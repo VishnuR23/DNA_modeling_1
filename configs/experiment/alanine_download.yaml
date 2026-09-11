@@ -1,0 +1,24 @@
+# @package _global_
+defaults:
+  - override /data: alanine
+action: download
+download:
+  base_url: https://ftp.mi.fu-berlin.de/pub/cmb-data
+  directory: data/alanine
+  topology: alanine-dipeptide-nowater.pdb
+  files:
+    - alanine-dipeptide-nowater.pdb
+    - alanine-dipeptide-0-250ns-nowater.xtc
+    - alanine-dipeptide-1-250ns-nowater.xtc
+    - alanine-dipeptide-2-250ns-nowater.xtc
+  trajectories:
+    - alanine-dipeptide-0-250ns-nowater.xtc
+    - alanine-dipeptide-1-250ns-nowater.xtc
+    - alanine-dipeptide-2-250ns-nowater.xtc
+  timeout_seconds: 180
+  timestamp_period_frames: 1000
+  sha256:
+    alanine-dipeptide-nowater.pdb: 20d4ff8f96df706d42f2efa334ab7facf256d16d5f8ba80175b407c3885bf9f5
+    alanine-dipeptide-0-250ns-nowater.xtc: ab8c91c8f572fddf4de3b9b78a6dfe56285f5f7dda30d2b124e261fa612e2b29
+    alanine-dipeptide-1-250ns-nowater.xtc: 6a80b5f301ee8c301ef7a7e19559411ca623a9af9a416d8fb70e0ff8f6b94134
+    alanine-dipeptide-2-250ns-nowater.xtc: 635813174dc3bdebe2ee65b99a91830ff54d37c24c0235054476f522244bceb5

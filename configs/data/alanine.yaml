@@ -1,0 +1,7 @@
+kind: mdshare_explicit
+path: data/alanine/processed.npz
+topology: data/alanine/alanine-dipeptide-nowater.pdb
+spacing_ps: 1.0
+scale_nm: 0.1661689
+temperature_k: 300.0
+torsions: [[4, 6, 8, 14], [6, 8, 14, 16]]

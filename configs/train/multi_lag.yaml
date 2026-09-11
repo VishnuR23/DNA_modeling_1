@@ -1,0 +1,11 @@
+steps: 2000
+batch_size: 8
+learning_rate: 0.001
+gradient_clip: 1.0
+ema_decay: 0.99
+lag_law: disexp
+fixed_lag: null
+max_seconds: 600
+checkpoint_every: 100
+log_every: 50
+resume: null

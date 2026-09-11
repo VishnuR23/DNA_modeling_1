@@ -1,0 +1,18 @@
+# @package _global_
+action: smoke
+model:
+  atoms: 4
+  width: 8
+  condition_layers: 1
+  score_layers: 1
+  max_lag: 16
+train:
+  steps: 30
+  batch_size: 4
+  max_seconds: 90
+  log_every: 10
+evaluation:
+  lags: [4]
+  chains: 2
+  transitions: 3
+  solver_steps: 10

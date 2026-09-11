@@ -1,0 +1,9 @@
+atoms: 22
+width: 16
+condition_layers: 1
+score_layers: 2
+max_lag: 1000
+diffusion_steps: 1000
+radial_scale: 3.0
+beta_start: -8.0
+beta_end: -4.0

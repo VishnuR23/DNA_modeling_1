@@ -1,0 +1,12 @@
+checkpoint: null
+chains: 4
+transitions: 64
+lags: [10, 100, 1000]
+solver_steps: 50
+bins: 64
+msm_bins: 12
+min_transitions: 100
+fes_max_kj_mol: 20.0
+ck_branches: 64
+ck_lag: 100
+ck_steps: 5

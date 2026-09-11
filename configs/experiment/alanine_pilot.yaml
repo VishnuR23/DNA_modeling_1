@@ -1,0 +1,5 @@
+# @package _global_
+# Local end-to-end pilot: data must first be downloaded with alanine_download.
+defaults:
+  - override /data: alanine
+action: pilot

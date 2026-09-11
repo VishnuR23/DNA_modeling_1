@@ -1,0 +1,18 @@
+defaults:
+  - data: synthetic
+  - model: ito_small
+  - train: multi_lag
+  - eval@evaluation: thermo
+  - _self_
+  - experiment: smoke
+
+seed: 20260910
+action: smoke
+runtime:
+  device: cpu
+  threads: 2
+hydra:
+  run:
+    dir: runs/${action}/${now:%Y%m%d_%H%M%S_%f}
+  job:
+    chdir: false

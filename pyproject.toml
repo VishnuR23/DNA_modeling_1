@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tito-repro"
+version = "0.1.0"
+description = "Local CPU reproduction of implicit molecular transfer operators"
+requires-python = ">=3.11,<3.12"
+dependencies = ["torch", "openmm", "mdtraj", "deeptime", "numpy", "scipy", "matplotlib", "hydra-core", "pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"tito_repro.vendor.ito" = ["LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

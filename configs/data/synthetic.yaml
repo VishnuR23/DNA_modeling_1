@@ -1,0 +1,6 @@
+kind: synthetic
+replicas: 2
+frames: 256
+spacing_ps: 1.0
+correlation: 0.95
+scale_nm: 0.1661689

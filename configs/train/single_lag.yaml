@@ -1,0 +1,4 @@
+defaults:
+  - multi_lag
+lag_law: fixed
+fixed_lag: 100

@@ -1,0 +1,18 @@
+# @package _global_
+defaults:
+  - override /data: alanine
+action: reference
+reference:
+  platform: Reference
+  forcefield_files: [amber14-all.xml, implicit/obc2.xml]
+  temperature_k: 300.0
+  friction_per_ps: 0.3
+  step_ps: 0.002
+  save_ps: 1.0
+  hydrogen_constraints: true
+  equilibration_ps: 10.0
+  frames: 100
+  replicas: 1
+  minimize_iterations: 500
+  minimize_tolerance_kj_mol_nm: 10.0
+  log_every_frames: 10
