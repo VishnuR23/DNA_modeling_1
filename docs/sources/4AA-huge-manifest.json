@@ -1,0 +1,4682 @@
+[
+  {
+    "type": "directory",
+    "oid": "07038112e5ac2c90deb5091ccd44e739fcd689e2",
+    "size": 0,
+    "path": "4AA-huge/test"
+  },
+  {
+    "type": "directory",
+    "oid": "006d291c7505c36ea788a0f78e74718c4ca21aa3",
+    "size": 0,
+    "path": "4AA-huge/train"
+  },
+  {
+    "type": "directory",
+    "oid": "b9d922f356e6e27a344de4f807603a8b3b902158",
+    "size": 0,
+    "path": "4AA-huge/val"
+  },
+  {
+    "type": "file",
+    "oid": "6ba8db3da46d918ed7202adf68f0a8c31085e9c8",
+    "size": 2067,
+    "path": "4AA-huge/README.md"
+  },
+  {
+    "type": "file",
+    "oid": "809201c773ea5f99de90d620f84b4a348bffc401",
+    "size": 2077473197,
+    "lfs": {
+      "oid": "359068e0f64df3d08f7c0f9936d503f36cd52aa931e2a92b29254744012d671f",
+      "size": 2077473197,
+      "pointerSize": 135
+    },
+    "xetHash": "8acb82b5f504458462f190d97dc48242bdceab04ec0ff95b62eb3449b93e2523",
+    "path": "4AA-huge/test/AAEW-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "c3713b03f90f249c90a5c40aeb9d7f4ce1126c8e",
+    "size": 5100,
+    "path": "4AA-huge/test/AAEW-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "f3e8603b499593bc53d3c1ab6d685f880b025445",
+    "size": 136,
+    "lfs": {
+      "oid": "4917a2fa92a040f6bdc0aaecbb1b44b3683a643f4b08328c13381ea9c877b63f",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "c16487571e1de08f170bea920318e770f5ba0da2bbe1626d337f3e7da320b863",
+    "path": "4AA-huge/test/AAEW-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "67bbc5a69e388517b3979fd7a6bf26604caa2db8",
+    "size": 2013754125,
+    "lfs": {
+      "oid": "25064be66cddd814a072a5394f279a1a47d0738b65fcb3c862564f4d3cb0d7e8",
+      "size": 2013754125,
+      "pointerSize": 135
+    },
+    "xetHash": "a85ccb646ba22bdf3590031c04af17adc24f509e31ec4fa8ef9a978bd2c58c4b",
+    "path": "4AA-huge/test/AEME-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "8ae0f17a4510f33bab47516a1da0f2c842506559",
+    "size": 4938,
+    "path": "4AA-huge/test/AEME-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "8ad532c531f40203d0c19e01a15d41dbbaa05d97",
+    "size": 136,
+    "lfs": {
+      "oid": "5fdd0ed690b040c416346ae8a0ce51671c48772f26f5cb2728b377994d05111a",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "a66d77fd6244eb6b9b9205490139d1fbf1c6f5c0446e486af5cfe34cc0a072ae",
+    "path": "4AA-huge/test/AEME-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "84a2cfbaf463c8c9c7f30026904f3a2d97d6291a",
+    "size": 2115831113,
+    "lfs": {
+      "oid": "2e2ace3951437bfc4a79e684b578dbada4a48618fabb83807b6c0cd97926d8e5",
+      "size": 2115831113,
+      "pointerSize": 135
+    },
+    "xetHash": "77849ac9b1fa2c20565bdc46c4c75c748165172a9c5c8faa39b9e1e5c3ad9145",
+    "path": "4AA-huge/test/AEVI-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "1cf95a53ebcbca7caace98df4658f8fe87d78893",
+    "size": 5181,
+    "path": "4AA-huge/test/AEVI-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "7b6dd4f7bf3a63df429f805207b265698e9f787c",
+    "size": 136,
+    "lfs": {
+      "oid": "e6ec0126c42b3823d871da0f525ff5da21b5ee91c99e2b3d4c4a74126c992cda",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "005698448cf818fb20cbad9a558c99713b79cc3fd83c4c4d7a229ce586f68259",
+    "path": "4AA-huge/test/AEVI-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "fdc7939b0302b28f05e01c1b1baf60a0a4cc7005",
+    "size": 1748792937,
+    "lfs": {
+      "oid": "5a1e44f50bec1962dab90178e0923905b2df467d2195c3957fdb7df269cb05dc",
+      "size": 1748792937,
+      "pointerSize": 135
+    },
+    "xetHash": "02775c8588faa67d2441b919273984c377e72b97e5d9cc467abc81e7eb92cc52",
+    "path": "4AA-huge/test/AGAK-2-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b7503a3515348554b8b519a5b35b7b566c191166",
+    "size": 4290,
+    "path": "4AA-huge/test/AGAK-2-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "d6a3bdf9d596cf9fd88cde129e6046bf7834d5e0",
+    "size": 136,
+    "lfs": {
+      "oid": "aa9f521ef807d43b3fdd9fb8aec71b28f216c07f26925129b1cfe6de8ae56a1b",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "39106acae1d2b220b4fc9cf412903ba16b13f82f66682ff475b1512cbc89f556",
+    "path": "4AA-huge/test/AGAK-2-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "e1f1cd36954520397beb644327e6ff2b76479d6b",
+    "size": 1746636194,
+    "lfs": {
+      "oid": "2269ce5686b9182759d518bac37bafdc9d0e37146f2d3abd258d9df1ccbb4f20",
+      "size": 1746636194,
+      "pointerSize": 135
+    },
+    "xetHash": "12d83b37960af3320253b6dc71098f4f55748e21afcc580f99249b9932aa624b",
+    "path": "4AA-huge/test/AGAK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b6a34b0fa1c0b4fea712d9a67ff679cea4aada44",
+    "size": 4290,
+    "path": "4AA-huge/test/AGAK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "bd3e65705541405bb20005ce61e91a45ac5fd228",
+    "size": 136,
+    "lfs": {
+      "oid": "219ac29fa8a1115222e58078fa23a3b3f3e422023c1541196790e6bdc2854f7c",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "c293899d7f1998bf69595659aea2e46439d163b335fe91839cc85d4b67c8f62a",
+    "path": "4AA-huge/test/AGAK-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "901d702af2c4fba63ac4fa06b63f3c1aa3dfed03",
+    "size": 2346851670,
+    "lfs": {
+      "oid": "27dfd61aac81a55cce6c54205e9b41dac8948192368c32fd4a2cbe1c6c9e7b70",
+      "size": 2346851670,
+      "pointerSize": 135
+    },
+    "xetHash": "bcbf52f92aab23f963b6bb1bff2f2c99b166f592ae1d6eb5aa1044eaf3281ca3",
+    "path": "4AA-huge/test/ALQY-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "676f2ab5d00431d39a386e02a5153a29925d15e0",
+    "size": 5748,
+    "path": "4AA-huge/test/ALQY-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "387d2c42a50270798b366f5588f145d566f0b9af",
+    "size": 136,
+    "lfs": {
+      "oid": "be15500b3363b6ff5503fc561808a2abb51e3e09fc694f246bee8ed0d3f07a0e",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "48870ed0ea2038a0faf73d059b6179ba07e2b02aba37d8a280a08862181c1a70",
+    "path": "4AA-huge/test/ALQY-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "99abe3c41b00ccf545360dbe5e448f6432bdd14d",
+    "size": 1814298184,
+    "lfs": {
+      "oid": "42e91342ba6fd7d74310293b1d2848c341864392df35097bd7c7e2a4153245ec",
+      "size": 1814298184,
+      "pointerSize": 135
+    },
+    "xetHash": "ca8f37c73468ae34b673f7d49b272bdf0c1d1bd19bf5d1b2e7db53a9d5a3da0e",
+    "path": "4AA-huge/test/ANFG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "8c62de65a5e3243201d2cff8a70cfd2d25be4180",
+    "size": 4452,
+    "path": "4AA-huge/test/ANFG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "9d4f3729e6b9d4c39e56afb6a9a51c19e71004b1",
+    "size": 136,
+    "lfs": {
+      "oid": "18945f4ccf27a2277a719d41d0b98c17db388da64e6a694a9e7e6293acf0ce14",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "b5cd0fb6e0b1b36a692e11ca6bcfe68e5089d31b08e340df093988518a2c4646",
+    "path": "4AA-huge/test/ANFG-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "ffe9626d4e3f86b0880a40118c193581d6508410",
+    "size": 2080598549,
+    "lfs": {
+      "oid": "17cd43407195adf0f771959bc03806c47aa2a2b6af00182636b2210ac11c37e0",
+      "size": 2080598549,
+      "pointerSize": 135
+    },
+    "xetHash": "ee4c0f04a73edb08c296a89143acaf4ca064c2f44e9d6522fae76fffdf5b0a2d",
+    "path": "4AA-huge/test/ANYT-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "ed0efef98ef546b0837c1003c889b7037b17b4c7",
+    "size": 5100,
+    "path": "4AA-huge/test/ANYT-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "03b198ec66f93b384b74609be429945511e93b92",
+    "size": 136,
+    "lfs": {
+      "oid": "eda59d884e83c215031b18e6cade11b8115bea526c54fb4a82be07a223bc691f",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "0db82963ca44cd925099754c76af72ba915e339e07989f1ad42c8cf1e89030e0",
+    "path": "4AA-huge/test/ANYT-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "f0d4ace8a050511b94e2b1d70b70e57282f07661",
+    "size": 2214289950,
+    "lfs": {
+      "oid": "a68587f371609115c41875a49d60993528af10f22250e4b63420bf97b7d79afe",
+      "size": 2214289950,
+      "pointerSize": 135
+    },
+    "xetHash": "c7bb8018c4a22b4da3999c3cdd863a3f069d106cd6b85d38646e433fc16b0e2b",
+    "path": "4AA-huge/test/AVEK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "02d20d19bab2b056c24b211b02f2cf18a78da252",
+    "size": 5424,
+    "path": "4AA-huge/test/AVEK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "42a24bfaade377357b49a3c906863012a9876cd1",
+    "size": 136,
+    "lfs": {
+      "oid": "f588f2a487b0ac642e30104a5eb347ae012995ddba49928e95a3a25f1608e213",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "8ae469aba99959ebc7738ca37712736fe90afee3eaef611c0e24b0014dd28c74",
+    "path": "4AA-huge/test/AVEK-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "f10d0f8bd607bded10a761810e340048d58a0440",
+    "size": 2348415205,
+    "lfs": {
+      "oid": "c910f60c0b143b10d0c1dc5bacb561ada507da858f51a2a86ca6c5983ace4026",
+      "size": 2348415205,
+      "pointerSize": 135
+    },
+    "xetHash": "1a8bbe0f3b30fe733c34e9e2534993307a2b72741791163d55b3cd51f39794ae",
+    "path": "4AA-huge/test/AWKC-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "c86af997c243d830246ec67a1d7907fc4bb2caf7",
+    "size": 5748,
+    "path": "4AA-huge/test/AWKC-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "10af7560366b0baaf8fe8d969ab4d27594a43bb8",
+    "size": 136,
+    "lfs": {
+      "oid": "5785e5c2e367b2de4514ddf3d2e6e61687a895f17553f6e57a4d8cf354f278e5",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "69502317af818d67217f7ce2fa9d940c3330c8a5b3b5231e1898b3f1bc646652",
+    "path": "4AA-huge/test/AWKC-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "dfcb40db9c61cbea99284bf2f1cd830c48b4409a",
+    "size": 1848159603,
+    "lfs": {
+      "oid": "4c6bb93b9d9f767dcf4e16e756632e78f9a7d4a234bfc2e91fae53679a2b564a",
+      "size": 1848159603,
+      "pointerSize": 135
+    },
+    "xetHash": "f7ce3812c08580195be081097dbf6be6657f2e0d0449e35ba4722eefd9808629",
+    "path": "4AA-huge/test/AYTG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "29034a89dce1cf92ec2087257b0354d195df3a46",
+    "size": 4533,
+    "path": "4AA-huge/test/AYTG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "55ac7258f7a616f42e52b058b1dcebf153992ded",
+    "size": 136,
+    "lfs": {
+      "oid": "5adff7633e7c561d35e64606c385b3237573de383b52968b9132e20426a6af7f",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "b873bc570b09b7b49855e31b1aaf4f8c67a7b28a353bbdf94154716892a53ba7",
+    "path": "4AA-huge/test/AYTG-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "84af9924fabf9dd13303d4fb36e45cf4a782a3a2",
+    "size": 2316586676,
+    "lfs": {
+      "oid": "985fa58e482b3b67a57e1bbcff94d35aa61b57d72846850256abdf5ba6fc38ff",
+      "size": 2316586676,
+      "pointerSize": 135
+    },
+    "xetHash": "c9e7a0389d9e40caeffcffb5d70284599e2c82d4e8c77cbebc8f2ae4d88a7dff",
+    "path": "4AA-huge/test/CHPR-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "5bb913c9c798dceba018f89b221717380d4663f1",
+    "size": 5667,
+    "path": "4AA-huge/test/CHPR-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "42aa98acdddfdfeca29d556b789dc281eaaa93a1",
+    "size": 136,
+    "lfs": {
+      "oid": "4fb22871745f0145a81a6dbf6672ca8ef8c413c86245ed44064a766374d6d6e0",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "0b6f07e33daddb3a74e8a7b3906f2d2e506772dae35858dc5beaf7e441672cdc",
+    "path": "4AA-huge/test/CHPR-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "007399d0c79255492116ffb7501d511b12f5b027",
+    "size": 1881901657,
+    "lfs": {
+      "oid": "ffc88ff861f7143217f390924d6657643402cbe3e7f174bc5930e850aa4f6caa",
+      "size": 1881901657,
+      "pointerSize": 135
+    },
+    "xetHash": "289d7041b03b0b88e30ee0436bbeb6a08d74e314d4924ceef1aedd967eafe49d",
+    "path": "4AA-huge/test/CMST-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "72c70922583a3e8c6997a4d05db52daac1408e1d",
+    "size": 4614,
+    "path": "4AA-huge/test/CMST-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "aa6cfe1d64222fdc388782723429aeb8bca0f1fc",
+    "size": 136,
+    "lfs": {
+      "oid": "2f8003359726dde6531e29baaf6cdf2e448e88a1a8401824daf1b76d79229e5d",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "b439795c9c4367c70bf30503dd4676dcd80345d2ceb62b8622a06c65151221a2",
+    "path": "4AA-huge/test/CMST-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "ec1dda82404e39144b3663b31ea9610565db8313",
+    "size": 1882880011,
+    "lfs": {
+      "oid": "3ba81137f7b3d55e843aa5cee861041c4aaf9936a20c745f5f40971f791c303e",
+      "size": 1882880011,
+      "pointerSize": 135
+    },
+    "xetHash": "68cdd9e301327fadd524403650d46946bc775c0e6c881aa6d150f5783590e16a",
+    "path": "4AA-huge/test/CMTS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "cba7dcb837453e5322fbed84f61b199c8b7ca72c",
+    "size": 4614,
+    "path": "4AA-huge/test/CMTS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "d8b2ba8ff638221e10f42b5c72999d282102cc6c",
+    "size": 136,
+    "lfs": {
+      "oid": "71a5fd31c28656d227580095095bd67df34abf0bd1b58247e1412229609a73f6",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "31f733daf4fb9d5b059ede898f84efe2297744b8a7e435c64383ff06aa1a48c9",
+    "path": "4AA-huge/test/CMTS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "ef080c9ab24191199a3f7b73019597c41edffe73",
+    "size": 2078854305,
+    "lfs": {
+      "oid": "5ee2e92b28f63e1fa707c4b26ce45c20094f784aa1973c2311f518509b30d0bd",
+      "size": 2078854305,
+      "pointerSize": 135
+    },
+    "xetHash": "954e520dedb51e0f8da78c11a0e9efd92ca95406c83343bcbdb47717bd437980",
+    "path": "4AA-huge/test/CSFQ-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "c25e09cf658f43373a507b702d9229a5e87657ff",
+    "size": 5100,
+    "path": "4AA-huge/test/CSFQ-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "46ada3546f7f186aca3f2ce4932db99b1f7c896c",
+    "size": 136,
+    "lfs": {
+      "oid": "9a8a521cfb2ad58ef1d56a68b8111c31fd68b6ea71f8e01c4177604364390e39",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "3f5fd44e2a2cd7ad6ba90e9d3b58b4b34094b421a0feefe26fbe82069c418f81",
+    "path": "4AA-huge/test/CSFQ-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "6619ed46fd0c742c33d715abad4c330c29198b5a",
+    "size": 1449539984,
+    "lfs": {
+      "oid": "7cd49a7cf46eafecc137474e45ff0588a8df688ad8ec729f29e864e2b7ea57bf",
+      "size": 1449539984,
+      "pointerSize": 135
+    },
+    "xetHash": "b450199f6363d5840be0a8cff4d281787ce29cb592f18d7c57c40b48445538af",
+    "path": "4AA-huge/test/CSGS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "24f0c95b6df371430a9bae8180c2736224de3323",
+    "size": 3561,
+    "path": "4AA-huge/test/CSGS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "15fd61386ce5c86dc90f8cc2be5713a27a990716",
+    "size": 136,
+    "lfs": {
+      "oid": "32be7b0c5c511e0c01b3ce50766496cdde83aa3ecf50b56750ba9ee7a79a4186",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "8efde35bc17a92c67aa8d3ac44af8816b2e14938c9e0efd102fbc277eaf8fc69",
+    "path": "4AA-huge/test/CSGS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "82186aaf64892181d595fbbdaf1baf33d01e94f1",
+    "size": 1649090718,
+    "lfs": {
+      "oid": "23f0750a2bd1ab702de1fb9dcb4c4fec5986ad871646bef0fb9b1576780c088b",
+      "size": 1649090718,
+      "pointerSize": 135
+    },
+    "xetHash": "f2cfdad4a11199a87c63facd1aa11a87e314511aa51f79b4da7c50566f0657a7",
+    "path": "4AA-huge/test/CTSA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "115d930b97de22b5bedc1f1e04f520257ae989c5",
+    "size": 4047,
+    "path": "4AA-huge/test/CTSA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "7064e8a80d3fce6c20609496fe26662a450948e5",
+    "size": 136,
+    "lfs": {
+      "oid": "3e92cd77a9ede2da0d23e258a7b0e18d3f868d68d39ff63f2ccc151fd8e0094f",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "76cc765fee3af11e52a1a4ba09ec0a93ce4799372c66d2aca7ef3d73359aea20",
+    "path": "4AA-huge/test/CTSA-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "a78b31a434955d532ad997a676107c01e8c4accd",
+    "size": 2411336519,
+    "lfs": {
+      "oid": "df660ef635b5522fae3031bbe2b1f37b4f241046e34067052daedc1646dec9f1",
+      "size": 2411336519,
+      "pointerSize": 135
+    },
+    "xetHash": "7645937cf5dcd9b6f39dde0a2a01fbf1c5d6c9ee4ab2872ac6fa56403608ddfd",
+    "path": "4AA-huge/test/CVKF-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "ccf99a98ac697a010b9a860c2c52c33372b8dac5",
+    "size": 5910,
+    "path": "4AA-huge/test/CVKF-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "d696b8cb21e8bcaaa234df06056016f184e8b0fe",
+    "size": 136,
+    "lfs": {
+      "oid": "94c85f94697f167ca5acc31890938efc3afea4b75541c7ecf043c44d1295cff2",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "e29817b3cdbe0fd671e4ba0f086c3d6c6fe73c7f97388c1dd9c704cd4ec29e67",
+    "path": "4AA-huge/test/CVKF-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "8db7f128b2a6eab0410105f85df91a7b1d249486",
+    "size": 1982047599,
+    "lfs": {
+      "oid": "62e6b848ac8b6ba06cc88691ecf534ed0420228986111dcbbb1f55a6873996d8",
+      "size": 1982047599,
+      "pointerSize": 135
+    },
+    "xetHash": "a30fa774b48d86327894c498f74c37f70eeea99b51c22e969c6a0e3601afd7b5",
+    "path": "4AA-huge/test/CVTE-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "6f86d3e15b50656680fe6094610222dd54374980",
+    "size": 4857,
+    "path": "4AA-huge/test/CVTE-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "8a5c67c96644b06e3fcce9a658dc5e8482a26a40",
+    "size": 136,
+    "lfs": {
+      "oid": "cd286c912f3ee72b1d3763f988b021f66bb631eede351fd33127a13bd1bc0bc7",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "cf05a8b387b1cd7226e40b566439a0342a48ed51b4ffde9caec548ec1668973e",
+    "path": "4AA-huge/test/CVTE-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "a14eedee529a1c00132c9b7c3b3bb41da1926d26",
+    "size": 1780537170,
+    "lfs": {
+      "oid": "b9691469e21aa38baf1aaee06b6495b5f40c1abeb03251b98e1225db0b325d29",
+      "size": 1780537170,
+      "pointerSize": 135
+    },
+    "xetHash": "ac3e74249d9cf747129c90664c1c304c455560e94cbd8efdb9120b6e51a6ca20",
+    "path": "4AA-huge/test/DDIG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "a78d248d803517abc99a2414a71e7baec1be6905",
+    "size": 4371,
+    "path": "4AA-huge/test/DDIG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "5eacadde5b3230035b8c34df973ebdbfc65670f4",
+    "size": 136,
+    "lfs": {
+      "oid": "24ef910261e7ba6d62bd7bc45b9a3a659a229ceb4e0f1b622f4b5c10f43f7676",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "05cdf10a7b54c7af4734a8b99574acadf96270b9868daf94c1fa6d577ad713c9",
+    "path": "4AA-huge/test/DDIG-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "40bcac8843dace7e09c83d31eb7b47fb5d57e2b0",
+    "size": 2279267855,
+    "lfs": {
+      "oid": "8b6171b10b824d7104380c9c258574825ff4c30a492fa4d06f4bd93c47552bb5",
+      "size": 2279267855,
+      "pointerSize": 135
+    },
+    "xetHash": "09ae43160dd7b86ea899606ca2d9dbe49dff8c85b52fdcc8800df20ff152226e",
+    "path": "4AA-huge/test/DFKS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "519bfe7ba4947d56d2e9ab4e10a35ec2c9187f03",
+    "size": 5586,
+    "path": "4AA-huge/test/DFKS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "f47cc4a93eaa03575eff69a106f346078fe586de",
+    "size": 136,
+    "lfs": {
+      "oid": "b0bd3d8628c3633390510bfead20999cbc8f5c597bf4ac77353d22685e9cdcde",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "20d3286039bc3c093e553696835f550090cffd8c438aabd88074361836787154",
+    "path": "4AA-huge/test/DFKS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "68001d1ea2f384d5d8f980b4ba3dcccd4b0c0605",
+    "size": 2348577414,
+    "lfs": {
+      "oid": "2c3bfe22b8a02ec0632bb21d789ea66f0a4eaf2bfb3976da583b790bab24fa8c",
+      "size": 2348577414,
+      "pointerSize": 135
+    },
+    "xetHash": "7f35b83d2c8f9385360fd0d15d4bcb6dc98e5d1c9b56d9cc457be37d0bffdb08",
+    "path": "4AA-huge/test/DPLK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "62de563684870d4b1bbf3efcc575d23bfef6cc1c",
+    "size": 5748,
+    "path": "4AA-huge/test/DPLK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "d9d097f6ba0e547574e232eec4b0495450fdb0a7",
+    "size": 136,
+    "lfs": {
+      "oid": "0ede5eb13242a7d99288a2f4124e3efbd60cc27dd293b8f6974473e618bb1451",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "7c01c0a0a340f8fcad5690984067a1ed0bd42de627c4fb63c06f0ae0f76059c5",
+    "path": "4AA-huge/test/DPLK-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "f4de5bd9c0dab22b296e0e29479cf56333050361",
+    "size": 2049961698,
+    "lfs": {
+      "oid": "2497a0517e72677c95f135169719b607d456f215a16e12f1e1b250ea5483b446",
+      "size": 2049961698,
+      "pointerSize": 135
+    },
+    "xetHash": "8b53fc634d1a37a3789703fda96aeaed15ec462ebb3066a11e6a95a10b65b276",
+    "path": "4AA-huge/test/DQAL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "cce19639008566e62c198bdb3c5c5a70b67f8e83",
+    "size": 5019,
+    "path": "4AA-huge/test/DQAL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "86e6226d33420a0dbf63db2e25a15352bee6e02c",
+    "size": 136,
+    "lfs": {
+      "oid": "bd6aa6ac5c2c677083dba81b607ffa1dd1fa1b37f7f73668027b2aa63164f832",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "ea72a3ddec2875122994243310263e0490053c93743ad8907a3d149913746f54",
+    "path": "4AA-huge/test/DQAL-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "72bd78914ef5ece3851b36a7f65deb68e308aae2",
+    "size": 1780801344,
+    "lfs": {
+      "oid": "e4a29a4e665e4f86ef72f7b979c660ed5d96dc6b0bc58ccc2701dcb7a98855e4",
+      "size": 1780801344,
+      "pointerSize": 135
+    },
+    "xetHash": "275bb3c5afd58dc8671fe73d4271ff0b19adf0bf5a38f3be74825f84604e9da4",
+    "path": "4AA-huge/test/DSDE-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "2007beaba08b4ba4c16227229a681923770ba295",
+    "size": 4371,
+    "path": "4AA-huge/test/DSDE-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "1563ad80d06187d86ac9cd0cec304d18b036b657",
+    "size": 136,
+    "lfs": {
+      "oid": "645775e29a7dcc9ab46cd70d2f0330c1aacbf61183930632270925f8315b966c",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "48de162a6b7d7a53c125f872eb3339bc2b9889e9f545e05cf65b55438af06df3",
+    "path": "4AA-huge/test/DSDE-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "a5212a5d4bad9270af2abbe807cd136ebf442aa6",
+    "size": 2014453823,
+    "lfs": {
+      "oid": "f3bd676e9fd36d92ac4a3e1997e45f2fb2267531321bd08e6af9b1dd93a77348",
+      "size": 2014453823,
+      "pointerSize": 135
+    },
+    "xetHash": "5bd115a9b1b8191ab77885dce9e94fd14d28db6834ef9998597712a28a690acb",
+    "path": "4AA-huge/test/DTDL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "dff281403e9e79b16f079bcaeb1d6b483e48d8b1",
+    "size": 4938,
+    "path": "4AA-huge/test/DTDL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c898af7b93a2567b320468f7618607e1e04d06c0",
+    "size": 136,
+    "lfs": {
+      "oid": "0a7518c1e7f0bf4d0c1ed094c58ad0d5f256c9d837b546b3b1ec9ec982b052ce",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "7495c4192c63f7ed284a217339a7d70fb5148cd434ced5ec5e69f8898514782e",
+    "path": "4AA-huge/test/DTDL-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "643fc2c8b7f92a5b40ba834b57997a5c82c20d21",
+    "size": 2246550088,
+    "lfs": {
+      "oid": "48284e468466a05b4a5bdabed73b5c6ffe4df832084304fb467bccafa5a69571",
+      "size": 2246550088,
+      "pointerSize": 135
+    },
+    "xetHash": "add13e920993c678fffc35096f77c435fd477157da121c782606310d5aa2251d",
+    "path": "4AA-huge/test/DTVK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "e0023f2be1ba3aec9b540e4733f662930e90b58f",
+    "size": 5505,
+    "path": "4AA-huge/test/DTVK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "e1d5352be25c3de4bdc048f07c93f955bca17f35",
+    "size": 136,
+    "lfs": {
+      "oid": "26d16b00cbc694c18c833aa0fa30c7070062b74d2175f3a2d16283a9d6b1bd65",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "06436417ad56b1decfd1c104b76bb87af0ef5cb2c04a1453f412d60c7d4b45cd",
+    "path": "4AA-huge/test/DTVK-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "2c0e38c0b5c7bc7500306fe177f3ff5c7d5aa8da",
+    "size": 1748020799,
+    "lfs": {
+      "oid": "6f4bd90b63e04d7a2cb783155c1ff75eeff57283d09942450eed138125e22935",
+      "size": 1748020799,
+      "pointerSize": 135
+    },
+    "xetHash": "5d59d1aecfeccf32997602bd5c2a401db8ce23e14d43bbb9bbd3febf95ff296b",
+    "path": "4AA-huge/test/DVNG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "2e46a88ca588b0ac95536de6673d1bfe8ebcdcd9",
+    "size": 4290,
+    "path": "4AA-huge/test/DVNG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "196e2ee9ce3e0b80fea021cbed5c3c891c23e176",
+    "size": 136,
+    "lfs": {
+      "oid": "2886ef0764d642bf841ae1b28efac174f2c0ad8cd5ce444bb0e7537c7129c5ce",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "376c1b3ad0d8ed278b7e4965d60ed68550b3149eb8e3c3b13aa0b93222e0599d",
+    "path": "4AA-huge/test/DVNG-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "80b736d072ea769fbd422652a359f0a8276591cc",
+    "size": 2148772157,
+    "lfs": {
+      "oid": "d9d6c133e600bd9d8b28ff4e7556d56bbac1f550eea48072d758b3fb9a92a3fa",
+      "size": 2148772157,
+      "pointerSize": 135
+    },
+    "xetHash": "7d70db0a6af6b696be5b892127b1ff3197c24ce1b6d55bcd01a73ebc127c217c",
+    "path": "4AA-huge/test/DYQC-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "42dddc0ff59b64839b6638b0ae46052eef8f5650",
+    "size": 5262,
+    "path": "4AA-huge/test/DYQC-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "47ee75a0f68da6e316813a36ef49f42736dd074d",
+    "size": 136,
+    "lfs": {
+      "oid": "249fcf1d7a8bd688005930fea91577fad9269f3800c9cef405b472ac2427408b",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "53ddba9cba524c0142ca971ec908e73b7f859498b14037e6c36a357a2c7290de",
+    "path": "4AA-huge/test/DYQC-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "9ffed59114731feeb7bad442282f26bdd8c1f1cc",
+    "size": 1681797496,
+    "lfs": {
+      "oid": "e14938aee09287234bee6a89eb80f9f5e0b83946406aa7e66d35d413e01b28e3",
+      "size": 1681797496,
+      "pointerSize": 135
+    },
+    "xetHash": "763ad1ced8deab2f68addf8ecff4276148b30379d87a3199788ea5d27957568c",
+    "path": "4AA-huge/test/EASS-2-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "c2520a90f6c29898f4c9b827f0316cc46847174d",
+    "size": 4128,
+    "path": "4AA-huge/test/EASS-2-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "39b03dc98ba8a7558a4a4cf00a6799193b845613",
+    "size": 136,
+    "lfs": {
+      "oid": "33c734c7a76ac10580f5440b114fd09af5974c5ad76bc9cd8288e0dfc3950343",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "9673b36a99a10449ed3034c84b8e5a85b8cab37ae1e41a1b243038fad77ab6c5",
+    "path": "4AA-huge/test/EASS-2-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "da25c1c4f70fa3335874e19b5323c7818c081199",
+    "size": 1679682797,
+    "lfs": {
+      "oid": "014865b200fa1bf45cd66ec17cfeeb715673f8a53afe7b10dd425bcdba7e3d36",
+      "size": 1679682797,
+      "pointerSize": 135
+    },
+    "xetHash": "572c3c0518d1102a12cf582eb8d5f6667a3e55afdceb961bcbc4497c3def6239",
+    "path": "4AA-huge/test/EASS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "43105061e8ddeedd3102af603781c8cd73d7148b",
+    "size": 4128,
+    "path": "4AA-huge/test/EASS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "63b70b5cd034de97bcd02b4a5cd4a30aeb3d0567",
+    "size": 136,
+    "lfs": {
+      "oid": "a19c9937a02a81f8eefbf90474b0ce2a7d6da287111b4369fe75a076a57ce80f",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "d3e2d6c6ec75fdeba2aaf2bfd1197de728b075c637b267b79366cc2fb3d6fd3c",
+    "path": "4AA-huge/test/EASS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "8613c5908be756f8dc6472f6315b47b65726c8a6",
+    "size": 1549584160,
+    "lfs": {
+      "oid": "c2930aa4bdf590b163de7525d70bdb6e380108398499062c5fb961a5a89827dc",
+      "size": 1549584160,
+      "pointerSize": 135
+    },
+    "xetHash": "83219393b229be4bdc6888cfd1d16e77123dd0ef42a9884d1ba546b007a19911",
+    "path": "4AA-huge/test/ECGA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "4d4a6a140a06deac2d70b25a1bf3f39096943c3f",
+    "size": 3804,
+    "path": "4AA-huge/test/ECGA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "80481ad71b17d53610dd5dd716386a7a7aacc222",
+    "size": 136,
+    "lfs": {
+      "oid": "18c2e83a8c2083f249879d9c40f3411a295a4dc749789f3b75b24a252d7ff3fe",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "3439a6d7db372188420ed3f4745602333d3eb2c0009baf02056eb3a8975d6f84",
+    "path": "4AA-huge/test/ECGA-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "afc4b816718c3e2e5db1d32f583a07ab5b586f3f",
+    "size": 2379607710,
+    "lfs": {
+      "oid": "4839514695fc6a1d7baaa766ec7ec5515b11482e10cb7e27c58327d638f8a521",
+      "size": 2379607710,
+      "pointerSize": 135
+    },
+    "xetHash": "bd8dcc7032a3cda92f77bb506979f3d82d0831f84679c094ebecdb01faa32511",
+    "path": "4AA-huge/test/EFNL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "ef191226789ff954abff727d36eff91e8c072ca3",
+    "size": 5829,
+    "path": "4AA-huge/test/EFNL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "363f1dad1d5780f099f5a0b0a6dbdada45d7fea4",
+    "size": 136,
+    "lfs": {
+      "oid": "e8b4871c85674cf8e16dc60cfe8a1c3e0a0a4e17d71a4a7eb64b99540db463f9",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "b91478a529805dc501b61ad684a0755b0ff7363e8ec7fc22e4de7e8f8b235b50",
+    "path": "4AA-huge/test/EFNL-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "b2b7ee3a9d65cd78902a50b97a7b7923b00b840d",
+    "size": 2012061154,
+    "lfs": {
+      "oid": "b997fce6d40379a1c826b53f97007c2be75fa5fa6ba93d1e1acb8a5f43589844",
+      "size": 2012061154,
+      "pointerSize": 135
+    },
+    "xetHash": "078cc7884c1ddbb18d597930a472d1adef62d95c79c117edee7b4fa8232464de",
+    "path": "4AA-huge/test/EGVL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "fcfbc195da6f419672245e08f7556df6e2f4d8fa",
+    "size": 4938,
+    "path": "4AA-huge/test/EGVL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "7df9212b8c168ebeac8262ac90a81f166eed63d6",
+    "size": 136,
+    "lfs": {
+      "oid": "1e1240460754cf85bed54cb03e89a5ab1ab5b150664684e89fb9693f4c5ec29c",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "4b32bc831e6404c62a2c792d1f74d99bde59dfe3ae086939052e3935e86ce23c",
+    "path": "4AA-huge/test/EGVL-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "71a90d81927bd85884dd751f8c3e7c3747a4417d",
+    "size": 1949260367,
+    "lfs": {
+      "oid": "936ac55e92b7f88a391f0baa768aa801dd38eed2d79a1990b49c4901171d0312",
+      "size": 1949260367,
+      "pointerSize": 135
+    },
+    "xetHash": "87a6ae3150cd253db27165dce616f43eb9fc5654fd3993da113526a3bd68795d",
+    "path": "4AA-huge/test/EMVG-2-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "fa353036a4a2f941f8bd9e4bc763d5887993e0c1",
+    "size": 4776,
+    "path": "4AA-huge/test/EMVG-2-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "e08c3118e67e30de03d910ce805ac08264f35ce9",
+    "size": 136,
+    "lfs": {
+      "oid": "3b24410f8ec696c4607e5fd2212629f2126951ebadd533195d10b4d6e55c36ae",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "699e30495509b848241760d9ffafd256dc10bc19c9636402ab04f56bf14de6d2",
+    "path": "4AA-huge/test/EMVG-2-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "94ee5c9a1e4137aa93590c05b9522462fa88bde2",
+    "size": 1947974185,
+    "lfs": {
+      "oid": "a14af2804ada749a750d9d8aee183793247e6f0af1853c089374ad230c90dfeb",
+      "size": 1947974185,
+      "pointerSize": 135
+    },
+    "xetHash": "0de8b786efbe6c54292e64b26f17d9a6cbc016de6335123b59555c9b07917ecc",
+    "path": "4AA-huge/test/EMVG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "9800286f60797429954c5927a05b0118284541dc",
+    "size": 4776,
+    "path": "4AA-huge/test/EMVG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "bb15f44d237b1399af5d75905c23a7e205a6aae9",
+    "size": 136,
+    "lfs": {
+      "oid": "f5954b144e7df995d81933e0775f04b7baafb3c50691080a0cc22608bdf37ce4",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "f035d60bb6a6cc445846f60a2e59d5f5d904c29f71e175d5cf61717e9ede95dc",
+    "path": "4AA-huge/test/EMVG-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "b3f89f05546845653e090fbf972be3ee669fa427",
+    "size": 2780610230,
+    "lfs": {
+      "oid": "fa27ce26cfa2383c83117d314c67aa5723f102c6b366ab2b788feac5f72f42db",
+      "size": 2780610230,
+      "pointerSize": 135
+    },
+    "xetHash": "e91dc29d8b3b70f34850ce006b28ed97ac41b46996de6c68a95c6827494c0d08",
+    "path": "4AA-huge/test/ERQW-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b6cd0dcf6d40b2b1ad3de24a91bdd19e177287b0",
+    "size": 6801,
+    "path": "4AA-huge/test/ERQW-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "9a7b60b14da37975b9bad8645e497e7aaab73f6a",
+    "size": 136,
+    "lfs": {
+      "oid": "28729670947623349405ff1216b0f54b8338c7577d5dff7fcc026252d90faadb",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "806aca476b9a8acfd15d11f13cf5765e7e4c7acaa88538d4ba07244a3700cc56",
+    "path": "4AA-huge/test/ERQW-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "78599abbf16f9563126561a62b78213cbc5080b9",
+    "size": 2111863270,
+    "lfs": {
+      "oid": "237894dc0d269baccaf1201a0b0842900d699952f3eaa789a0e4274590d191b6",
+      "size": 2111863270,
+      "pointerSize": 135
+    },
+    "xetHash": "00b9e8b49bec1bb23f27561978169adc90e79c61a1cae540d89ce7f653447a0c",
+    "path": "4AA-huge/test/FALS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "e7cddc48917b3152969adc76d32f0a881fb93ae1",
+    "size": 5181,
+    "path": "4AA-huge/test/FALS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "a797ce7410c89771651a841641c31cbad367862e",
+    "size": 136,
+    "lfs": {
+      "oid": "4cf5791bc814b009f1b2d205383e32e36a53129b0cb7d3ffcd068396b462e189",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "36b55f56c4f7d441f22d16d74770cdfbf3a4cca4f8eed0edd322218dfdde26b9",
+    "path": "4AA-huge/test/FALS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "a585f2020f2aaf42f32209c50646f82ce3170331",
+    "size": 2479723311,
+    "lfs": {
+      "oid": "55286643a5ad685319cc2f29e22c2250fa759b96038894e33212d8140ec6b41e",
+      "size": 2479723311,
+      "pointerSize": 135
+    },
+    "xetHash": "e9aa5f35a163e5dd1b9c9c3f3aec9ae2b12a38e6877f010b7f0ab9b0b798cd46",
+    "path": "4AA-huge/test/FIAK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "caeb8ecfe6108b36deb2f9c8bcc096e18b1d4dd2",
+    "size": 6072,
+    "path": "4AA-huge/test/FIAK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "275a754707fa39d68cc77a8f1ac28127d0eef1c9",
+    "size": 136,
+    "lfs": {
+      "oid": "f86ab35e555ba85fda3427c164abc914b2866d0ee4319d795856d3adb2a57229",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "0a845a10ee374190336bc1baf34a784f3b2709c2d36107797e402b5d4739cb24",
+    "path": "4AA-huge/test/FIAK-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "2323e6b8d4b7a3d3541ffb39027462647aaa20d9",
+    "size": 2148853456,
+    "lfs": {
+      "oid": "698dc844b19b9dccc98a764e127cc0a4ec85a9975fd0fefa7f0790945c267ac3",
+      "size": 2148853456,
+      "pointerSize": 135
+    },
+    "xetHash": "331ebc22358bb8ac3201a7b51dcb4e578eeaa921ea606cf5be7b743d1b84fd33",
+    "path": "4AA-huge/test/FIGE-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b3cc0e0bc025a0b737a079857d26507eaf1e57ab",
+    "size": 5262,
+    "path": "4AA-huge/test/FIGE-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "820b426a2d1aa08ad493dbb33611a5bbfd4dd8de",
+    "size": 136,
+    "lfs": {
+      "oid": "724b0ce3530b4f35b270e68fb365b61ed89fdb4ffcf780014e121b3275713dad",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "a2b5cfca3d7aa8142f62512b95a2fb93e7255dfc84758549b70783389fce7726",
+    "path": "4AA-huge/test/FIGE-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "49c84e66dd3bf0ddb7e8818507c9ebc70bf8c164",
+    "size": 2344135977,
+    "lfs": {
+      "oid": "0ef04e3716a9cad8ab9b0e4f11077c5af7b1e53e608837efbb1661162aaaab67",
+      "size": 2344135977,
+      "pointerSize": 135
+    },
+    "xetHash": "16f600f19154d3ab0ec85cc0d31baa6704f481c90faa99b54ee4ae465567cd02",
+    "path": "4AA-huge/test/FIYG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "f88705a041653ab5c933e871e6eed813a45edf71",
+    "size": 5748,
+    "path": "4AA-huge/test/FIYG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "6f0356a518a91762b38a2652f5d820524853ef9b",
+    "size": 136,
+    "lfs": {
+      "oid": "7d739f065ff755448fb1833e95dce49edd0c256152b6ac0d2fbf630192dd1083",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "ed390007b3eb8c99186f9a7d1ab50c2bed60031779604189d057bb669be2b01b",
+    "path": "4AA-huge/test/FIYG-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "83a5bf33ec329fbee567e2655b3fdf3f19d98029",
+    "size": 2511713656,
+    "lfs": {
+      "oid": "dc0a79306bb8d1b77d069311318e5064c120cb793b6ee7925e0cafef690d3034",
+      "size": 2511713656,
+      "pointerSize": 135
+    },
+    "xetHash": "a4c9fd6bf39d1ec4856cdc31bc9c60042c6b482bae5f5e15151c47ba96393e79",
+    "path": "4AA-huge/test/FKVP-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "bded14ee59e9be79c08a0701ea1495ed654e7018",
+    "size": 6153,
+    "path": "4AA-huge/test/FKVP-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "303945c91ff3306c1ea3f4afd5f7f51c433342f6",
+    "size": 136,
+    "lfs": {
+      "oid": "ef22c593c684c167a31863244fc5409c4b105960645b30839c4124d9a12bd9e7",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "8c8d9bb58f70ddb9d1b722c7a6fe4ca3409af136c32cc69712907511d0376ff8",
+    "path": "4AA-huge/test/FKVP-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "5af939ee99bf5cd71960f5994f6319a55ddf0783",
+    "size": 2480162108,
+    "lfs": {
+      "oid": "26d0eaf99b5a0ad519fe9146053d775dceaa3b99ec348c8574c4693f14fdb4b5",
+      "size": 2480162108,
+      "pointerSize": 135
+    },
+    "xetHash": "295757941c0b426a2363e75c9ccc5061a487e1f950af88d60243f068380ec66b",
+    "path": "4AA-huge/test/FSLY-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "57ae32c52cfc63801f1391733677bf562892fe92",
+    "size": 6072,
+    "path": "4AA-huge/test/FSLY-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "0e5fbc0ce2d926ba5f2ef561d303362eb886b8f6",
+    "size": 136,
+    "lfs": {
+      "oid": "cd9857c1cab8a9e56a863aa772a2650ee5a8f524b814f4ec57a9e053ce08ac62",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "76182d3a4460892b727823b2fcef9c93f3ed42f93271e3b61785836f1526bf43",
+    "path": "4AA-huge/test/FSLY-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "222c345fdb4cca4f11bd0aa4e1b3fe2562fba4c2",
+    "size": 1715878092,
+    "lfs": {
+      "oid": "6848275e2ebb221b0d02d052d933b1c038f2a2ef80501595412fc16d924a480f",
+      "size": 1715878092,
+      "pointerSize": 135
+    },
+    "xetHash": "b7d5a17cb4c75a3d8382057a8f8b3c29b662d28fca3f839ac75bfc2f41b0f3c5",
+    "path": "4AA-huge/test/GCSL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "6b89be5e8a8bb85dc670955aa8d8a01f0c89fdf0",
+    "size": 4209,
+    "path": "4AA-huge/test/GCSL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "08a2bb37e61924a915c78e81a5de65091c5daafd",
+    "size": 136,
+    "lfs": {
+      "oid": "500a32f727e8f501a86928252932478609276b924ab024cab7d58661ca47baa2",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "25b67bee2554919650c2a65a94aefe82348da2ab904b749ff0f8f69a13363cc7",
+    "path": "4AA-huge/test/GCSL-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "b8bd4e7e35aa3dc2c5e6234d2df56fc08d0bd92b",
+    "size": 2048017786,
+    "lfs": {
+      "oid": "9f185e07dac719330cb9540cc2b3f8519dbdc382758cb399e4c34bdceca9defa",
+      "size": 2048017786,
+      "pointerSize": 135
+    },
+    "xetHash": "216a75ea961708548a15fdcd697c214526064bd5bfbc4e1643a3b3d4ed3c5a18",
+    "path": "4AA-huge/test/GDQK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "8466fea469b399e8f971964e7982f9f6e149f6d3",
+    "size": 5019,
+    "path": "4AA-huge/test/GDQK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "64c4f1a026fcb994902c51c47b3b261a32300b13",
+    "size": 136,
+    "lfs": {
+      "oid": "a416fa4d77183d72c8b6cc7319bb4c97d582aac903ae40ef140d85e8e93f6d1e",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "71b4cd6333ff7357c25defb4231499fb1533d6f0c5d1b3e9b3430ad23162d840",
+    "path": "4AA-huge/test/GDQK-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "bf2bea3709708782d254586d0651b799421f7a27",
+    "size": 1482098697,
+    "lfs": {
+      "oid": "4914a8d09e0556eb7a2155e76748d52d1f7fecd1fe03ce1dcfa283bef0620aee",
+      "size": 1482098697,
+      "pointerSize": 135
+    },
+    "xetHash": "7be03930d1e50eb19d6e8520fa0a3e3fcc1dbf751ccbe4f9ba043886b8e26edc",
+    "path": "4AA-huge/test/GHGA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "9690e38dea164a9cf61f866ebc174f5a7d90645a",
+    "size": 3642,
+    "path": "4AA-huge/test/GHGA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "9c24de5cd23285bdda581f7669ab5141a3c60f80",
+    "size": 136,
+    "lfs": {
+      "oid": "5c811141b5c8dc5086f4eb36baac5614aa9c9aa616cf7cad56b526fc8b0e138c",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "30cba2dc583710a1762d17ef47f3948a8cdcfa06b7a585a4859cafda8194ba4c",
+    "path": "4AA-huge/test/GHGA-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "c25cadb7967e93b83218b6150f9260ed62873617",
+    "size": 1681617764,
+    "lfs": {
+      "oid": "cdf07138c2fc5be56eb711b4fd7616d87e3f21ef9ebd5c744b482091d661609c",
+      "size": 1681617764,
+      "pointerSize": 135
+    },
+    "xetHash": "f8f6fa41559eaa241e9f8de82e98d7841095eb75e69ac19afad027f362f1d59c",
+    "path": "4AA-huge/test/GIGP-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "8df6939d58c5c9d8605c05c79976eb2912821cfd",
+    "size": 4128,
+    "path": "4AA-huge/test/GIGP-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "77090cc73bfd0c1fec7587cb2321dbceba09d9e9",
+    "size": 136,
+    "lfs": {
+      "oid": "4386e588fa6b6b46097c4779ed5a30dd70b8f43a9950d5714556e3a7cef8120b",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "9f42c19dab11a22698cebad0ddb6be532248119e8714d606d7de672906ecf7c6",
+    "path": "4AA-huge/test/GIGP-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "46b28181458ef39926e8d84dd9a807ba7e2db1a8",
+    "size": 1748533707,
+    "lfs": {
+      "oid": "22a253110ee062acb1d9696439ad85604152fdd926312371a958373d039366fd",
+      "size": 1748533707,
+      "pointerSize": 135
+    },
+    "xetHash": "0051de36e8f04a599b4d0a13ce7b1f7aaa1af1b7f35c036e05f87a8dfea2d6d2",
+    "path": "4AA-huge/test/GRSG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "e50469385efca48831393059f13d98c236b16a51",
+    "size": 4290,
+    "path": "4AA-huge/test/GRSG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "76ca8761325cb6040cfdd7cc20d75ca1bc46c7d4",
+    "size": 136,
+    "lfs": {
+      "oid": "c2ae19827824338adeb1fc92a52fdac77015011ae8cbffdb512115ba68541499",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "cfd658a7501f3d8340519a57b8cf32454550e677600893b554bff5e5e177f835",
+    "path": "4AA-huge/test/GRSG-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "a61b0a0fd648517c653893ef0adb4b8e1410c98d",
+    "size": 1878996470,
+    "lfs": {
+      "oid": "3a954cbba49968a1fc30d7f50d3741083238676b5ef786e8cab36087921956be",
+      "size": 1878996470,
+      "pointerSize": 135
+    },
+    "xetHash": "75b207a4dfcca4c4336720d443d88679d871b9f5bc2d5dd07c724fa495ec8c7f",
+    "path": "4AA-huge/test/HALG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "30b8c1ab8272cdfa7b03b39114a68b4070949652",
+    "size": 4614,
+    "path": "4AA-huge/test/HALG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "6583fb8e75df0109ef9589272b28ebcd455d6cc4",
+    "size": 136,
+    "lfs": {
+      "oid": "021acbc2319d1c42fbb41ebc096883144ed04d2200e27b7476c26b5cd13559be",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "856202eae2c677bc57b0a1d983815fdd0d26ba1a9de69101eaddfa1e53f4d943",
+    "path": "4AA-huge/test/HALG-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "a6f523781bc6c664ca4586e335be4456919c4b9d",
+    "size": 2515941462,
+    "lfs": {
+      "oid": "ad8aeb315d4ac4a954cdfbc4fb161cf535d496f666a0035bd4f4d7611d914be1",
+      "size": 2515941462,
+      "pointerSize": 135
+    },
+    "xetHash": "92f348386b473ff3be9d0386bb04a9972b9907685913355649dce166a4f5e609",
+    "path": "4AA-huge/test/IKSF-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "64435fa6c6537fe28ba5b7962a4854ce11322209",
+    "size": 6153,
+    "path": "4AA-huge/test/IKSF-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2d39773d12ed84a13048878420883c848227e16e",
+    "size": 136,
+    "lfs": {
+      "oid": "785480cd4b6a94bcd835c8d14deb5e98bf89cbbd222f1286a5733873bc8dd074",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "02e2fa44db7a0f2a0b047ccb4fb7a4f11f9242dd073b9606f1e4efd599cdb967",
+    "path": "4AA-huge/test/IKSF-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "af2e581784749af52c1a96383e95d99e5eed8475",
+    "size": 2477580580,
+    "lfs": {
+      "oid": "11576654a038f1ebe22c0051579c5247780f8329162de4b7441bbc8d78c0fab5",
+      "size": 2477580580,
+      "pointerSize": 135
+    },
+    "xetHash": "a2ad6a52ca5579549c0cb7af85a19d45ddfe29b77111b80b34906691781c427d",
+    "path": "4AA-huge/test/IMYP-2-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b076ae465df91ca2cb9048ec52a658a1117c5e37",
+    "size": 6072,
+    "path": "4AA-huge/test/IMYP-2-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "acfd884ea32c85edcbbce26c36643acb4194ae0b",
+    "size": 136,
+    "lfs": {
+      "oid": "8b5d7cc032ced214fb351dc6657b5cf6962797b735cd4a042c74f229fb82bfc6",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "dafa3aee6902d1d0127cf878d91c5efa256f7ea846b1ceb31f425d92bdeb9d34",
+    "path": "4AA-huge/test/IMYP-2-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "a003b663ffad4575161fc757dff41980e5086502",
+    "size": 2477401891,
+    "lfs": {
+      "oid": "4bb9792ae05d06689f65e4285a90242420e2c051ccee54e65b90775dbf483218",
+      "size": 2477401891,
+      "pointerSize": 135
+    },
+    "xetHash": "0dc67e4f6277475b9e02c3ec568b213ed6623e6d3159174f0dbe974b23d835e9",
+    "path": "4AA-huge/test/IMYP-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "12d430da8ae7b91c96f895cddeffac1135d2dd63",
+    "size": 6072,
+    "path": "4AA-huge/test/IMYP-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "278e1f579724a7d00e9da2c85fb8f1abe7d715e8",
+    "size": 136,
+    "lfs": {
+      "oid": "fc28331114dc179244991b427e2ac161e9e9cc532ff33ac5c2f76b6ab750e1f4",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "3f9be6a09d906d4874e8d082179beffa3e227a27ab082d72c6554f3acdc41e88",
+    "path": "4AA-huge/test/IMYP-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "e1d5299c05779fa62f656944b45ad04e80dad6cb",
+    "size": 2181212306,
+    "lfs": {
+      "oid": "0eb6d29a68cd1f8ecd6cac8e7eb62d6920a0d7dee67ccf32fc74ecfcef48dfe4",
+      "size": 2181212306,
+      "pointerSize": 135
+    },
+    "xetHash": "f0fc88c6a0b72a16c235435a794c63b246dbb126a81d04c2d4c87504240ef34d",
+    "path": "4AA-huge/test/ITQD-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "0cfbb5b28f9df7d977a63ac0ba3491389ac04505",
+    "size": 5343,
+    "path": "4AA-huge/test/ITQD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "9698143be9cf9136ac5adfb2cd1ff068a8342b37",
+    "size": 136,
+    "lfs": {
+      "oid": "729ddb5b5d274397c29ef22d0600770e4ccbabea130a613768a3abe2b4ee5f90",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "d2d029e03e9e19e5da507b317ede2fc29d543ee0236bf0cfa93eb6df229c970c",
+    "path": "4AA-huge/test/ITQD-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "8623bf63cf26ed03adcb6e1e1498e0f7d2e53b3d",
+    "size": 2245769203,
+    "lfs": {
+      "oid": "4f13c6fc4dd28afc3425582f6ae5f3b930ce7c5a96de51be36f41b575c7376c1",
+      "size": 2245769203,
+      "pointerSize": 135
+    },
+    "xetHash": "2836e756cecffa7c5b97f1981d550c5679701a0aa51d5d01c4aad9b432a443e1",
+    "path": "4AA-huge/test/IVNE-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "158557da9936f865a4080b6677b9d9061d5768e0",
+    "size": 5505,
+    "path": "4AA-huge/test/IVNE-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "f83739f6b437c1536b51d59b646f00d5f33fd8d2",
+    "size": 136,
+    "lfs": {
+      "oid": "d7d27cdcecc11273ab3dd88b80b0f261917908d64029811568a4b36101563691",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "04b0929ab24f8f429ea48b613097ef4cce4c8679cddb4d2490c6259881b73b87",
+    "path": "4AA-huge/test/IVNE-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "0fa22e23080dfd620064ffd4f6949c5b256b7cb5",
+    "size": 1911296760,
+    "lfs": {
+      "oid": "8bbf72f33de1272f543390c279f5b84535d5de3b12efa3f5b6e0c933e8420548",
+      "size": 1911296760,
+      "pointerSize": 135
+    },
+    "xetHash": "adf1b1d9def83b751615c8a00de54e9a250ebf40134cca042da7a431d0c6338f",
+    "path": "4AA-huge/test/KAEG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "5a16fd9ae9f33400ec4faf277cda3bb09a29fa5e",
+    "size": 4695,
+    "path": "4AA-huge/test/KAEG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "59396a0bfb213f02967953170c7b8b8e55a87355",
+    "size": 136,
+    "lfs": {
+      "oid": "d98d98e1c71225db309287f6e1ba16c7bbeac60cb4526f1dbb54ead22bf0f5b0",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "b8d9cbafb8f6944ad2ec4bca1b08f437ea4d3a0866acad3f4fb14c856d452aac",
+    "path": "4AA-huge/test/KAEG-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "2292d68a4a899ed6fc6bf243c389c02101a66764",
+    "size": 2810591311,
+    "lfs": {
+      "oid": "615497a69d2db703c2ca1a3b83a2253ef95b547470f240d393e42748a728b9f8",
+      "size": 2810591311,
+      "pointerSize": 135
+    },
+    "xetHash": "20b8f358f39b3a77ec9d28ab885a18634e1e548ecd7a7842b72f3592a881ded4",
+    "path": "4AA-huge/test/KKQF-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "fc1ce13d12c321b2f716a347c853e20c1436ce7f",
+    "size": 6882,
+    "path": "4AA-huge/test/KKQF-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "b46e5801784e7631e4d7ff03a3efa504bcd82884",
+    "size": 136,
+    "lfs": {
+      "oid": "ecd760e3e84986cd32cfb843717d925ab7874af35d700eb0468e1be1e9c7a3c4",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "47480094d21c14ef16f8fb208e9e4c45c64b9568e84e8acfb40974e2378d728c",
+    "path": "4AA-huge/test/KKQF-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "1d60d3573a49ad192a5adc6a07772848a534b7c9",
+    "size": 2646697631,
+    "lfs": {
+      "oid": "6962d6ec4ac0ee0033b50e6cdf82bdc3ee94bfc2c7a44fc5b90da687df89441f",
+      "size": 2646697631,
+      "pointerSize": 135
+    },
+    "xetHash": "5ea9b9f16a65da77bfd54167d3e51bacc31a7997bce4236a84caf7ace7929343",
+    "path": "4AA-huge/test/KVLI-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "054a1c355b4a4c2f6efaa13c61eba05d6b7e8784",
+    "size": 6477,
+    "path": "4AA-huge/test/KVLI-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "dd4a5c47e73da7de9abb59bad4217efd937e3808",
+    "size": 136,
+    "lfs": {
+      "oid": "0c4ccdf68dd8414dc0cdc118e9e307c04cc465a5c82ee9bc6aaf06f61a38c2a9",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "a0b68c0f97cd6346c714c602f16909c2a70f531bd9957e21136dfa17199eb7e6",
+    "path": "4AA-huge/test/KVLI-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "7e0c15e456c237cb0c83ccf988e4b1675dd22efa",
+    "size": 2147756106,
+    "lfs": {
+      "oid": "f5e97fd1ff401644647d9b183ec95d79bda42e6c411c89c2bdf51ecd54d58419",
+      "size": 2147756106,
+      "pointerSize": 135
+    },
+    "xetHash": "6eba3f6d386de0802c97f758073e91045b332fb882c429e81d0cc586226cf6f1",
+    "path": "4AA-huge/test/KYGS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "1d758c82da67ba6f2cfa82c0d9dd529f8c4ff26b",
+    "size": 5262,
+    "path": "4AA-huge/test/KYGS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "7a3c3ced2b55c8c833a4c5fcbe67e29c9b347396",
+    "size": 136,
+    "lfs": {
+      "oid": "18b6863027793148a71442f503fb0d67784700a9ed5fd7b376342662595fd151",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "a1e9678e4c0296cbca30a31aa7a9dc19576fab4fed28efd8dcc82249ba82020e",
+    "path": "4AA-huge/test/KYGS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "b91c387d5e590fd5178b135efc4e8c5a8c8e91df",
+    "size": 2147589007,
+    "lfs": {
+      "oid": "2a90ab5d6b928b7700f4f0e67333cc14c850c916b5f72480521cd39a2a5a16b0",
+      "size": 2147589007,
+      "pointerSize": 135
+    },
+    "xetHash": "37349854c3ddf9af851b8d47d42a6d3818d6fd420029ed68a752c4f220548efb",
+    "path": "4AA-huge/test/LCFS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "76ff3f41aca7601c2af1093077a1fec2a0b0ccb4",
+    "size": 5262,
+    "path": "4AA-huge/test/LCFS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c8f583ad29b6abd34bd061c4789905768243cb82",
+    "size": 136,
+    "lfs": {
+      "oid": "4f3df52744a3c0c0ede0e100824929596cd839302a2545f2b1c45305b30e191e",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "8c3330cae986e608acfd3a27f9f78f584d5816c2bfb33aa2b72387454404d44e",
+    "path": "4AA-huge/test/LCFS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "d70bbe7e5bf11295b8840db3f0abfb24c08e0210",
+    "size": 2282887905,
+    "lfs": {
+      "oid": "f494275a6be9bb5f7fad7e9c7184b48474a04df7f50ed9ec227c290c0a61b1c3",
+      "size": 2282887905,
+      "pointerSize": 135
+    },
+    "xetHash": "38607bafd3d15efe5522b8ee8c2bd09815e3936ec2366a7256929794189bccce",
+    "path": "4AA-huge/test/LPEM-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "18933c72a025bb75aa68d68ba9d9de23726165c3",
+    "size": 5586,
+    "path": "4AA-huge/test/LPEM-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "359a0ee3d9c5f7b5159ab1ebffff176185c9aada",
+    "size": 136,
+    "lfs": {
+      "oid": "4e7b52353c0108f6b899b9616e31b20b012c1c38c17e5c11346b7b85ac1144c9",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "f11241dd7d03dbd5b3c9f9595cbe37191e3bf31e5e8f35eafb83c26bf45fb628",
+    "path": "4AA-huge/test/LPEM-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "dab732194b92e7107293f8258df34890abdca226",
+    "size": 2116149133,
+    "lfs": {
+      "oid": "e169fdc6b48845cfb4741aa1b945e6ab00617ac697a397ef4a26d6550b16431b",
+      "size": 2116149133,
+      "pointerSize": 135
+    },
+    "xetHash": "effe005c953a6e3cc18189991ade96589e3373ba0442bcee2bf97f33dd3a0c72",
+    "path": "4AA-huge/test/LVPS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "619ff433e3a68b958ea5e87e0136b909be974bcf",
+    "size": 5181,
+    "path": "4AA-huge/test/LVPS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "10cff7c1115f8f7958fbe88bc49b36bec95ee900",
+    "size": 136,
+    "lfs": {
+      "oid": "487119ce9334281ad634db789f011e2b7681b8d79d720f4dd27fa02cf8d4495c",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "42be039b71bb9872dd2137fd79c7f28734334c5001aeda6cb5405e4ec6356fc0",
+    "path": "4AA-huge/test/LVPS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "a37dca4757de6b8d045d40303326522164c53cd7",
+    "size": 2615683491,
+    "lfs": {
+      "oid": "45a023c0ae362ca63203a69095822948414ec56a1d76d1ff5ef530e8ef79e5ce",
+      "size": 2615683491,
+      "pointerSize": 135
+    },
+    "xetHash": "5ecbd3da1ff0e2489167617c22905d2f36f10722ff1ad143654b449ecbb080d5",
+    "path": "4AA-huge/test/LYVI-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "a9aa37e939933f0041195e80c51117dd680399c7",
+    "size": 6396,
+    "path": "4AA-huge/test/LYVI-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "234b7b91aa7f92a909cd04ffb6e1436570a0e11d",
+    "size": 136,
+    "lfs": {
+      "oid": "24906d9948bd40334b8f180512cd0ef948e6955596982b0548e1016e6598e41e",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "baa9b9434b550b772076eda0d608bc040d75271fec7c2a6af2d58a5e828ffe46",
+    "path": "4AA-huge/test/LYVI-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "cf432171f148aaf4cd999885626a2f9152161cd8",
+    "size": 1915244075,
+    "lfs": {
+      "oid": "604d3ed350825eb3c8563fd7523d38fa29d0acaccb5967372880401ed4693ca5",
+      "size": 1915244075,
+      "pointerSize": 135
+    },
+    "xetHash": "b385901394be01b2a38efeba6b26429f2d4ad53926938c493035d4d741fe4a2f",
+    "path": "4AA-huge/test/MDTS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b3f1b1138d29dc9c3daa92168a5df0dfb7eb2d86",
+    "size": 4695,
+    "path": "4AA-huge/test/MDTS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "40dba9519469ac336a25974dfe01d500cbd586c8",
+    "size": 136,
+    "lfs": {
+      "oid": "cacc1d2a1b9c05e0db462204757db71b55a4ee6121834242aafc2a388ecd5031",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "18c36f95ac4d8ce9a218e7391f7f89a0d832274763561df16935f9450a79924f",
+    "path": "4AA-huge/test/MDTS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "d62447808fc9927944a4519497b202da0f2ed7fb",
+    "size": 2614781593,
+    "lfs": {
+      "oid": "fdf89aa232394cda59805e2ab8dce3f72f87aa9571f98cbd1d4e63402e529a5d",
+      "size": 2614781593,
+      "pointerSize": 135
+    },
+    "xetHash": "0002629db2105d3c46c2bc3fb86f3d38c32843e8210d86e3727a4a14cfb5e672",
+    "path": "4AA-huge/test/MFLL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "f960bc165aea800cb1b7ae723b5f33efdaff5a22",
+    "size": 6396,
+    "path": "4AA-huge/test/MFLL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "656f65116b1674f1a79e6c8338466af63db76413",
+    "size": 136,
+    "lfs": {
+      "oid": "a3f2a148c6c6813a8f4c16390af95fc23e41adfdd656843159fdc66a2fdd3770",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "53a10d5c0c8609985821620126979e73cd51b074a8669cb5a4ff304f258fbc1d",
+    "path": "4AA-huge/test/MFLL-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "ac93d6d90a3ff6eef1499b72b1f487b00c3c1478",
+    "size": 1979234252,
+    "lfs": {
+      "oid": "045a0d9372e1fab6382bd753f7b2bf6bb287c005151093afe16388ce21db549b",
+      "size": 1979234252,
+      "pointerSize": 135
+    },
+    "xetHash": "1c491eccace03752fe30503e80a1f00781ba1e47e696cd7d772574b25bdef01b",
+    "path": "4AA-huge/test/MTNS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "e9266db65f93b87170f460f56181c6e619f0724d",
+    "size": 4857,
+    "path": "4AA-huge/test/MTNS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c766fbc7d6716806f2e63e60baf7c65fc258a236",
+    "size": 136,
+    "lfs": {
+      "oid": "25d0faad1621807b3c906e899e894973e009ef869859fa3c311f482011c80f3c",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "60adef0d7e657c7d39a13407c8926d72fa85baa31868a40f918d24c22d21f6b4",
+    "path": "4AA-huge/test/MTNS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "69e54e33dce3028635312984f0878c343246f996",
+    "size": 2514014622,
+    "lfs": {
+      "oid": "a5aaeed1c65edc9fe15459a3e12bc4b63810c0f100288410efa9bc39e833dd38",
+      "size": 2514014622,
+      "pointerSize": 135
+    },
+    "xetHash": "65b0d58a7308d413d74ea93bd092648f3302fa06efbcb0ce4fe1e76eb6e30144",
+    "path": "4AA-huge/test/NKTK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "7d08011aa6777502afa8fbab162dc7d5d5fcd4f3",
+    "size": 6153,
+    "path": "4AA-huge/test/NKTK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "7d61b2b25d8e2dfdf942a6d0238e804c2a8c7e84",
+    "size": 136,
+    "lfs": {
+      "oid": "696320f094e68266eeb2356084a62f64265cf7b76a09d66ccfe1f49fa9f8a3b5",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "4a01a6a407f6d7ed841e29fa91df9ef6ab2ee78f83c87d5bc5c6ab80f8bcd6aa",
+    "path": "4AA-huge/test/NKTK-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "cccfa768e3a30c6a8400113a71a32622f9187e65",
+    "size": 2378926610,
+    "lfs": {
+      "oid": "f5c51f1afc2abc55be62be8192ffdad254e28fe319c060d77bdc58c78fd610c9",
+      "size": 2378926610,
+      "pointerSize": 135
+    },
+    "xetHash": "bdb9bc95ce6889070bb3fed677cfb97525219067875737d8be3ab809e3704843",
+    "path": "4AA-huge/test/NQFM-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "af9d87dd9c5c5bf9b2de6a652fb80770f187c155",
+    "size": 5829,
+    "path": "4AA-huge/test/NQFM-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "230b8f021ac446449816032e48f709a0c7448adf",
+    "size": 136,
+    "lfs": {
+      "oid": "c0489fc7eb034f49302f87a1a5a09b032652ca7ef77facd059e8934390a91bc2",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "f1fc4cf1dfab958a62beeff40c231943fc0bab84d64d6304a7c9e136889502cc",
+    "path": "4AA-huge/test/NQFM-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "b5305a3bd84e3e512e212261b3fa1b53617d4a1f",
+    "size": 2113483368,
+    "lfs": {
+      "oid": "1750bf6fff785c53f54ddefd5aae5e32c05050d7cfa19de8e5536584a45b5140",
+      "size": 2113483368,
+      "pointerSize": 135
+    },
+    "xetHash": "6bbcf3733db37eb812bfc1a6ba3175cc904761d079f98ff87c35e1c43cce9cba",
+    "path": "4AA-huge/test/QADY-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "5f0cb53c4b096171bc7e5b9520ca8779c6151452",
+    "size": 5181,
+    "path": "4AA-huge/test/QADY-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "40bb9a18f62086928ef7a1ae5263981c8634b80c",
+    "size": 136,
+    "lfs": {
+      "oid": "fc09e670373e88c916d555c0fd5e059df89a633d6f5aade45d33b6c9d5883d75",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "06a9b4c36ec101beba8f78a4fd1166c50bd2342d218c5bf4133791dbd58c42ad",
+    "path": "4AA-huge/test/QADY-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "b292027fca930cfd9d16262a38b608ffa392283b",
+    "size": 1978471198,
+    "lfs": {
+      "oid": "f3c98a77bd7da9d105097a638194b694db0e1feede5e09dad35b2de991627727",
+      "size": 1978471198,
+      "pointerSize": 135
+    },
+    "xetHash": "1ef33aa884dfb0d277d671659c15d932bd0a28bfef20cf362e84254eb6393d8f",
+    "path": "4AA-huge/test/QDED-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "671ff746a000b8a282aa22bcc69f493aef94c65a",
+    "size": 4857,
+    "path": "4AA-huge/test/QDED-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "01709f48a8e004cfe759120cd65318c33f154f81",
+    "size": 136,
+    "lfs": {
+      "oid": "cf90e8f05151e4e46f38411074c957334419827c60fb2e94ca1617ed9d05cdf1",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "734b9683d1e5138f079e34aa7bae2a310527c328f53309a1d370b7418962a3b0",
+    "path": "4AA-huge/test/QDED-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "e9e5468869da11eb77b8254a08fc0e3c3a4fce88",
+    "size": 2082187713,
+    "lfs": {
+      "oid": "387ee2bb3630c581d5dbee718ee77f633103e76430205d348b6136601fecf61e",
+      "size": 2082187713,
+      "pointerSize": 135
+    },
+    "xetHash": "cd6379e3f4fd4c4edd2199e34aa32b522c45c136b2f58965817d481730338538",
+    "path": "4AA-huge/test/QISD-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "237c0b46784bbaf33a94ae700cdea1e78726328c",
+    "size": 5100,
+    "path": "4AA-huge/test/QISD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "4e2b5af55b535568a48592e8173b644689543c31",
+    "size": 136,
+    "lfs": {
+      "oid": "0e6600e01857423ea4e52162673dc9302e9cc0f8b56725dfc539b7b00f40873e",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "01eb5708d97cd472d099a15cd55abda16f8f645d6dc15f0abeb046b0648353a9",
+    "path": "4AA-huge/test/QISD-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "2801eec0ec9d874582672bec4b87873daf700b33",
+    "size": 1977367617,
+    "lfs": {
+      "oid": "a00260bbbf88a91120ba52c06608017ddd34220b106c85b2251c515de81a912a",
+      "size": 1977367617,
+      "pointerSize": 135
+    },
+    "xetHash": "a9fdeec36b15eb4b5efb5464bc534ad8b3346ad8d6d8faa90125915699e1560b",
+    "path": "4AA-huge/test/RGSP-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "03ff58e411240c55c5cfab8980e63249b8fcec3c",
+    "size": 4857,
+    "path": "4AA-huge/test/RGSP-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "75078f9e18c747ef2929105255d2d187b575d4f4",
+    "size": 136,
+    "lfs": {
+      "oid": "2c5a88cada207d4d6e6b1c059e74b8506c4fb9b14e71cd572c03ce73c67c195d",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "83b3dcdb4b14ed7696469d79ecf714cb2c8c201a341ea95fcd36b395153aca47",
+    "path": "4AA-huge/test/RGSP-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "9be818c982ba6e0ebf4142d13eb9e3aafb24a035",
+    "size": 2480251903,
+    "lfs": {
+      "oid": "5dab1191a3a8134907456dfb0304d1935e768faa9d3b48245f49b5b0a26ec6a9",
+      "size": 2480251903,
+      "pointerSize": 135
+    },
+    "xetHash": "56485ac998ff81a63f8cd1ad37964da35aa5f41c473fdd486a4800d5c7fb8860",
+    "path": "4AA-huge/test/RYDT-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "4e5bea0e5ca37191d5cd812b57bc6637c83d6e7a",
+    "size": 6072,
+    "path": "4AA-huge/test/RYDT-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "255d591651e222636de1c031511467fee3dc37b8",
+    "size": 136,
+    "lfs": {
+      "oid": "14da43eccab1f6d031761c187ba55548de5664f9a4ee13e144b5fda5a208616b",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "314d6094753021481c6452c977545f64a9672d571e7e1d7f72bb3c2846e32c7d",
+    "path": "4AA-huge/test/RYDT-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "1f131cf7a9679f792945e1f4057ce31f854dbc0a",
+    "size": 1413672277,
+    "lfs": {
+      "oid": "310879973c5c9f803586189b6324f067c6f9172bf2e8e04517c10478972b28b9",
+      "size": 1413672277,
+      "pointerSize": 135
+    },
+    "xetHash": "f83169273bd61ffaebb13e6c1b94bb5eb74c85fb3b0db2b0699945664dd0e5b6",
+    "path": "4AA-huge/test/SACG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b6880e4505044d76b3370a7e24a527051b51ece2",
+    "size": 3480,
+    "path": "4AA-huge/test/SACG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "02024ea5695dace020fc50680f43cf1ffc1e0ed8",
+    "size": 136,
+    "lfs": {
+      "oid": "59a0013e686b026c6fb14cf251c09bd31ce50350ae3fc9a247a9eb6446170981",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "7e7276c9c804f1f6ef61354fe6b1dd8500eb79ffb824b01d153fc4bba5651209",
+    "path": "4AA-huge/test/SACG-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "b1c0364f29727025dd953f53cbbb82a4c92075d8",
+    "size": 1946883083,
+    "lfs": {
+      "oid": "f6b09c9490b37e572a86f4432b049383aacb547dd53042da58b9c5fc307efc09",
+      "size": 1946883083,
+      "pointerSize": 135
+    },
+    "xetHash": "8f332226eab4315eb705f090be0663ad84e0b32b1408c2de6dd4cfe6d42991e0",
+    "path": "4AA-huge/test/SAEL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b115b71d3d0982f05f68664d9e723248bcd42412",
+    "size": 4776,
+    "path": "4AA-huge/test/SAEL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c89b214ebdae227e2d36517dbdc9bc4710ed97f5",
+    "size": 136,
+    "lfs": {
+      "oid": "6f9f751b49b62fa88c0622de710b55853c3c89bca450f84303a0777c6609fb42",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "e10df09e2f96ba07fe2a9ad0b2a239cee7ee0f9e2c874765ec593def55a90fe9",
+    "path": "4AA-huge/test/SAEL-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "98ee8b68a66f17f1a4f15f5ffed2df80038ba8ca",
+    "size": 2248781864,
+    "lfs": {
+      "oid": "e61bad24a078e5c70c94b67534b6d56777df9dc225c8f21342a5b27df176a98d",
+      "size": 2248781864,
+      "pointerSize": 135
+    },
+    "xetHash": "45fc1a328993c58d518a953bff8402294a3554b716f264e022d217ab7225d67c",
+    "path": "4AA-huge/test/SKDI-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "516d48bd7320f333d52f279d213893eeb3ba32ab",
+    "size": 5505,
+    "path": "4AA-huge/test/SKDI-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "b73fbdc0741c82dfd9ca7f30c68fa3e6d83311bb",
+    "size": 136,
+    "lfs": {
+      "oid": "e07eb6ebbcecfc0c21d0be52ebb70633ffafc3d56d1c51adc3c5f1256ae82ab9",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "7e2c20dbf45830b2da17909ceb667cfa1aec6e379c40a236d659f4e22eda67b7",
+    "path": "4AA-huge/test/SKDI-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "b6e27af6df2dafa91a461dbc8530b920cdd76d56",
+    "size": 1683728759,
+    "lfs": {
+      "oid": "c450637ad708ddc51be4f00137b3e5fd91140341b6bc3c31564a99b29a19bca8",
+      "size": 1683728759,
+      "pointerSize": 135
+    },
+    "xetHash": "a2bf24a2268a11eb728c52e7de5ef07be74b711a4fa1d73bec69afa341033bbb",
+    "path": "4AA-huge/test/SKGG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "9fc107ba688e397a3fe6333d55cbbd12df55be82",
+    "size": 4128,
+    "path": "4AA-huge/test/SKGG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "d46bb443286c453479ffd6e910e5b652cd0f7e81",
+    "size": 136,
+    "lfs": {
+      "oid": "9d534850ea3db66244541ace755563bcdcdd2e75581426f62315807b794572f2",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "35f14af8c636db291a3b928ff085e33e440547ba9b3e409dbf8f29f7ef75095f",
+    "path": "4AA-huge/test/SKGG-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "400851717338333b220cc9d7c48b0b648febdc51",
+    "size": 1949009133,
+    "lfs": {
+      "oid": "f006efd7b9d450894b8ccb4eb7f06a71dff56c10ad89e941bbe305882762c0ae",
+      "size": 1949009133,
+      "pointerSize": 135
+    },
+    "xetHash": "6d6702365500fd871d08cf1eae5bbfad9f06bb6ac50b53d8f90dbd7ee3cc05b7",
+    "path": "4AA-huge/test/SLTC-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "a2fabbf07fbcad029327e8d851e37629ee5b9076",
+    "size": 4776,
+    "path": "4AA-huge/test/SLTC-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c48400fe584cf2bd05c9552aa3521d057e02b8e2",
+    "size": 136,
+    "lfs": {
+      "oid": "20224a199c62f449dcbc6cc91c0f64822b947f4c76c3f2f8d2a8537d1634900f",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "5421b76790d10fe58a47b36a265a2681ac28648cf46b29d22572116c073bc068",
+    "path": "4AA-huge/test/SLTC-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "3bb1babe99f68879b6f6d01557d8c166291e9477",
+    "size": 2149798756,
+    "lfs": {
+      "oid": "85d036478cecf91226aa3348c716182f07e51fc3e217fe5bf41792612c292ef7",
+      "size": 2149798756,
+      "pointerSize": 135
+    },
+    "xetHash": "6feba1c6427cf506f7b5b0c9f2fa64f0168780fe5550e17463195581f3e72f48",
+    "path": "4AA-huge/test/SPQI-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "1c8a6590002e8faf9977c1e255df1ad5533f7402",
+    "size": 5262,
+    "path": "4AA-huge/test/SPQI-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "5d1cbd8e5a829e5bf9f296ea4c528963b642851e",
+    "size": 136,
+    "lfs": {
+      "oid": "14957d1ca955ef1efb188e11396f182a140aa8b626f9ff4a6cb910ecd251e983",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "4d25e76126c28561dcbad6c083efa191d410f3303a89c5e5fa2d6945b7d9b470",
+    "path": "4AA-huge/test/SPQI-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "f7fcfe3127b6106149653d4720bd66b50a953fc0",
+    "size": 1846215490,
+    "lfs": {
+      "oid": "67eaa111b7e228a42a2e6b5ba78e7c52bd036df79553f20cdaf7538a08601ec5",
+      "size": 1846215490,
+      "pointerSize": 135
+    },
+    "xetHash": "5235b0fe5fdea69c6105a6542315de23afbcf7bdd0fde64ac7a66c868d0b3e6f",
+    "path": "4AA-huge/test/SSLS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "1edc4f682acc5383fdd61dae71cabd4bc56acba1",
+    "size": 4533,
+    "path": "4AA-huge/test/SSLS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "62818d4b43641b571837a121ab0f9736338753c9",
+    "size": 136,
+    "lfs": {
+      "oid": "df0d35bb73fb9579fd0f65a5a72c51ca9cfee27f0751f621caf64dad8d466162",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "c751675ac54e55f4841bc7e06eb9c2c57e57948da14535b51c1c7afe3aa51e1b",
+    "path": "4AA-huge/test/SSLS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "f0b226de8e67f8ae4b32ddb43821a3e3af25f245",
+    "size": 2442735637,
+    "lfs": {
+      "oid": "ea4872036df37e43bd151933fe9918c7ad3605653c00a080f8558ba5e15c7aa4",
+      "size": 2442735637,
+      "pointerSize": 135
+    },
+    "xetHash": "963d002e45e8c730f646a1a24c6658de5d9243f26567ed3706f763ec7573f0ab",
+    "path": "4AA-huge/test/SSRW-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "17d98c645750f9ecd42c78ec81a1d8f1de009950",
+    "size": 5991,
+    "path": "4AA-huge/test/SSRW-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "71dbab8dc3a7c749423e339da2a77a09bd28a316",
+    "size": 136,
+    "lfs": {
+      "oid": "acb6a264b10cbcabc5dc69a0abc1fbcb1da20531e35ce0f130098da5f0d616f4",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "5c92b6382d97d48f252e2f924e757dd9df3adbb802dbb3e25c0bfe7aec96305f",
+    "path": "4AA-huge/test/SSRW-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "3d762e47a2b5a71867b999d11f891da4619ad6de",
+    "size": 1746302673,
+    "lfs": {
+      "oid": "f4e225c399e05f48815f32798a3c7e4d653c53890a9c910c591253536f8a113e",
+      "size": 1746302673,
+      "pointerSize": 135
+    },
+    "xetHash": "d9c21a5ecec67932a5acabb84118ce4fe25600582ad0493fdb102b9c4d26e56f",
+    "path": "4AA-huge/test/STDD-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "6942395756930ae8afe6bdfcdffadc6e04bdfb11",
+    "size": 4290,
+    "path": "4AA-huge/test/STDD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2b3920d7cb4e1d0a086259e6fcd44662f186e2d2",
+    "size": 136,
+    "lfs": {
+      "oid": "8ee8bedcc1246a460c8898a7ab841d1df845c16b91c7408748c2ce03adc77c36",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "fb44b7e893e379b469f417b5392d1c715b56e9e56b188a4fcd2d94c90afc0d98",
+    "path": "4AA-huge/test/STDD-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "a74c1e6b425050234926bfbb2e624dc03ca35c8b",
+    "size": 1814044221,
+    "lfs": {
+      "oid": "e9517ed9db4f36867144aa692e740cbd8a2028f41e769b984151a6517e3531a6",
+      "size": 1814044221,
+      "pointerSize": 135
+    },
+    "xetHash": "7eb2cea695ed8ea7650b9126544acd512c1b3aeb4baac655e510c83b9e629cb5",
+    "path": "4AA-huge/test/STDP-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "5e62547e465bcae0f80d991d2dc17a9b053265e3",
+    "size": 4452,
+    "path": "4AA-huge/test/STDP-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "9f3cc5f2b79005618ae9467581ed5d288671e13d",
+    "size": 136,
+    "lfs": {
+      "oid": "0ec1aade3fe1f24d2cfde5aedeb3aff4302ddde8d47f3c942381d6b93cef23b4",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "5ef82b7f92b8052e2fc3cc964a4a9be5b9eff3db6ec2f40a5373229356ee567a",
+    "path": "4AA-huge/test/STDP-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "907c662e074ba629845771c92cf237e128574bf1",
+    "size": 2048297961,
+    "lfs": {
+      "oid": "e8357ce196ecaca5c1bf60744527b1250db3c83d71f07b1ed914a4fb1bdb6bf1",
+      "size": 2048297961,
+      "pointerSize": 135
+    },
+    "xetHash": "2ec5b8e57dae152d6560fe761ab7cc824a7444ed5b841caaf4eb9a30490de8a3",
+    "path": "4AA-huge/test/STTI-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "adbab4425e34e79741df94b6513ace77080b0ac2",
+    "size": 5019,
+    "path": "4AA-huge/test/STTI-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "199e561d790a9a8017af2abc17cc963949ea7dc3",
+    "size": 136,
+    "lfs": {
+      "oid": "9f2cd9164611b47a97489d183dc5f7c091a987317f5985911a1541995c6e4ee8",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "09f6b374cf30ec8f5bb2f06ddcdc3bae047768df8263b530933f923dc6456c3f",
+    "path": "4AA-huge/test/STTI-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "ba72cafc4a99e944c161cebe52ddca083c97f593",
+    "size": 2544954325,
+    "lfs": {
+      "oid": "14adb8e46f2c0947e416df2766ab7189e66296744483e5e5e758def0f064cb78",
+      "size": 2544954325,
+      "pointerSize": 135
+    },
+    "xetHash": "a7096298b83144c2463f1495d543f08e97fff9070def4a3c75c56326859ac082",
+    "path": "4AA-huge/test/TFFL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "5ff777ffa594b6b63dd183ca45f522769bb6d935",
+    "size": 6234,
+    "path": "4AA-huge/test/TFFL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "4f7f47a41379cf143b5895c1ece5ed2000978b79",
+    "size": 136,
+    "lfs": {
+      "oid": "4c3a7501ad97630beb2bc57037ddfb34e03fdc04bd5ba5a4c4fd3f01fce930d0",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "a26464aa7f4969134b4af75fa6f9db5db90f04ff50553c08c5e7b6fafbbafb40",
+    "path": "4AA-huge/test/TFFL-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "9d51dcc8cfd59af198ef90b7371a11276102022a",
+    "size": 1414397197,
+    "lfs": {
+      "oid": "a82543b4a81c9c8df65c8710eca0194d5031404c8203d43a3734101d40ebf9aa",
+      "size": 1414397197,
+      "pointerSize": 135
+    },
+    "xetHash": "347957d810046e269ef513d22b2835efefbf45b286f2aca8c8310ddd29429f8a",
+    "path": "4AA-huge/test/TGGC-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "463ea8e995136d976f00bc0099549f3da2f5a468",
+    "size": 3480,
+    "path": "4AA-huge/test/TGGC-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "9073dec66a6712c8d467faf86b39e4b8f70fd9e9",
+    "size": 136,
+    "lfs": {
+      "oid": "a4e10eea6d5fd344c85f9b0fe0190057e82e362128e339f5d1a10826c8d66336",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "ecb58d5dd2e5eb513507f977e3a2fb47a3b94894f8dfe4ae01308ac98088bed1",
+    "path": "4AA-huge/test/TGGC-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "d575871d6f992559eba6aef549491a0aef266947",
+    "size": 2479672631,
+    "lfs": {
+      "oid": "18d24b7d5460de68eb05e82bcdd4ff2a0c295158124743ffb2edcd9c1f579e6a",
+      "size": 2479672631,
+      "pointerSize": 135
+    },
+    "xetHash": "8b975aa795c0f36977deffd6db492e34137ddfd8b18fea5d9e6f38f698060f66",
+    "path": "4AA-huge/test/TKIV-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "29c903e19afc57e75c054fa449c9d414cf17c3a7",
+    "size": 6072,
+    "path": "4AA-huge/test/TKIV-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "74de60990239fd12b21012ac96f4d40b235d35d7",
+    "size": 136,
+    "lfs": {
+      "oid": "9f94c788acbce68be592523e001665f19613205bf722ed8a78e03ef0c15a4588",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "a91cf103ac5a229f59cf26ec2d2d968af28c25442b824ee5d726e6d7a2df9c63",
+    "path": "4AA-huge/test/TKIV-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "dcab30501d7a6d6a58ef6c67884708fa27614eb0",
+    "size": 2348438315,
+    "lfs": {
+      "oid": "4f253975cb11c84ffebcf058815b8c8cfa358a92489756890049e503486696c8",
+      "size": 2348438315,
+      "pointerSize": 135
+    },
+    "xetHash": "60c37e42e4d6f4eb828dbce0e3ea9fe94ed89e23b53a58093c95443777da0a2b",
+    "path": "4AA-huge/test/TKMN-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "06a54691cb24733bd8ba10b710419fe7195b9a6b",
+    "size": 5748,
+    "path": "4AA-huge/test/TKMN-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c37e6ffd08259c9db74e5e886edec012af8c91a3",
+    "size": 136,
+    "lfs": {
+      "oid": "4994471fff1ee51ed144fc6928dc0c4eccd7fa5f6f102c82e7dd9946d755a65c",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "656d3c5bf520719613f780653fd09d562ea014f131f0f53ce3b1b4225c185bbd",
+    "path": "4AA-huge/test/TKMN-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "8e419a94984196203ded970ce612c3127ff35d3c",
+    "size": 2180320662,
+    "lfs": {
+      "oid": "efb932bec585c788c0c7cb6667a26dde08864e580dc65120e108ce4a1d97352b",
+      "size": 2180320662,
+      "pointerSize": 135
+    },
+    "xetHash": "c3a7f804d5a465755f3adeb9b29289a3f77060f681bd1aaf5b759001bac651fe",
+    "path": "4AA-huge/test/TLAL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "0b1ee832193918fbe0f514d619d7e9c59ac9c4eb",
+    "size": 5343,
+    "path": "4AA-huge/test/TLAL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "e73f54e60f67caf0229797fb6e7e92573b1c406f",
+    "size": 136,
+    "lfs": {
+      "oid": "5e25d3e1c7c036c6eab9a26d146882aac2133c98a6697ba0fe18fc099b97fc5e",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "d33b6f4fbd3f4a5a1481cc560ae46b2f92791d5f0f4e24c6efbfc2dc0cb1ced6",
+    "path": "4AA-huge/test/TLAL-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "68262c4aa6853a174f88914cda8fc771ee11b941",
+    "size": 2150686736,
+    "lfs": {
+      "oid": "4efde7f52b800731cf8514b4ff059c698a5e4dc116cc90c9195bf553b38d2693",
+      "size": 2150686736,
+      "pointerSize": 135
+    },
+    "xetHash": "4b97f05dfa7224d9f3bdbe57683c7f6b59aba4f612b719189e0e51791c29ea2f",
+    "path": "4AA-huge/test/TYPD-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "fe2e02d24258ba330cbb388cc6a1b4294725e57b",
+    "size": 5262,
+    "path": "4AA-huge/test/TYPD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "8841e1d87601b71c84b2342a2f6dea7d4416afa7",
+    "size": 136,
+    "lfs": {
+      "oid": "6b10dcec6f76153360dd31a35269ca91d0800ea380e7cffbbc4be1e740f5cec2",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "b5c37bc9144880a5e1d78466a91e53a007bd44619f96a8d068ebc50ee2176e9d",
+    "path": "4AA-huge/test/TYPD-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "7f771d8238afcc49e7e1332dc29eb2372c0f30c2",
+    "size": 1915497870,
+    "lfs": {
+      "oid": "8b3d6b930a73911323680e9d8fe7167947203c0cc205ef266c2a7c8e919f8cb2",
+      "size": 1915497870,
+      "pointerSize": 135
+    },
+    "xetHash": "855c2228a0cd25eb5213700282809cc7a9609a4b9f0cd58b726a0658453f4d25",
+    "path": "4AA-huge/test/VCVS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "9ac9ab42b77dedaa6ca2bc66cdb3a7378f80a051",
+    "size": 4695,
+    "path": "4AA-huge/test/VCVS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "b7b087945101dbb207adf4c0c6a2adf93b2e6333",
+    "size": 136,
+    "lfs": {
+      "oid": "de9efc4a7534f2b500f601b0980a1688ac6a1aad74397e4052b6b8157e450b20",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "e31cd7184de5ef0b214d365355a205627ba7ee39956ceddfa272bf01b4ba1e2a",
+    "path": "4AA-huge/test/VCVS-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "5c8926b289cf952e1711c719384f7569957722a4",
+    "size": 2282810296,
+    "lfs": {
+      "oid": "c2a619fe4344045cab4bb7d521551dca1fc4e9e98b25ed9449a3dab1f7e03dfa",
+      "size": 2282810296,
+      "pointerSize": 135
+    },
+    "xetHash": "b1ef915b240d3eb200cf0261bbd6de8ac0d7f71e5c8de94953cd1cee63a1443a",
+    "path": "4AA-huge/test/VELE-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "da82fd2e47c7d53a2a0c9c24f55e43796866902e",
+    "size": 5586,
+    "path": "4AA-huge/test/VELE-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "437e9127fe56acdf7e87486f6e83d0c1574532f1",
+    "size": 136,
+    "lfs": {
+      "oid": "adb61b8045a12749f90017bfca932bf61be3c6c46f4b9a2ea43bdaeca4206575",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "b3126f39b11bee166bd345918f6fdecd836bc5e2fa2dea44c669ab296f6398f9",
+    "path": "4AA-huge/test/VELE-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "2b39854ffead61e4a94463c7d26fe8d2ea5be9d0",
+    "size": 2413740889,
+    "lfs": {
+      "oid": "ff0c08890a7845cd1e9269dfa2aea9372506960f75bd1679da024a5f767d9768",
+      "size": 2413740889,
+      "pointerSize": 135
+    },
+    "xetHash": "f54feb48954014a96cca14ec1e5341123bc2b2051db637fdcdbc431734dbbf16",
+    "path": "4AA-huge/test/VIEL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "7cdf34f7b2570cd98f06d2d9c0713f0a064d7e96",
+    "size": 5910,
+    "path": "4AA-huge/test/VIEL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "b417491a599407175f0b1ac3126df3db6eb18b0f",
+    "size": 136,
+    "lfs": {
+      "oid": "da5717a1b683246ff9a106851b0edb18b70c968bd04a2742dfec6f76748f81ad",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "5866910d7be261575166e81d9e8e098ea3dba421ab4aedb5d5e81c3d505c6ad6",
+    "path": "4AA-huge/test/VIEL-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "625ca80da217edd80e97545ffa86972ca0f43ad8",
+    "size": 2216111339,
+    "lfs": {
+      "oid": "3551ad06adc83f6d311787dd15c653de4a821e8f1594dc2fa63bc77221136ee1",
+      "size": 2216111339,
+      "pointerSize": 135
+    },
+    "xetHash": "ef1e7b52aa4cf487c8c4d3df88d9fc913798706238d2c4186fa8318ea7918f1a",
+    "path": "4AA-huge/test/VLSM-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "610039e04189543eecdda6e399d04ede68036cd6",
+    "size": 5424,
+    "path": "4AA-huge/test/VLSM-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "42c3e4973cf79b4466fa56639b80a7dcfe78c89c",
+    "size": 136,
+    "lfs": {
+      "oid": "4c754837f7dbe1aa978886406c93511ab7a2b05f1befa1a7ef230928f13aad24",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "3554d08a84a50eb8196b199fb828fa20be944f1d82e9a2f1eec48a6a1531a443",
+    "path": "4AA-huge/test/VLSM-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "a0852d50a65740b59ff7ab7482e10259497b2c9b",
+    "size": 2445310192,
+    "lfs": {
+      "oid": "02f058380e5660865f0dcd8891071e74761dd75792cb9a54ac6c191958b0b715",
+      "size": 2445310192,
+      "pointerSize": 135
+    },
+    "xetHash": "1f9ac52d5e7b911bc89bc3acfe5b13f37ca7deec0b3cdb162074e25ce01bc01b",
+    "path": "4AA-huge/test/VLYP-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "f3d33caaf48aa98cdf4912833ea8ef2ec4905cf6",
+    "size": 5991,
+    "path": "4AA-huge/test/VLYP-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "dc4fe2e5aaec20cda5ce0ad198e2c93fd4e29a85",
+    "size": 136,
+    "lfs": {
+      "oid": "bb15bf2b3eea7388b5843ffd243b82aaa86ee68d11aea195a667c11d4adc889f",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "f3ba18268b096aa3201fe950cd19f9492c747d539a64660910020e255fe360b4",
+    "path": "4AA-huge/test/VLYP-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "b9c14ff8c72e71b25f8e27bd4659b822916e139e",
+    "size": 1981147211,
+    "lfs": {
+      "oid": "e10eae59e746e7dc6165e06397e9c72ac00b5b18ca145f67fea27cecb5f64532",
+      "size": 1981147211,
+      "pointerSize": 135
+    },
+    "xetHash": "1a91245d369b531bafc58b8d7fd4963d5db218aa76b94a9c1dfe393a1e9404af",
+    "path": "4AA-huge/test/VPDT-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "a5e75440e16e9bcb31fad0d46f571ad13b928b3f",
+    "size": 4857,
+    "path": "4AA-huge/test/VPDT-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "3b776f56f63f026e727605c8549c8c54ebee7a70",
+    "size": 136,
+    "lfs": {
+      "oid": "5c1778298759fce6cd9fc9a218702ef389b7ecc2ded00a0885cbcc8ceae3dff5",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "f74ee0aab3ff423dfdcfb073a539bff4df1fdd5804e5484431c9c751993428ce",
+    "path": "4AA-huge/test/VPDT-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "b2164896ae87474d4f97deed1446b346395e0872",
+    "size": 1949367819,
+    "lfs": {
+      "oid": "61cfceb1e127ad293997b91e6bb2e4f461f682c65de174e5b4fce7a5c5eb37ee",
+      "size": 1949367819,
+      "pointerSize": 135
+    },
+    "xetHash": "ed26f625d3595e96c36f291e75ce3d96466d150fae80ed99739fc62d4dd400c7",
+    "path": "4AA-huge/test/VTST-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "bac504e034a522ff9f03e6f3b1afe5f62867f97b",
+    "size": 4776,
+    "path": "4AA-huge/test/VTST-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "9c39bfd2660e563b7feb023c3099f10b6c9c5596",
+    "size": 136,
+    "lfs": {
+      "oid": "85b1d3cad1ddecc52df6802b32ea28cde50cd2be3b5723c130c08978587c033f",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "d18740d7cc04673269d940431cbe2d316fdc8218bd5123dae540a8f2703b35df",
+    "path": "4AA-huge/test/VTST-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "c4e3c9c8da70509f9353c6703df54eac52b0ae7c",
+    "size": 2879703891,
+    "lfs": {
+      "oid": "d48b92f347a1fc36f9a0ecd60070dbe5483af9485cbdc4961bf9d2f808696019",
+      "size": 2879703891,
+      "pointerSize": 135
+    },
+    "xetHash": "31e6c929995d974310a2581cd95573d3c6ea418d9717e298273e7fcfa7665ba9",
+    "path": "4AA-huge/test/VWRL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "1b31f670da4361b1c2ed2655c6701c0301658527",
+    "size": 7044,
+    "path": "4AA-huge/test/VWRL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "a78b0ccef14f2fd97b77f9e14be283fadd0048bf",
+    "size": 136,
+    "lfs": {
+      "oid": "755c2b1f19562268375a4064d3646d8bbab93f3019300a7e21eb34976d52e50e",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "a51fb8d4a05189a30ded7bb19f42e17d74180a44785a79b2d365daec8219898e",
+    "path": "4AA-huge/test/VWRL-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "9381c63f896f2e5f6240e0df8caf4e8a75cfb261",
+    "size": 2546492760,
+    "lfs": {
+      "oid": "121c66ed523934d19be9bd929878bc6f13cecc968f0db12fa4bdf3df234b5256",
+      "size": 2546492760,
+      "pointerSize": 135
+    },
+    "xetHash": "b846dbf62b93f9dec5cad8bd008713c19d3f874bffcbbb70836c1d70e95ce137",
+    "path": "4AA-huge/train/ARHK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "f225ffaf80b3196d756407cc4e4d4fbd8497f734",
+    "size": 6234,
+    "path": "4AA-huge/train/ARHK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c4fd40c3a50e79aa254874634e439c2e38e78b60",
+    "size": 1648487369,
+    "lfs": {
+      "oid": "98c8deb7cd3685f98e2e511dad37dc04d24850f5e3437cfbda6968f7a9379f33",
+      "size": 1648487369,
+      "pointerSize": 135
+    },
+    "xetHash": "ddda3d0aba7f79f347ad1cc1f8459446ffc81af402c6789c69c2f9db75deb5d1",
+    "path": "4AA-huge/val/AAAV-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "14a0171859094c6261189cfedb585a90b2387e4d",
+    "size": 4047,
+    "path": "4AA-huge/val/AAAV-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "9b7807878e2b85c9742d3e9afcaccdfc0f94ce03",
+    "size": 4857,
+    "path": "4AA-huge/val/AAIQ-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "889c2514c4c30a2e4cb821cce4086c51ad80314a",
+    "size": 1813455259,
+    "lfs": {
+      "oid": "c6d5c1f43f321e81b87882d5e4004a633043b47b5fe7cf4e5023db992dc778af",
+      "size": 1813455259,
+      "pointerSize": 135
+    },
+    "xetHash": "02fdb3bf7bf14ab5495fa34d22e75fab5cdd6ac411c6e9e1fe3a77ed28d3fe21",
+    "path": "4AA-huge/val/ACIS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "d281ae86631a7b0b632248b3d5359cb64722bc0b",
+    "size": 4452,
+    "path": "4AA-huge/val/ACIS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2780a2c20aba7f169d25fb107cadff6ff8283625",
+    "size": 1646629612,
+    "lfs": {
+      "oid": "415c419086fc12a7f0645b05aece094e6916eee66620e64cebebf22f0b6a0f8d",
+      "size": 1646629612,
+      "pointerSize": 135
+    },
+    "xetHash": "3b3d2af3ffdf04cd5b7b6e474cb78b7ded8be0d1d1fd8fb9f6dcd4ba60f45d87",
+    "path": "4AA-huge/val/ADQG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "f3158628a6061153d9d9bdf35de530a43f110ca2",
+    "size": 4047,
+    "path": "4AA-huge/val/ADQG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "f45d2887deadf555b9844a3dc2a8be9202535ea3",
+    "size": 4614,
+    "path": "4AA-huge/val/AGQL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "54ffb9dd332f2c6eec976654bd720e9503bd0728",
+    "size": 2349457735,
+    "lfs": {
+      "oid": "d4ba3454e296153b012f5f6042128a2c9b2335df5dd65ef2506284c77c77a455",
+      "size": 2349457735,
+      "pointerSize": 135
+    },
+    "xetHash": "da715ceefe70c1abdc95476bec822707281bf7b6f937f329bb14c6d80ca790ef",
+    "path": "4AA-huge/val/AHVR-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "81d90e67f80b6dc39c08c7cbaba952d7e87e9378",
+    "size": 5748,
+    "path": "4AA-huge/val/AHVR-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c779e9530fb098011d968befa1fe1af7349754b1",
+    "size": 136,
+    "lfs": {
+      "oid": "6da6c50f00baaa896e679c4f94afbebee571d29558a9f1b2d0e3c9ff5fd39376",
+      "size": 136,
+      "pointerSize": 128
+    },
+    "xetHash": "281b754c88fe0d5a51bfdb05dcbe57c804e73a52c661d47c88a8cfc8f9f05bd4",
+    "path": "4AA-huge/val/AHVR-traj-time.npy"
+  },
+  {
+    "type": "file",
+    "oid": "d0cfb9d28a38e275359abf3690880d1dbcd6467f",
+    "size": 5343,
+    "path": "4AA-huge/val/ANRN-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "1280903ab495c8d3668f1e821eef952d79b71c61",
+    "size": 1614444985,
+    "lfs": {
+      "oid": "d2ff007737e9fe3ad296c0eea1bdb28b60dfd594226ce80fee539fad613c152d",
+      "size": 1614444985,
+      "pointerSize": 135
+    },
+    "xetHash": "a470c936d2963ac13451b84872ed659377c61a69a7da9431dc2c036113bad4fb",
+    "path": "4AA-huge/val/ASGH-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "9b88b8d885ee712500db9b28506b1f16de0ad6e7",
+    "size": 3966,
+    "path": "4AA-huge/val/ASGH-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c8e194b93d4c069654eb6fd520871d9d03276207",
+    "size": 1846775946,
+    "lfs": {
+      "oid": "27d8e10b2efc5fca9202d827bed077078acff3711a944087ff783506d00bb023",
+      "size": 1846775946,
+      "pointerSize": 135
+    },
+    "xetHash": "3eb65143232c298ea8cc672afcfb660372c8e7b4268b429cb4260d14e82bfb07",
+    "path": "4AA-huge/val/ATNT-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "dac970ae59254c954e75ede7ce900eafecc9e88b",
+    "size": 4533,
+    "path": "4AA-huge/val/ATNT-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "0bfb8bf42618ab5d82a7a41df8c495154f7c22b1",
+    "size": 5505,
+    "path": "4AA-huge/val/CFYD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "bed399070568ac7f2ce84cd8d52ce57d00e7b953",
+    "size": 1747168932,
+    "lfs": {
+      "oid": "531d54ef9f450db07cc83f7d2ec549d86c2f02a3117f095049665c8164cb8e26",
+      "size": 1747168932,
+      "pointerSize": 135
+    },
+    "xetHash": "607c73d722e5eff32ffa8fb898a3b9958525bdafc7c4bf2c69be5dfefb95d22b",
+    "path": "4AA-huge/val/CPGM-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b97c22a6e854506600a891b6b68faa0afcb906ad",
+    "size": 4290,
+    "path": "4AA-huge/val/CPGM-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "30ce424c746e6a7ab8907766c9b52c779fa635e8",
+    "size": 1257652950,
+    "lfs": {
+      "oid": "c69c92df477fb0cd3cf7c9b6f5b47aaadde6c8d5956ff9c9ce93548442fbb3e7",
+      "size": 1257652950,
+      "pointerSize": 135
+    },
+    "xetHash": "c443653679cc196ef32a085b91f2a7e99089e4461e0ac3dec0ca51e3c0eb69fc",
+    "path": "4AA-huge/val/CWVY-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "f0f55870011908a5523bb7fca2f967f35173b7f8",
+    "size": 4614,
+    "path": "4AA-huge/val/DGKD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "8df700e2cff0d17e356c71187fb5ac05df6f1400",
+    "size": 2015043788,
+    "lfs": {
+      "oid": "f5233f0d8371f198efe11d86cad843d9b219d131090b5c072acb1b30e28568d4",
+      "size": 2015043788,
+      "pointerSize": 135
+    },
+    "xetHash": "2633e32b8ac8bd2114ecf747a231f25acb4312baf66535741fe7e4ca52b2473a",
+    "path": "4AA-huge/val/DHPT-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "9a42be2f523f535412e819090f3b4a02f443dd62",
+    "size": 4938,
+    "path": "4AA-huge/val/DHPT-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "ffc544c3cf3c73c07b7fea7c4d5ebede55f6a477",
+    "size": 4209,
+    "path": "4AA-huge/val/DIGA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "05dc7e49d3c7d9c5548b13f078703ec69f97f4e3",
+    "size": 2348065469,
+    "lfs": {
+      "oid": "cda218f771560857701c2f881c219154ab46b9464f55ea8183ae648f61dd31f7",
+      "size": 2348065469,
+      "pointerSize": 135
+    },
+    "xetHash": "c8d1162f86913e913dce5585cd4c72cfdae383b61cbde52a5f2349cdafe00bd0",
+    "path": "4AA-huge/val/DKPL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "ac83c1372d221ea819198875531cf207b2b00aba",
+    "size": 5748,
+    "path": "4AA-huge/val/DKPL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "779d6f50e52e35305cd954138cc0e76947c46b28",
+    "size": 4938,
+    "path": "4AA-huge/val/DNPQ-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "67622186f386d582c028fc89579f4a5dab6c65d2",
+    "size": 5181,
+    "path": "4AA-huge/val/DNQQ-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "1b7799a0c58cea01cdbf50d5dc30569a6a9e012a",
+    "size": 1683310923,
+    "lfs": {
+      "oid": "fbb9ec43e33f26bf4252814cb115cb94d42cdc44dbcd26b63a50c4f1db2a05e2",
+      "size": 1683310923,
+      "pointerSize": 135
+    },
+    "xetHash": "aee99185c30ecec7afcf2758f2097abe96c3bb6bf648171b62a8abb9b0ceb124",
+    "path": "4AA-huge/val/DPAS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "fd2bb4fa91ed850d3e22c3467b95df3768245c18",
+    "size": 4128,
+    "path": "4AA-huge/val/DPAS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "88c72eea3782ae31229332e111ebb15b9d83e428",
+    "size": 2114528361,
+    "lfs": {
+      "oid": "b9a6eb5132f500163e771849ba01ceb636358462484ab2a3b1d2e4b0659fcdf0",
+      "size": 2114528361,
+      "pointerSize": 135
+    },
+    "xetHash": "14ddbe059e98cd3d232ee7603e78f4abbe0355b063c32043dd131bead61fdbe5",
+    "path": "4AA-huge/val/DQVE-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "8e21ca716a7e9ec15f2b42710a3ad205bbd2c591",
+    "size": 5181,
+    "path": "4AA-huge/val/DQVE-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "26a4d2cd0d8602198beaa860322c18d107e1797c",
+    "size": 1449546238,
+    "lfs": {
+      "oid": "dab25f6ba174a8b1f75d1517683eb0d678cded2f3dae5d6dae746244558e5ec1",
+      "size": 1449546238,
+      "pointerSize": 135
+    },
+    "xetHash": "bb2dcb9d9bb0c9ca106a8df83a75c706f7f708a35b9fb717174c46cdf38180e4",
+    "path": "4AA-huge/val/DSGA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "06abe031826b9afc7012247ca3b14e3551cfbd58",
+    "size": 3561,
+    "path": "4AA-huge/val/DSGA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "9306cc76052e502bf870be79119c4271d9b88618",
+    "size": 2178833442,
+    "lfs": {
+      "oid": "2078444684e3a19089ed601d2de476237cf7049bffff3cb582a16d5b64520cf5",
+      "size": 2178833442,
+      "pointerSize": 135
+    },
+    "xetHash": "0ee43f147850db978c47c4839181c8f94519f82d0a43275cc481ced0a3aa4ade",
+    "path": "4AA-huge/val/DVHM-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "abb230056628786f98d9edf8fb19218bda7e265d",
+    "size": 5343,
+    "path": "4AA-huge/val/DVHM-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "f7403bd0dd211b98911f5a3fb7d6ef35297b7eb0",
+    "size": 2212841163,
+    "lfs": {
+      "oid": "9abde6ce4669bbef4fa47f017e8c70ef7aad9aa9acc701393d9e4d28c7183454",
+      "size": 2212841163,
+      "pointerSize": 135
+    },
+    "xetHash": "41c6cf3ca99c1098f2b671ccecb65aa76f27119c4309cf077e484250d5f4524b",
+    "path": "4AA-huge/val/EENL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "488d5ebf787203b3a96e930342026547750ae7f1",
+    "size": 5424,
+    "path": "4AA-huge/val/EENL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "39b2173a735f102939644bf6822186dcd96132c2",
+    "size": 2146952371,
+    "lfs": {
+      "oid": "d9a6fb79652462419dbc863abda45ee7d757315e1c7cf82ff93cdc4bc1ee90aa",
+      "size": 2146952371,
+      "pointerSize": 135
+    },
+    "xetHash": "d6bab74fc4be3c42f90a586d15767c6085ead71ab7f988253976b833b71fc81a",
+    "path": "4AA-huge/val/EFLG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "d181b1830395d46fc530d209e36c16b55b7cf35a",
+    "size": 5262,
+    "path": "4AA-huge/val/EFLG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "b7136a62187d45498869ded74cce56cab3735bdc",
+    "size": 1744799879,
+    "lfs": {
+      "oid": "ef90f3254f04baca6295225164215784d70d922e24caffc07c91c97c94d45d74",
+      "size": 1744799879,
+      "pointerSize": 135
+    },
+    "xetHash": "b90c29ede4c5dfff3aa06d97e2b18c56bb1f8740fd277928d424c60b4a83d755",
+    "path": "4AA-huge/val/EGHA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "415c1a519220d8a16a7895ee97d8451c8204d7b0",
+    "size": 4290,
+    "path": "4AA-huge/val/EGHA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "f92c4cae2fc2841d56c34db78121be1fc650a48a",
+    "size": 2081081482,
+    "lfs": {
+      "oid": "487bb90fd80c5a3ef54cd6d21a5db9d953d703b59ed604d19a5167c882addb2c",
+      "size": 2081081482,
+      "pointerSize": 135
+    },
+    "xetHash": "cd806fbbe4635097433963bc2a11101e740fe4b2a938a1ef3cd4cdececee0e1d",
+    "path": "4AA-huge/val/ENPV-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b35e861225224e5b232bf222eca20b4b27a16a38",
+    "size": 5100,
+    "path": "4AA-huge/val/ENPV-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "df9f24bf721cc25b0d818bc4ba3f810f6f4590a9",
+    "size": 1847853236,
+    "lfs": {
+      "oid": "ca69156a8656440d6677faa429f909fcbb1c2fdd2c7205b2c3fa83395e21197c",
+      "size": 1847853236,
+      "pointerSize": 135
+    },
+    "xetHash": "6a59bac555d9b78136bb3f0d9db9bca0af9eea2c91e5f07fa952e117cf62987d",
+    "path": "4AA-huge/val/EPGV-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "233de5ff8cb1ff525b28b2f82d3867519756e575",
+    "size": 4533,
+    "path": "4AA-huge/val/EPGV-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "0bee043737cf4bfb4639d2bbc7813f005b0c8937",
+    "size": 2177599115,
+    "lfs": {
+      "oid": "c7236ac9f59c4df7c8285741ad298133e2fb4dc2f3da74b5ff9b87284ff67b4c",
+      "size": 2177599115,
+      "pointerSize": 135
+    },
+    "xetHash": "8f49fd25f7e60ac7785020426c9f62c7c1a3666588ff9656dacb1f447b396aed",
+    "path": "4AA-huge/val/ESWD-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "3c8bc7cfa478766c6dfbecc7a218de66dc47040b",
+    "size": 5343,
+    "path": "4AA-huge/val/ESWD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "0b1fdf2bde437b0502ae276a643b348341979982",
+    "size": 1813477831,
+    "lfs": {
+      "oid": "fdd2adc9a6b1aa26136931fe5997638584aa1e8b85157c5cf6d116d829a6a4da",
+      "size": 1813477831,
+      "pointerSize": 135
+    },
+    "xetHash": "ecaa018de1a7225291a20ae39a7d8e9da449aca41dfb9dc80f641d8c065350b7",
+    "path": "4AA-huge/val/ETSS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "0f376dd0c2e99a6ac4b868f167441e72fe490da9",
+    "size": 4452,
+    "path": "4AA-huge/val/ETSS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2c78502f751fc2a2c5e754c7618737271acfd751",
+    "size": 1844583677,
+    "lfs": {
+      "oid": "e097b852005ec7db413de96ce9da61c1008127e27e92f2036fcb551a4b31b8c3",
+      "size": 1844583677,
+      "pointerSize": 135
+    },
+    "xetHash": "d730ae0c7a3618b57701f6fd8e16a95b61e948809ee8c9cc8f7841bff8f8cb25",
+    "path": "4AA-huge/val/FAEG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "4f1639afdd42830f04a649d544d33da04a746355",
+    "size": 4533,
+    "path": "4AA-huge/val/FAEG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "f7ccdaa24625b2785365cb49daea393d19563101",
+    "size": 1947692696,
+    "lfs": {
+      "oid": "a43164d5d71c2859a5173b66fdd319e1e9c8570843d0cdc3d987e51d927c11e0",
+      "size": 1947692696,
+      "pointerSize": 135
+    },
+    "xetHash": "be2ee4fd0f53634ce51ed1e6d2b661543628de18302903189f3ac544d159a7da",
+    "path": "4AA-huge/val/GDPK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "2e62bb4512de9166bba4bfe7a3cc7bfecd7ae18a",
+    "size": 4776,
+    "path": "4AA-huge/val/GDPK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c07590bd676dc992b704cd5efb4a3d9e4878df2b",
+    "size": 2046273110,
+    "lfs": {
+      "oid": "407d71f98b3c8052c92c4df6f5b258d673814a535c5deb24154559aadd395e7b",
+      "size": 2046273110,
+      "pointerSize": 135
+    },
+    "xetHash": "6ef86c19fa43b176d7330d39ce377cf9f293bf09570fde4eeb9ed4c614a07e9b",
+    "path": "4AA-huge/val/GEKT-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "acd3926438bf85055ce42db79ea4a74646dda3aa",
+    "size": 5019,
+    "path": "4AA-huge/val/GEKT-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "6d39c754f4c567a0a149f484cf07217fa608ca20",
+    "size": 1480321090,
+    "lfs": {
+      "oid": "f248cc260e6ae2c470f6a9942ab0399aea60b1b58371e79728db5286ae26db9f",
+      "size": 1480321090,
+      "pointerSize": 135
+    },
+    "xetHash": "db2be097465ee33b80781a558a8299a5a1dd68f366ce07601788dd4b7f3f8f8d",
+    "path": "4AA-huge/val/GGAH-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "d90df91d04e32dcbd2c1fb044216e5d8146ee8d9",
+    "size": 3642,
+    "path": "4AA-huge/val/GGAH-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "490851497cae707e78c704c581d140fd0571faa0",
+    "size": 1846890451,
+    "lfs": {
+      "oid": "f25d364da85a0d69917867f2806cbd406c167a4e6dbd75aca845223d7c3f9953",
+      "size": 1846890451,
+      "pointerSize": 135
+    },
+    "xetHash": "a4b0a5a84affb95b3925e63f6412a43d688053ca694c8bd91ed9a3da37040289",
+    "path": "4AA-huge/val/GIIG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "8fe74c8bfda70c9a4aa87f773a31cf9ff2d4bbf2",
+    "size": 4533,
+    "path": "4AA-huge/val/GIIG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "b61eae4ca32075c629b90a634fa842ef30f2583d",
+    "size": 1041028293,
+    "lfs": {
+      "oid": "0e41eb3bdb27b6f10d89cf1fe2ded01ad1e24019759de7583149c615f34b46ef",
+      "size": 1041028293,
+      "pointerSize": 135
+    },
+    "xetHash": "6dd70610db95c903f53fd4c661aff20910aa7356877b5d4ac8ec1f0d673f6572",
+    "path": "4AA-huge/val/GKNV-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "a08b5c1f5a86308444054ab3cb7146e305ac6ad7",
+    "size": 1912096244,
+    "lfs": {
+      "oid": "1d141b49755bbeb3597160ef41a68bf93bf81a2e99c678c468479a729814c044",
+      "size": 1912096244,
+      "pointerSize": 135
+    },
+    "xetHash": "d7a6a88a742bb26123ae25701ba8df9e6e5917ee6554698032b8add2af65ceee",
+    "path": "4AA-huge/val/GLHS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "f571eb6852eae9d4649e630c8b07f17b9f8acdb4",
+    "size": 4695,
+    "path": "4AA-huge/val/GLHS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "eb19e575f7b4ac1be2a94f79342a89901d6596fb",
+    "size": 1383596505,
+    "lfs": {
+      "oid": "e68bdf9569fdcc114349eda1c12b621eb53924c662ec3e5515fe668242438750",
+      "size": 1383596505,
+      "pointerSize": 135
+    },
+    "xetHash": "70eb2e5a67764248c87937c460b9b2035347b5de06465c101cf695c32b437caa",
+    "path": "4AA-huge/val/GNGA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "5ead753f61dd1c2af731e1cd4e9609d7a2127d35",
+    "size": 3399,
+    "path": "4AA-huge/val/GNGA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "d3cefe3f2fe59ffa71e1315c4fee0077dec2952c",
+    "size": 1514317984,
+    "lfs": {
+      "oid": "d00c1b67485c60cc98447a0fa56734411307b50a7e1366fcd0f75d63bcbd77bf",
+      "size": 1514317984,
+      "pointerSize": 135
+    },
+    "xetHash": "8f91da623d23c8318bf3c87bf8336ab29b0b1f3470048e1ef9d97adff7fcbcb7",
+    "path": "4AA-huge/val/GSAN-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "6ffd1a43812d8dacf000294dcdf384f08aa79fdb",
+    "size": 3723,
+    "path": "4AA-huge/val/GSAN-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "17c7a74b1f35ca285fd5b9656bef41e3204d2097",
+    "size": 4047,
+    "path": "4AA-huge/val/GSDV-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "a7ac3dafb52a7fccb00a760de37119c39180eb0e",
+    "size": 1416017936,
+    "lfs": {
+      "oid": "7a4b64141e9cba27dc2f2621aad39b09eac2ca83f0e305c071712d2133c3dba1",
+      "size": 1416017936,
+      "pointerSize": 135
+    },
+    "xetHash": "f43f730079c1c9bb0ffcf71f9fe6f911c64b62fcf9b9e5a856663ea3ddc7646e",
+    "path": "4AA-huge/val/GTSG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "4032193947463e6fb3ee89205c27ca734ebfbe4f",
+    "size": 3480,
+    "path": "4AA-huge/val/GTSG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "3d446154fddc4abe6a30ba5942702b3dbb2f818f",
+    "size": 2078486637,
+    "lfs": {
+      "oid": "182816414505592348e98ab66d1857f3afe9fa032797d496cdff258d1374a45f",
+      "size": 2078486637,
+      "pointerSize": 135
+    },
+    "xetHash": "d9990be4207ad12e4c51b1286e8da5017fdcbdc40af79765f7e8d3af93f4a8fd",
+    "path": "4AA-huge/val/GTTW-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "0b6f95eb904f580747546b199efc8198c90fd4aa",
+    "size": 5100,
+    "path": "4AA-huge/val/GTTW-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "611091906eefb32475e0c1ef85703e294dca2f1b",
+    "size": 1746830861,
+    "lfs": {
+      "oid": "a21be79d8f271c0cbc80bae5d05fc4254c916d1431b85538a634a2d6a7acf9b2",
+      "size": 1746830861,
+      "pointerSize": 135
+    },
+    "xetHash": "d1afda96a3a0bc81e406ac1bb03366ce4818ca8cb10e823f97ba391b4ea1a869",
+    "path": "4AA-huge/val/GVIG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "619e69375787badc6c9e6da2b553f429161dfa5c",
+    "size": 4290,
+    "path": "4AA-huge/val/GVIG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "01e7db436a927afee638aec503144d6fdb93695f",
+    "size": 4533,
+    "path": "4AA-huge/val/GVKG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "646e5001e05bc045423d4309c7297ad38f61eb4b",
+    "size": 1979126741,
+    "lfs": {
+      "oid": "403df14216cde682955cc5da6d279715e6367f5ad2468837533444f5b83be1c4",
+      "size": 1979126741,
+      "pointerSize": 135
+    },
+    "xetHash": "e1232b76dbba434ffd2963d00197418a2449b521c3241f3e32470b2e213a43db",
+    "path": "4AA-huge/val/HNNS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "be231dfa38b88e1ead948a721cee1e48fba623c5",
+    "size": 4857,
+    "path": "4AA-huge/val/HNNS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "08c01942a66440691c58be7bba58e438dc689dea",
+    "size": 1880987131,
+    "lfs": {
+      "oid": "9c2c2b039bb052aee61abc947199230e338c2bb0cb2c0557df69e264d5d939ab",
+      "size": 1880987131,
+      "pointerSize": 135
+    },
+    "xetHash": "59511e18e8324684a5eab053f6c470e404aad9b5560d13984399da26a0ff6b59",
+    "path": "4AA-huge/val/HSPS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "5e54afd49e9faa3a1d262dd0979943a52ca1e5a2",
+    "size": 4614,
+    "path": "4AA-huge/val/HSPS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "406c92c55a44b0b6236aa58a01bedfe66247bbf2",
+    "size": 5181,
+    "path": "4AA-huge/val/IADL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "3569a7c65b8b1d1e0b6e4f07a9054fa297f7062b",
+    "size": 2379186514,
+    "lfs": {
+      "oid": "2d56832f0f73e1e74f26d70abc0bdff8322066a25611c3f4b4176fa6e31d00de",
+      "size": 2379186514,
+      "pointerSize": 135
+    },
+    "xetHash": "4851ab781bcf8c886c92f721641bac4a957d9a11b8f63a8d30c026305e231a9d",
+    "path": "4AA-huge/val/ILLS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "f6b27ef81f4856ea820921342508a4d0f9422afd",
+    "size": 5829,
+    "path": "4AA-huge/val/ILLS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "de72bcb867d73143d149ecdbf505f37e94a834b0",
+    "size": 2310747522,
+    "lfs": {
+      "oid": "12f5023c2532796db98fc857ad17b040c917ca3000e9f33e366d8f1549659cbb",
+      "size": 2310747522,
+      "pointerSize": 135
+    },
+    "xetHash": "783ccdbbcc354b7663081d088ca29411c490b7bc0cc96e6b6343dc5475ae03a6",
+    "path": "4AA-huge/val/ISKT-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "695ebe81b4e668e8ac35e5860521bd40f4b11975",
+    "size": 5667,
+    "path": "4AA-huge/val/ISKT-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "91e507439dbf8b631975cfb2419864e8ab92ebb3",
+    "size": 2211112171,
+    "lfs": {
+      "oid": "4263f5be13072ef3e9d6aefedb577a8ef05cd125316d667e62193d2f59c13538",
+      "size": 2211112171,
+      "pointerSize": 135
+    },
+    "xetHash": "1f3d6708d698a418a3f7fd2fe2991b18907a26bd3fc5991e8d7e4581957dae73",
+    "path": "4AA-huge/val/ITFA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "02456c6e354346d78328e9bda07dee0a13add380",
+    "size": 5424,
+    "path": "4AA-huge/val/ITFA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "11b7749eb8ae69a1021bc6ac8ae73cb5e98340de",
+    "size": 2346550157,
+    "lfs": {
+      "oid": "7b84369d2f51c81a102e212d13a220f8630a925fa1a436ed24f6e91cfda66eba",
+      "size": 2346550157,
+      "pointerSize": 135
+    },
+    "xetHash": "56fb939040ec2142535fca3054adc15a91f104bab7261b642d9c1485c12747b5",
+    "path": "4AA-huge/val/IYHA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "beb3036a415d04f0ddb38350351aab1322c047ca",
+    "size": 5748,
+    "path": "4AA-huge/val/IYHA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "b9736854e11cb37f439e5411570abd6721529ffc",
+    "size": 5829,
+    "path": "4AA-huge/val/IYTN-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "4d3f0f4513b5bc432e98b12400e42154e0a63133",
+    "size": 2113438998,
+    "lfs": {
+      "oid": "0e693b1b16e69447c3b2b2c545634d5f5b6d4bc6b685e052b6ff3fe099580aaf",
+      "size": 2113438998,
+      "pointerSize": 135
+    },
+    "xetHash": "978e46a89dae8682532ae43658b4da456b729689b1b6b9e135a29adbb4391418",
+    "path": "4AA-huge/val/KAPN-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "a784b2473ba024f68d92515c05ba123185aa439b",
+    "size": 5181,
+    "path": "4AA-huge/val/KAPN-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "b438587f2e9528eddef7cdc971074e33e521a83e",
+    "size": 4938,
+    "path": "4AA-huge/val/KASN-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "9e450abfbfbd339cab336e015fff71300a527f2e",
+    "size": 5910,
+    "path": "4AA-huge/val/KCVF-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "cb85e54a50ee0211fa1f29bc194343eadac45029",
+    "size": 6153,
+    "path": "4AA-huge/val/KDWT-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "0f4c658d5d97e5dcaab378f899051cd7a2d6e2b4",
+    "size": 2143972858,
+    "lfs": {
+      "oid": "2b07b5c0eca596a2b7b471d8f003fd1945a788c0b78b4ddd6726ddcbab1547be",
+      "size": 2143972858,
+      "pointerSize": 135
+    },
+    "xetHash": "ae6a745341617149874b452f79b4a545cde5fdc8eba015c56f44a9441dbf1918",
+    "path": "4AA-huge/val/KGKA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b58bc5cd45d4ba1a88d7ef8598921723dd179861",
+    "size": 5262,
+    "path": "4AA-huge/val/KGKA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "fa5a9968513e320c9845fdaeb168a8dd6dd7a85b",
+    "size": 1258115136,
+    "lfs": {
+      "oid": "d488985659573dc0840c1cad27e715d0e4498e6ff2fbedb5f26d79894828d7ae",
+      "size": 1258115136,
+      "pointerSize": 135
+    },
+    "xetHash": "636fde51fe25e107da0d43c61cdd02c01de2506526ca5311af0ee4025953c18b",
+    "path": "4AA-huge/val/KRDT-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "d1b2f1982aa0ed5306d3500f407d647f49701c99",
+    "size": 2676360567,
+    "lfs": {
+      "oid": "172d3ed34564f9cdda7648803b0cf67a0c143d2fdc57e2b805b5589b61747339",
+      "size": 2676360567,
+      "pointerSize": 135
+    },
+    "xetHash": "311e5d123917d084a27a8e614a4be01ba29a2c53de52525c9b2a32761c99e3f6",
+    "path": "4AA-huge/val/KTKL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "cd5d8ed93fe7d964095de4faa8a26869fedab084",
+    "size": 6558,
+    "path": "4AA-huge/val/KTKL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "fef8986c84eb74f8565cd09d1ed44fcd3b5cd4bd",
+    "size": 2378050484,
+    "lfs": {
+      "oid": "fd6741300e85066e797c796bb4d5442ef70d37df917be564b85e3b407fdbd817",
+      "size": 2378050484,
+      "pointerSize": 135
+    },
+    "xetHash": "1b03e7a9acd8fbb8b94ea059d300f272e56860a9937d12bb4f3d733332095992",
+    "path": "4AA-huge/val/KVCL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "5059cdbd38e2f81683b94fd8160da05bd1e4bea7",
+    "size": 5829,
+    "path": "4AA-huge/val/KVCL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2607a929d334458d9c4137871d38d37a06ed078e",
+    "size": 2177416234,
+    "lfs": {
+      "oid": "de2794bf2208e902387b4cd201efc059b02ab859531b2a565c0d11f765ca8f36",
+      "size": 2177416234,
+      "pointerSize": 135
+    },
+    "xetHash": "229d46714f4d3433deaba758857d206d1513630577ff6e5c35561ceadbc6c5c8",
+    "path": "4AA-huge/val/LAKS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "6bc76dd88d5ee42c97a41945d18449f9d41b9af5",
+    "size": 5343,
+    "path": "4AA-huge/val/LAKS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2c244398cc5bc415ad1cb544370d6642cd8115b3",
+    "size": 6315,
+    "path": "4AA-huge/val/LEFF-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2871fdb59a1416089e973ba448dffdb5291779d0",
+    "size": 2513195779,
+    "lfs": {
+      "oid": "940c01b4089c9ce3cd49916526b8e36edd07eb66674b38c7d05fa72a49cf7828",
+      "size": 2513195779,
+      "pointerSize": 135
+    },
+    "xetHash": "2fd9ceac2364e0250d7e5a338b8dab1e88a5c0ab68fc52f5bc6fea6c098689d2",
+    "path": "4AA-huge/val/LFLT-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "8616cd3b0313be3fc9248a4a8586db5b480f5983",
+    "size": 6153,
+    "path": "4AA-huge/val/LFLT-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "a2047c78f949a95afc4ca894042f5f1b78fa1bd5",
+    "size": 1845963396,
+    "lfs": {
+      "oid": "57bed29aa124f1062acbb1289c6602b58c84b15971f37a944096dd23cf5d146e",
+      "size": 1845963396,
+      "pointerSize": 135
+    },
+    "xetHash": "a4c8f25e47a4a8179d1b852e6ca790792833c1504db9da3f94fec85ad848e847",
+    "path": "4AA-huge/val/LGVA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "7cb6b8d76a9a7b0281f517d023c2d6d2147d40ef",
+    "size": 4533,
+    "path": "4AA-huge/val/LGVA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c943996ee8f6d0f8d327d58e9c85d6a17ffd5da4",
+    "size": 5667,
+    "path": "4AA-huge/val/LIGY-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "f185d9a04cafaa8350ba92f6dc3974c96596bd54",
+    "size": 1773432123,
+    "lfs": {
+      "oid": "2209a52fed0f25a1d93660480cc00a2364dc345500e174170cc641dd6d3b7a8c",
+      "size": 1773432123,
+      "pointerSize": 135
+    },
+    "xetHash": "6d35d562d973e24585a87faabd2e698d30cabdf7b5d07a8dedc0f43efdd3984e",
+    "path": "4AA-huge/val/LIGY-traj.chk-sim.pickle.gz.old"
+  },
+  {
+    "type": "file",
+    "oid": "45220956cda9df761610c11022926d4fce04376a",
+    "size": 2446562932,
+    "lfs": {
+      "oid": "6a0e71de885213a222246467f5f16dda928872650ca0caa328fa50c2e107fdb9",
+      "size": 2446562932,
+      "pointerSize": 135
+    },
+    "xetHash": "082218ef8b015b705f5a85fb63a460306bb00288edd4b118a1f2c98d42f08983",
+    "path": "4AA-huge/val/LLAK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "824b055b8f78512a27fbb1b4d9d636bcde5aa935",
+    "size": 5991,
+    "path": "4AA-huge/val/LLAK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "70eaaafd4e21ed0c2d342da4e1baa10dbecb3892",
+    "size": 2180431674,
+    "lfs": {
+      "oid": "6a2896fd7bb30cc33adb7c1cede9ea399581eba2774c09291b31b6ad5b188c72",
+      "size": 2180431674,
+      "pointerSize": 135
+    },
+    "xetHash": "a8456d26bb477205e8869fc1032ce20b2a06087d1f004a45ed2c954bfb22ec85",
+    "path": "4AA-huge/val/LLAN-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "0e2834aace97e74d0f088c305aa2713818d5c1e5",
+    "size": 5343,
+    "path": "4AA-huge/val/LLAN-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "de921cf30ee277bbc1b2c8fb1b6bcbf171f24589",
+    "size": 6153,
+    "path": "4AA-huge/val/LLAR-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "5f63c44f91bcdf5214d4435f4ed8c2d5bbad031b",
+    "size": 6315,
+    "path": "4AA-huge/val/LRGW-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "64f31d1fad178690eb1d41837cbc661d73d96ae1",
+    "size": 2581657597,
+    "lfs": {
+      "oid": "a962f8dde27baca408f6cf41774d922c1e564e0f1fa31a1ea90c12ed012ac6c3",
+      "size": 2581657597,
+      "pointerSize": 135
+    },
+    "xetHash": "4d3034dc9c7e273d8695d3ced7a12cf7eadbfcc66422addd54c56393f99016fb",
+    "path": "4AA-huge/val/LRPH-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "a54d093bd052f1dc973216a6e388791a7cb4837d",
+    "size": 6315,
+    "path": "4AA-huge/val/LRPH-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "bc0f7c5d888c8130b63c68787d481c68a523e356",
+    "size": 1980083421,
+    "lfs": {
+      "oid": "dcb1d32bb1c9bc51d1a143e709f7c5a60fed3647f28d03200dec80cc5aa62ee1",
+      "size": 1980083421,
+      "pointerSize": 135
+    },
+    "xetHash": "d4e0498c7d5f6e9ac516cdbe4be4c5de72b1c0a5057d23a3622675b8ab897d00",
+    "path": "4AA-huge/val/LSGL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "555b47e2e31d302819d63bf395e7632a23f7b1b5",
+    "size": 4857,
+    "path": "4AA-huge/val/LSGL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "ec4fe5819d42b91ade466f29f9dff2839ddf7bf0",
+    "size": 1979719145,
+    "lfs": {
+      "oid": "2a30809106a0e33f7e9830eaa64d27809d7e4a4517dcc7ea26bdfe9c6bef8fe3",
+      "size": 1979719145,
+      "pointerSize": 135
+    },
+    "xetHash": "9f61c7978fc9bffd1487e94463845006d8b66e61d40be265f2c92af809c05b2f",
+    "path": "4AA-huge/val/LTDC-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "f4bf8e77b7f60ab272ac04e78d1eea8b2395779e",
+    "size": 4857,
+    "path": "4AA-huge/val/LTDC-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "dcf016474caa47050861aef291a79d6b6d52b161",
+    "size": 5991,
+    "path": "4AA-huge/val/LVVI-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "b513eada209f8b76608e95fac1cf5da11c258168",
+    "size": 2047575321,
+    "lfs": {
+      "oid": "5ca4d29bb4935ffc5af351d04c8c64a6f4254422a611392012a72eac351dcd7d",
+      "size": 2047575321,
+      "pointerSize": 135
+    },
+    "xetHash": "f73f1236c1e8bbad2371ee6b7c25b545184200c66390196f445420e1dd5818b1",
+    "path": "4AA-huge/val/MCPV-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "8520d82fc2c311b94b2e97e0cbabf32e63a23c10",
+    "size": 5019,
+    "path": "4AA-huge/val/MCPV-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "1fb4954603c4eda547674bac3792e10e5dbfff2a",
+    "size": 5100,
+    "path": "4AA-huge/val/MGRS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "e25b11713905e0aa4153dde086ab1d70ffc7b00e",
+    "size": 2178062983,
+    "lfs": {
+      "oid": "5b7a844bda26ff2a4ea0a327c3dca5bc9fa7f36a51dfd448d2813672215c829d",
+      "size": 2178062983,
+      "pointerSize": 135
+    },
+    "xetHash": "6f2ce8c826a3f3940fcd5a3cd2bb7f92d00f2a7204bc2a200b34e55d3f3bdac6",
+    "path": "4AA-huge/val/NATW-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "45748894bf7a63e979657a3baa93f18b8114ec33",
+    "size": 5343,
+    "path": "4AA-huge/val/NATW-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "49bd96ae4fe38d9af121e6b4b0c61ff5352f2190",
+    "size": 1814835942,
+    "lfs": {
+      "oid": "aa831a36010ded7c5a9cf6c194205b24bf5e15674fb03d65bc338685a3ac7a80",
+      "size": 1814835942,
+      "pointerSize": 135
+    },
+    "xetHash": "cd6beb5f10310e42403219ebd56ae6e8290cb0b7247923d7f608029610bddf71",
+    "path": "4AA-huge/val/NESS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "615772bcbf6a89e06ecc1afe8558eb0d0cf73487",
+    "size": 4452,
+    "path": "4AA-huge/val/NESS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2189362b045635a091403069e155016170d61fcb",
+    "size": 2214561168,
+    "lfs": {
+      "oid": "a2869b17eae9b18f6e553f6ad17a73798845a8b96e76c6fc23b70e8573186df2",
+      "size": 2214561168,
+      "pointerSize": 135
+    },
+    "xetHash": "cd6e829149210b1f6bd467eae46eff001ab08e063cbf01914db2baf1eac79953",
+    "path": "4AA-huge/val/NQAK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "2554c176e66b3db8bac2ae05b9f8fc6c464040c3",
+    "size": 5424,
+    "path": "4AA-huge/val/NQAK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c891a447181fc256af37e6c307cc96d5bf8edb13",
+    "size": 2811449525,
+    "lfs": {
+      "oid": "bae5e4bf117dadb402f93303f85807761d1f48caca5fe452d752d1282a196f49",
+      "size": 2811449525,
+      "pointerSize": 135
+    },
+    "xetHash": "7f1e7fa422a74f5af0afe6e63bc5bfe79408fd68fbfd8d600e05c18218fb6cfe",
+    "path": "4AA-huge/val/NRRI-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "63234db8666d0cdb986253a579938c300c64b524",
+    "size": 6882,
+    "path": "4AA-huge/val/NRRI-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c14b874f03d0c0a1477db4486ea192be6cd5f804",
+    "size": 2079427641,
+    "lfs": {
+      "oid": "377e1a57c99a830cfa9e1ca3cfe006050d3625693d46cc15a941a0b6d6f7f521",
+      "size": 2079427641,
+      "pointerSize": 135
+    },
+    "xetHash": "ae46813c1885b3000ea9bfb81ddba062a95343a9519192ad56717bc9e4cfeb9d",
+    "path": "4AA-huge/val/NSDK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "13e2cd1d57aa62c92dae05a059c127cb2ed69391",
+    "size": 5100,
+    "path": "4AA-huge/val/NSDK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2eaf58b002ee109f1ca22e1a534f1e5ad3fe9910",
+    "size": 2178633927,
+    "lfs": {
+      "oid": "83a2f9a2f07703beafe20f54a3a669464bc1628396ebe51ef852ca56477c1363",
+      "size": 2178633927,
+      "pointerSize": 135
+    },
+    "xetHash": "4a673058362d80c0fd64db621a7865c3f74c0bb47a9ab3d44169d72307c46c9e",
+    "path": "4AA-huge/val/NSFQ-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "cff7a167eb38fcd7a97c6279672b432a83792e4a",
+    "size": 5343,
+    "path": "4AA-huge/val/NSFQ-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "530daaff1d6cd6bb90a7ec5bf62bc18c33bbcb97",
+    "size": 1979140133,
+    "lfs": {
+      "oid": "16c874388a5c57886a2a05f0b4ab673df839403ae0c1aefd41811bcd22495f3e",
+      "size": 1979140133,
+      "pointerSize": 135
+    },
+    "xetHash": "f5c1c3bd36e15c42a77936d27c332a12e2da95e493096fdcbc5e1228f4e59259",
+    "path": "4AA-huge/val/NTQS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "892d54ebfef5f5b7efedb6725516581082fb5c85",
+    "size": 4857,
+    "path": "4AA-huge/val/NTQS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "60b2305d9df63593971d769d1ef4017484666012",
+    "size": 1812270003,
+    "lfs": {
+      "oid": "0d6e53f4ecaad41f3481625be27d250a4c22e56cec9f4210828f001df0f79c01",
+      "size": 1812270003,
+      "pointerSize": 135
+    },
+    "xetHash": "012bdc579990ef29245b41b10519e1e591097109e9c573b8739804809577bea2",
+    "path": "4AA-huge/val/QANA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "c1e39300b6874348c5355dc5041edac0cf3705e0",
+    "size": 4452,
+    "path": "4AA-huge/val/QANA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "dda9d77ea3f24641b1c464a8e5eaa28e9f74443b",
+    "size": 5424,
+    "path": "4AA-huge/val/QFTD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "0b1ff89660c1ce918e5c5bce9c6d8398d42b4d77",
+    "size": 1913750729,
+    "lfs": {
+      "oid": "eba01067fa3622652662c6820f340efb9539dfc9cd628dc5d66af31480ab0806",
+      "size": 1913750729,
+      "pointerSize": 135
+    },
+    "xetHash": "079c697c8bc91d91552a64e7cf1532023fb48cd01c1e407ff9bfc7e256804fcf",
+    "path": "4AA-huge/val/QGPV-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "9befcaf545aab6d2807467a254520acc009d14be",
+    "size": 4695,
+    "path": "4AA-huge/val/QGPV-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "828da8e3a90cfa2a7e8635d70457defdea4e0d43",
+    "size": 2445929608,
+    "lfs": {
+      "oid": "539d9ab9b26f939bb7b68105245f37694a90fbd4cc2877d2fedc381b6554534d",
+      "size": 2445929608,
+      "pointerSize": 135
+    },
+    "xetHash": "43c6fe7ea06db1bf2d8f9971fd5bc6cbc536ec0382c8b86b56b86f8c2ef1d788",
+    "path": "4AA-huge/val/QKLD-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "6595199c7f12c747ea24c87af0e8187271a0414c",
+    "size": 5991,
+    "path": "4AA-huge/val/QKLD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "1adc29566276fc90950a7f595e4d6d00b9d8a485",
+    "size": 2044618548,
+    "lfs": {
+      "oid": "f4faf0746ecb058457d82a9ed5f0989d76d29c9d7b87119b913adc4c7716c877",
+      "size": 2044618548,
+      "pointerSize": 135
+    },
+    "xetHash": "48702495cd53669e22f2fa6dbc1b274703c1f6f404c136c629ed87d7a5783a2c",
+    "path": "4AA-huge/val/RGGF-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "f970633d7c0007d2b9774d934cf2ef56e32286fa",
+    "size": 5019,
+    "path": "4AA-huge/val/RGGF-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c08f7f42bb7afe1a598daaeb005ffcee525f0505",
+    "size": 2679233340,
+    "lfs": {
+      "oid": "d68b5b27bafef4db0d9f6a50c4406a5485c01d72d9cff79fa9b32e840e10c7b0",
+      "size": 2679233340,
+      "pointerSize": 135
+    },
+    "xetHash": "a41f6b7570db226b75d4fee30c3c38bbac600ca1181d8b2b4a0b3992ecd724d1",
+    "path": "4AA-huge/val/RKGR-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "9a7f27ae08cdf0b0e3575ba343847966105611e0",
+    "size": 6558,
+    "path": "4AA-huge/val/RKGR-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c324be2932bd2cf2ce7aea04a51cec41e1969399",
+    "size": 5262,
+    "path": "4AA-huge/val/RLGS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "5af71f2ca0650c3d4957db8ce974e56562a86131",
+    "size": 5343,
+    "path": "4AA-huge/val/RSSV-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "133fc5ff954228123863efd9ac56e8eb1e03bbec",
+    "size": 2676558807,
+    "lfs": {
+      "oid": "b6bfd2178d26e543c64b74ba6257f924d1a1a6c1390ce44e3ed728b939fb41ab",
+      "size": 2676558807,
+      "pointerSize": 135
+    },
+    "xetHash": "d4a18b0ae9043c3cfeb43ca735a5b98cb91e621d97f7dc193388f78f236f6af3",
+    "path": "4AA-huge/val/RTKQ-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "107950cc42deac5c49c52eb010a8c6e4ed596478",
+    "size": 6558,
+    "path": "4AA-huge/val/RTKQ-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "7bc820eb837ec7a9929881eef6c14f43532c969f",
+    "size": 2641446311,
+    "lfs": {
+      "oid": "f476a2abdbed5718caab5b2f4e1c6d92bc478c48df470df0d3681e3f1d6c2eb5",
+      "size": 2641446311,
+      "pointerSize": 135
+    },
+    "xetHash": "a7766ca6b9a39db3b91b7e68c7dd9f86e250663ae54ba9e6196606e3860679c5",
+    "path": "4AA-huge/val/RVRD-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b72b52255347e31b7816709681427b360557f402",
+    "size": 6477,
+    "path": "4AA-huge/val/RVRD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "5a8b9f9eb811f90bb2f20010a765f5a4d22f0cf4",
+    "size": 1380822045,
+    "lfs": {
+      "oid": "4aff97e0febc47fff3afc7451154a53bea1c3744336cd40d3881e687b46ae2dd",
+      "size": 1380822045,
+      "pointerSize": 135
+    },
+    "xetHash": "e7170da8ed617e4ac9a129218e071c9d26dcd97a1d2352fb78143c0d97af0fb0",
+    "path": "4AA-huge/val/SAGA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b6e339ec8d5451d7c5963efdcc15743a5b2c13c0",
+    "size": 3399,
+    "path": "4AA-huge/val/SAGA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "7044f872eeaa60637f9f8f21f068a47c9ecde028",
+    "size": 1747659193,
+    "lfs": {
+      "oid": "bc7476996d71ac2351861e49cefa81a715082fb5c188c5474a5d727f98231601",
+      "size": 1747659193,
+      "pointerSize": 135
+    },
+    "xetHash": "cb8cc251c20d7dcabf555051aa72f88ff37aa0374e8118b06a27a77540d9820a",
+    "path": "4AA-huge/val/SDVA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "46588f669713155dde33ec4ac480f1daca68cb0d",
+    "size": 4290,
+    "path": "4AA-huge/val/SDVA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "0fd768262f017621fc2c61671b548fa3866eb242",
+    "size": 4938,
+    "path": "4AA-huge/val/SEYA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "355e84cad88b9c1240fe3967bba48f060b440aa4",
+    "size": 1646045273,
+    "lfs": {
+      "oid": "e5916ba7ea934258db8911659a2642835c65d60179131deed4ab1f6960886af4",
+      "size": 1646045273,
+      "pointerSize": 135
+    },
+    "xetHash": "cdb8fcc9f15e06cefb3325bec54203bbffa378b3e798ae2f365383787727e658",
+    "path": "4AA-huge/val/SGTP-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "064f037a0edaddf166605dc4792b9e66fc48a985",
+    "size": 4047,
+    "path": "4AA-huge/val/SGTP-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "f0f1e255e52ad3dbb4ad18c57266b5164305b53c",
+    "size": 5181,
+    "path": "4AA-huge/val/SKQA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "ab02814671b845bdf0da9b5c67a099c04c131623",
+    "size": 2477833623,
+    "lfs": {
+      "oid": "713d622fdc0145b7a31e59c61ea640b1cf9447417d386b2aea03cebe6aaddf03",
+      "size": 2477833623,
+      "pointerSize": 135
+    },
+    "xetHash": "d4a7c6a149ac65ba075e79fb707f545b6cb7c76f60866c285e513042b568f58a",
+    "path": "4AA-huge/val/SLFY-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "a431c6104ae536fa6645d431fa02918e4dab204a",
+    "size": 6072,
+    "path": "4AA-huge/val/SLFY-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "9da0337788fdf08303e59f5b46d5ac393b5dc299",
+    "size": 974254027,
+    "lfs": {
+      "oid": "a43fb202d144a46fa6d7bad73eab2506faf68876f1bcfea01f72f41b5a26fe66",
+      "size": 974254027,
+      "pointerSize": 134
+    },
+    "xetHash": "9923cb9ffa055200c453b00c9333e22e92b4cebbfee146cdf18286ec2a19b80a",
+    "path": "4AA-huge/val/SNLS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "565e4bcfb1afce112e03f2c53cb07656fdda55e9",
+    "size": 4857,
+    "path": "4AA-huge/val/STYA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "287f28492d92b469b6dfd5fefc2847c0169ae342",
+    "size": 1979030888,
+    "lfs": {
+      "oid": "85e44bab368059ad07f1ccde890d02558243ac035ab5d0a3e256b1a4946fc988",
+      "size": 1979030888,
+      "pointerSize": 135
+    },
+    "xetHash": "7767f2287664e33a15a79c7e9beab8f3dd1900619176a75f314749512ded191b",
+    "path": "4AA-huge/val/SVHD-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "6e7613ebb2108e54ef8583548f769344f9ce9d8c",
+    "size": 4857,
+    "path": "4AA-huge/val/SVHD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "fb4ef5e442b035a64da296cffdeda33457825910",
+    "size": 1980447881,
+    "lfs": {
+      "oid": "c1f4943cc7cc53b646f4936e740ab212038a754a38d0cf4f6457986adf7ad3f2",
+      "size": 1980447881,
+      "pointerSize": 135
+    },
+    "xetHash": "147c8fc9dd61e55192f5958fb4a0b6b4e6d0e0670d6975eb9bd0036a07f4fadb",
+    "path": "4AA-huge/val/TAAK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "fa11938aeb16055233c3136d9c3da1f255684dec",
+    "size": 4857,
+    "path": "4AA-huge/val/TAAK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "680801375c12a19a288a1fe59c21db1b82035a4f",
+    "size": 4614,
+    "path": "4AA-huge/val/TCVD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "be0ead77c6a153aea7826a169820ef4745cd6fb7",
+    "size": 5829,
+    "path": "4AA-huge/val/TDYY-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "48f7356d0d5c7e5cf653e8e318870a1cd60ee999",
+    "size": 6396,
+    "path": "4AA-huge/val/TEKR-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "5f048da0b52a5f450cc0cc04d97f254f6e156c24",
+    "size": 1977358638,
+    "lfs": {
+      "oid": "49ea4d5b7e55a1c0e9838a705bc53791016f9795b3de2e4cadd0e2b50d72a173",
+      "size": 1977358638,
+      "pointerSize": 135
+    },
+    "xetHash": "d66e8e9f1a3dc782d1ce3f39383da7285dc3c562479e7c792b6e0da4a798b542",
+    "path": "4AA-huge/val/TGRC-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "b8e44d4b31a480626e42ae80c8b37ec4e5d0bbbf",
+    "size": 4857,
+    "path": "4AA-huge/val/TGRC-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "cbd2c52669dd4cd6faf6be154bc829a6605a7de9",
+    "size": 5019,
+    "path": "4AA-huge/val/TKSS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "b197193f7d1a2616f98ff755cbe78e82787e4eb1",
+    "size": 6153,
+    "path": "4AA-huge/val/TLQK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "97b983f7bd97399f6496fc913ef42f30a930b807",
+    "size": 2079157533,
+    "lfs": {
+      "oid": "e96027467a82bdc113206da967435adf03bef9fa0633ec34b61a483b2a7160e0",
+      "size": 2079157533,
+      "pointerSize": 135
+    },
+    "xetHash": "87a0f0df0645dcb7145fdb79637090fb80968c7e99d45f1eeb1e37ae07ce9e3c",
+    "path": "4AA-huge/val/TSQH-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "4f49599556b8a0f03385e7b7c1dce500b596b6d3",
+    "size": 5100,
+    "path": "4AA-huge/val/TSQH-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "ee9aab422e607d346918bdfb4f1244eb920242c1",
+    "size": 1779384193,
+    "lfs": {
+      "oid": "2329c74aff40a9f8b6ba6c71f583136fdbc3d02685b2cfad72ed822653f5571f",
+      "size": 1779384193,
+      "pointerSize": 135
+    },
+    "xetHash": "fbb30e942dd108a23f635c9e5ae6ea7f5d861bb09f650d9ee3e64a904b0427ac",
+    "path": "4AA-huge/val/TTEG-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "dc17382d42624636d070ed898280f832fcc75e24",
+    "size": 4371,
+    "path": "4AA-huge/val/TTEG-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "5b5e66ea558b3b4ea46abf2a19d3b01142b10a79",
+    "size": 5343,
+    "path": "4AA-huge/val/VDFP-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "47da2b38cf71025e0cf49f2df838f2af7c3bd775",
+    "size": 1980754554,
+    "lfs": {
+      "oid": "4ba093a5abdffab05f5aaa652c434d701cfbadb0d4980b705710f25089fc51d7",
+      "size": 1980754554,
+      "pointerSize": 135
+    },
+    "xetHash": "249e535e150050afee2cfbe19fa24f147c57a18002257a76236c94d05a851013",
+    "path": "4AA-huge/val/VGPL-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "6c7138d4a717cf27b3d96ac629909890515b980e",
+    "size": 4857,
+    "path": "4AA-huge/val/VGPL-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2d9af846f4eb41b5ba985682ea9d9946c04ed57b",
+    "size": 4776,
+    "path": "4AA-huge/val/VMCS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "8478b6bc100082712aa162504c68969a5f29bdda",
+    "size": 5181,
+    "path": "4AA-huge/val/VMED-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "79560340a7c2fddbf010678ccc7b457fb9819fc4",
+    "size": 2112334864,
+    "lfs": {
+      "oid": "dd3c25a8d1265a58851dc839a360e8a7dcbb9a37433e2cb3445ed09eb09de7c5",
+      "size": 2112334864,
+      "pointerSize": 135
+    },
+    "xetHash": "d8363956c610525868f7902fa26330acfe96c367ec9f14bbcab1398f43a2b30a",
+    "path": "4AA-huge/val/VNFA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "fcd0af16ebb87ffac8911f46ca1a786e743f9554",
+    "size": 5181,
+    "path": "4AA-huge/val/VNFA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "064e0a6818450809e8ddeed65224a4f62f7f4c87",
+    "size": 1814202537,
+    "lfs": {
+      "oid": "dce27391248a227cd9abc2a8df0e6dc23fc202e495afaf2eade5e98ead86949d",
+      "size": 1814202537,
+      "pointerSize": 135
+    },
+    "xetHash": "90fde27d5a2866ceb47d6e152805397df870aee6ad16400490b5efed64e84999",
+    "path": "4AA-huge/val/VNSA-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "284d5c2b5a1a4fa552ee25b8be74f8b51d5d2889",
+    "size": 4452,
+    "path": "4AA-huge/val/VNSA-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "4f3464689775db7c2966ea422e661b1ee03221b5",
+    "size": 1847515008,
+    "lfs": {
+      "oid": "1def40d4cdcfece7b2c6401e63cfe0047d28e4e23e6c484061360dd3cffaf6b6",
+      "size": 1847515008,
+      "pointerSize": 135
+    },
+    "xetHash": "2a81b5d94c34c748a74bc0609d66a05d3ba0fb741308a0e755f5d2dd02e206af",
+    "path": "4AA-huge/val/VNSC-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "144266cf5503076866a6faec94b11a6e99b42ecb",
+    "size": 4533,
+    "path": "4AA-huge/val/VNSC-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "ed15f6eb3e47bd89c49735791249ca2f3a91902d",
+    "size": 2413791712,
+    "lfs": {
+      "oid": "4e0888d80ce5a1520881bd7f8f29efe825fd6422a6d89e344d263047a3dbe3bb",
+      "size": 2413791712,
+      "pointerSize": 135
+    },
+    "xetHash": "28da7b76b30588bd037c467cd1aaac0e8c243ef6b1765f92eff48fcb409310e3",
+    "path": "4AA-huge/val/VPIF-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "7f9db6b87abb194e91ad7cace0b669817d4f8fa4",
+    "size": 5910,
+    "path": "4AA-huge/val/VPIF-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2544a033e0e421e1c814de33980415bb5f58fb52",
+    "size": 1881002104,
+    "lfs": {
+      "oid": "60911a23fba3ff13838d4f932cd6855a05497748300832029725cafb0be3e5a0",
+      "size": 1881002104,
+      "pointerSize": 135
+    },
+    "xetHash": "e3993f4251c0b4021cca3c1a472c0d3e932b25711a9a4baf2fa8e9390d1e0473",
+    "path": "4AA-huge/val/VPSD-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "24b2b8a1247f778984c4cc9e56b6d4244543d0c2",
+    "size": 4614,
+    "path": "4AA-huge/val/VPSD-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "2294614c4de9e957ee02f5b4d265e791548715b1",
+    "size": 2213207427,
+    "lfs": {
+      "oid": "332b8a842f512fd86240113db5d24d56aab0792d72c33811f94057ed0bbcf7b1",
+      "size": 2213207427,
+      "pointerSize": 135
+    },
+    "xetHash": "d0c16cc13e5cf4616e08e7bfa43339c3ce46e173326c8cf7a0fb965cf3ebb0d2",
+    "path": "4AA-huge/val/VQIS-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "4a3a22cde80d92ed24042b349ec4fad9fc369832",
+    "size": 5424,
+    "path": "4AA-huge/val/VQIS-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "3c52de9692ba961b00cb29408a36e92426b02442",
+    "size": 2212730657,
+    "lfs": {
+      "oid": "70e29af324eed2451c9cc297be43738093832c74ff7988233f87f42a93feccd0",
+      "size": 2212730657,
+      "pointerSize": 135
+    },
+    "xetHash": "70b38830c5771a9bdb9ce54c5e279d61a728d6a485b113fd324f2a8d9aaae437",
+    "path": "4AA-huge/val/VSNK-traj-arrays.npz"
+  },
+  {
+    "type": "file",
+    "oid": "a892751ec7244a6433c2c31a58799386093263f6",
+    "size": 5424,
+    "path": "4AA-huge/val/VSNK-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "c21b1167a305b297b5e7416871969889e7acad7a",
+    "size": 5505,
+    "path": "4AA-huge/val/WDTT-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "134015d6456a621600c3e775e915db1f154ae5d2",
+    "size": 5505,
+    "path": "4AA-huge/val/WGLN-traj-state0.pdb"
+  },
+  {
+    "type": "file",
+    "oid": "5147d0468a6b2a008a85f8348a87e68864b966d9",
+    "size": 5505,
+    "path": "4AA-huge/val/YFGV-traj-state0.pdb"
+  }
+]
