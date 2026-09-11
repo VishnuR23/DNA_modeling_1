@@ -66,6 +66,17 @@ def test_schedule_and_sample(config: DictConfig) -> None:
         model.sample(c, torch.tensor([1, 2]), 1001)
 
 
+def test_denoiser_returns_noise_not_noisy_state(config: DictConfig) -> None:
+    """Denoiser output is a centered epsilon prediction, not x plus epsilon."""
+    seed_cpu(22, 1)
+    model = make_model(config)
+    x = center(torch.randn(2, 4, 3))
+    out = model.denoiser(x, x, torch.tensor([1, 2]), torch.tensor([10, 20]))
+    assert out.shape == x.shape
+    torch.testing.assert_close(out.mean(1), torch.zeros(2, 3), atol=1e-5, rtol=0)
+    assert not torch.allclose(out, x)
+
+
 def test_histogram_and_disconnected_msm() -> None:
     """JSD conventions and disconnected kinetics cannot silently report success."""
     assert jsd(np.array([1, 0]), np.array([0, 1])) == pytest.approx(np.log(2))

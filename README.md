@@ -8,6 +8,8 @@ The initial 2,000-update alanine run took 44.1 seconds on this Mac and produced 
 
 The corrected-readout model also failed its 2,000-update pilot: JSD **0.624, 0.622, 0.617**, timescale ratios **0.049, 0.552, 4.373**, CK **0.693 nats**. A 20,000-update legacy-model follow-up took 479.4 seconds and remained poor (JSD **0.612–0.633**). All three outcomes are preserved; the readout fix alone does not solve the reproduction.
 
+The diffusion interface was then corrected so the denoiser returns epsilon directly. A fresh 500-update sanity run still failed (JSD **0.631–0.648 nats**, CK **0.693 nats**), so this consistency fix is necessary but insufficient. Its short run is recorded in the status report; no longer fit has been claimed.
+
 The extension has not started: Phase 1 gates block transferable training and hallucination detection. No detector AUROC or TITO reproduction result is claimed. For context, TITO reports peptide TICA JSD mean/median 0.042/0.036 and top-ten timescale discrepancy mean/median 1.204/0.434; these concern a different dataset, projection and model and cannot be compared directly to the alanine numbers above.
 
 ![Initial CPU pilot: model error exceeds the matched-count reference control](docs/figures/pilot_2000_audit.png)

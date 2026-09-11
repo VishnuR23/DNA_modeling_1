@@ -49,4 +49,7 @@ class Denoiser(nn.Module):
         for block in self.score:
             s, v = block(noisy, s, v)
         output = self.readout(v.transpose(-1, -2)).squeeze(-1) * self.gate(s)
-        return center(noisy + output)
+        # The diffusion objective supervises epsilon directly.  Adding the noisy
+        # input here would turn the output into x-hat while loss() compares it to
+        # epsilon, making training and DDIM sampling inconsistent.
+        return center(output)

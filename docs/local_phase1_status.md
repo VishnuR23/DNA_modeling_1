@@ -40,6 +40,10 @@ The thermodynamic basin structure is wrong in the first pilot, two kinetic ratio
 
 No directly comparable scalar alanine JSD is reported by the predecessor; the project's thresholds must not be presented as paper numbers. TITO's peptide metrics are not interchangeable with these alanine diagnostics. No Phase2–4 implementation or extension result exists.
 
+## Diffusion-output consistency diagnostic
+
+During continued review, the denoiser was found to return `noisy + predicted_noise` even though the loss compares its result directly with Gaussian epsilon. The implementation now returns the centered epsilon prediction, and a regression test covers this contract. A fresh 500-update corrected-readout run (`runs/pilot/20260910_204755_*/`, exact timestamp in the run directory) took13.07s for training and81.69s for evaluation; its JSDs were **0.631,0.648,0.644nats**, timescale ratios **0.063,0.449,4.805**, and CK JSD **0.693nats**. This sanity run also fails. The previous pilot numbers remain valid for their committed code/configuration; the corrected implementation requires a fresh longer fit before any quantitative comparison.
+
 The next scientifically justified experiment uses the corrected conditioning readout, then compares sampling solvers and increases generated samples before any acceptance claim. A failed pilot is retained as evidence rather than discarded.
 
 ## Completed follow-ups
