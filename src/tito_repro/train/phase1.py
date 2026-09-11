@@ -32,6 +32,9 @@ def make_model(cfg: DictConfig) -> Diffusion:
     kwargs = OmegaConf.to_container(cfg.model, resolve=True)
     kwargs.pop("beta_start")
     kwargs.pop("beta_end")
+    # The first CPU pilots omitted the source conditioning readout. Preserve their
+    # checkpoint interpretation; new configs explicitly enable the corrected stage.
+    kwargs.setdefault("condition_readout", False)
     return Diffusion(Denoiser(**kwargs), cfg.model.diffusion_steps, cfg.model.beta_start, cfg.model.beta_end)
 
 

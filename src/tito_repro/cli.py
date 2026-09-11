@@ -40,6 +40,9 @@ def main(cfg: DictConfig) -> None:
         elif cfg.action == "download":
             from tito_repro.data.download import download_alanine
             result = download_alanine(cfg, output)
+        elif cfg.action == "audit":
+            from tito_repro.eval.phase1_audit import audit
+            result = audit(cfg, output)
         else:
             raise ValueError(f"Unknown action: {cfg.action}")
         logging.info("Result: %s", result)

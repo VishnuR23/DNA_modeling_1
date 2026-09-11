@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+  - override /data: alanine
+action: audit
+audit:
+  evaluation_run: null
+  bootstrap_replicates: 100
+  confidence: 0.95
+  jsd_threshold_nats: 0.10
+  ck_threshold_nats: 0.05
+  timescale_ratio_bounds: [0.5, 2.0]
+  minimum_basin_samples: 10
+  # Broad project diagnostic regions in radians, not fitted paper basin boundaries.
+  basins:
+    alpha_r: [-3.141592653589793, 0.0, -3.141592653589793, 0.0]
+    beta: [-3.141592653589793, 0.0, 0.0, 3.141592653589793]
+    alpha_l: [0.0, 3.141592653589793, -3.141592653589793, 3.141592653589793]

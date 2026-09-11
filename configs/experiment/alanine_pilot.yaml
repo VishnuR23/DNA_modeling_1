@@ -3,3 +3,5 @@
 defaults:
   - override /data: alanine
 action: pilot
+model:
+  condition_readout: false

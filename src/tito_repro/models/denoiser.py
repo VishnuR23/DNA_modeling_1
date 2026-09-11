@@ -10,7 +10,8 @@ class Denoiser(nn.Module):
     """Lag-conditioned SE(3) denoiser for tensors [batch,atoms,3]; CPU only."""
 
     def __init__(self, atoms: int, width: int, condition_layers: int, score_layers: int,
-                 max_lag: int, diffusion_steps: int, radial_scale: float) -> None:
+                 max_lag: int, diffusion_steps: int, radial_scale: float,
+                 condition_readout: bool = True) -> None:
         super().__init__()
         if width < 2 or width % 2 or min(atoms, condition_layers, score_layers) < 1:
             raise ValueError("Positive sizes and even feature width required")
@@ -18,6 +19,10 @@ class Denoiser(nn.Module):
         self.atom_embedding = nn.Embedding(atoms, width)
         self.condition_mix, self.time_mix = mlp(2 * width, width, width), mlp(2 * width, width, width)
         self.condition = nn.ModuleList([ChiroBlock(width, radial_scale) for _ in range(condition_layers)])
+        self.condition_readout = condition_readout
+        if condition_readout:
+            self.condition_scalar = mlp(width, width, 2 * width)
+            self.condition_vector = nn.Linear(width, width, bias=False)
         self.score = nn.ModuleList([ChiroBlock(width, radial_scale) for _ in range(score_layers)])
         self.readout = nn.Linear(width, 1, bias=False)
         self.gate = mlp(width, width, 1)
@@ -35,6 +40,9 @@ class Denoiser(nn.Module):
         v = torch.zeros(b, a, self.width, 3, dtype=noisy.dtype)
         for block in self.condition:
             s, v = block(condition, s, v)
+        if self.condition_readout:
+            s, gate = self.condition_scalar(s).chunk(2, dim=-1)
+            v = self.condition_vector(v.transpose(-1, -2)).transpose(-1, -2) * gate.unsqueeze(-1)
         times = fourier(noise_step.to(noisy.dtype), self.width, self.diffusion_steps)[:, None].expand(-1, a, -1)
         s = self.time_mix(torch.cat((s, times), dim=-1))
         for block in self.score:

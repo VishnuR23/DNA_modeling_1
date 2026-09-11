@@ -1,0 +1,12 @@
+# @package _global_
+# Follow-up to failed 2,000-update pilot. Measured estimate: 7.4 CPU minutes training.
+defaults:
+  - override /data: alanine
+action: pilot
+model:
+  condition_readout: false
+train:
+  steps: 20000
+  max_seconds: 600
+  checkpoint_every: 1000
+  log_every: 1000

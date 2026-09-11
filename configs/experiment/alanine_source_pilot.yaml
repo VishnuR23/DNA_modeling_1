@@ -1,0 +1,5 @@
+# @package _global_
+# Restores the conditioning-network gated scalar/vector readout found in upstream.
+defaults:
+  - override /data: alanine
+action: pilot

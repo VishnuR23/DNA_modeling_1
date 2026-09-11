@@ -1,5 +1,6 @@
 """Local experiment records and deterministic CPU execution."""
 import hashlib
+import importlib.metadata
 import json
 import os
 import platform
@@ -50,9 +51,16 @@ def record_environment(cfg: DictConfig, output: Path) -> None:
     OmegaConf.save(cfg, output / "config.yaml", resolve=True)
     revision = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True)
     dirty = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
+    root = Path(__file__).resolve().parents[3]
+    sources = {str(p.relative_to(root)): digest(p)
+               for directory in ("src", "configs") for p in sorted((root / directory).rglob("*"))
+               if p.is_file() and p.suffix in (".py", ".yaml")}
     write_json(output / "environment.json", {
         "device": "cpu", "python": platform.python_version(), "machine": platform.machine(),
         "system": platform.platform(), "torch": torch.__version__, "numpy": np.__version__,
         "threads": cfg.runtime.threads, "seed": cfg.seed,
         "revision": revision.stdout.strip(), "dirty": bool(dirty.stdout.strip()),
+        "source_sha256": sources,
+        "packages": {name: importlib.metadata.version(name) for name in
+                     ("torch", "openmm", "mdtraj", "deeptime", "numpy", "scipy", "matplotlib", "hydra-core", "pytest")},
     })

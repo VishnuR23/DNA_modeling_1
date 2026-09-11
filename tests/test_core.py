@@ -6,6 +6,7 @@ import numpy as np
 import pytest
 import torch
 from hydra import compose, initialize_config_dir
+from omegaconf import DictConfig
 
 from tito_repro.data.pairs import LagPairs, center, synthetic_trajectories
 from tito_repro.eval.metrics import jsd, msm_timescale
@@ -14,13 +15,13 @@ from tito_repro.utils.runtime import seed_cpu
 
 
 @pytest.fixture
-def config():
+def config() -> DictConfig:
     """Compose synthetic configuration with dimensionless model and nm data."""
     with initialize_config_dir(version_base=None, config_dir=str(Path(__file__).parents[1] / "configs")):
         return compose(config_name="config", overrides=["experiment=smoke"])
 
 
-def test_equivariance(config):
+def test_equivariance(config: DictConfig) -> None:
     """Both condition and noisy [B,A,3] rotate together; translations are removed."""
     seed_cpu(4, 1)
     net = make_model(config).double().denoiser
@@ -34,7 +35,7 @@ def test_equivariance(config):
     torch.testing.assert_close(actual.mean(1), torch.zeros(2, 3, dtype=torch.float64), atol=1e-12, rtol=0)
 
 
-def test_pair_boundaries_and_rng():
+def test_pair_boundaries_and_rng() -> None:
     """Replica identity remains intact even at its final admissible starts."""
     trajectories = [np.full((20, 3, 3), value, dtype=np.float32) for value in (10, 50)]
     sampler = LagPairs(trajectories, 8, 4)
@@ -50,7 +51,7 @@ def test_pair_boundaries_and_rng():
         LagPairs(trajectories, 20, 1)
 
 
-def test_schedule_and_sample(config):
+def test_schedule_and_sample(config: DictConfig) -> None:
     """Cumulative alpha includes every beta; centered deterministic DDIM stays finite."""
     seed_cpu(2, 1)
     model = make_model(config)
@@ -65,7 +66,7 @@ def test_schedule_and_sample(config):
         model.sample(c, torch.tensor([1, 2]), 1001)
 
 
-def test_histogram_and_disconnected_msm():
+def test_histogram_and_disconnected_msm() -> None:
     """JSD conventions and disconnected kinetics cannot silently report success."""
     assert jsd(np.array([1, 0]), np.array([0, 1])) == pytest.approx(np.log(2))
     assert jsd(np.ones(4), np.ones(4)) == pytest.approx(0)
@@ -75,7 +76,7 @@ def test_histogram_and_disconnected_msm():
     assert result["status"] == "inconclusive" and result["timescale_ps"] is None
 
 
-def test_cpu_smoke_and_exact_resume(config, tmp_path):
+def test_cpu_smoke_and_exact_resume(config: DictConfig, tmp_path: Path) -> None:
     """End-to-end train/sample plus resume preserving optimizer, EMA and RNG in <120 s."""
     started = time.perf_counter()
     seed_cpu(config.seed, 1)
@@ -93,7 +94,7 @@ def test_cpu_smoke_and_exact_resume(config, tmp_path):
     original = LagPairs.sample
     calls = 0
 
-    def interrupted(self, batch):
+    def interrupted(self: LagPairs, batch: int) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
         nonlocal calls
         calls += 1
         if calls > 10:
@@ -120,7 +121,16 @@ def test_cpu_smoke_and_exact_resume(config, tmp_path):
     assert time.perf_counter() - started < 120
 
 
-def test_gpu_is_rejected():
+def test_gpu_is_rejected() -> None:
     """No physical experiment may accidentally use MPS/CUDA."""
     with pytest.raises(ValueError, match="CPU"):
         seed_cpu(1, 2, "mps")
+
+
+def test_basin_screen_boundaries() -> None:
+    """A zero-angle boundary belongs to only one configured half-open radian region."""
+    from tito_repro.eval.phase1_audit import basin_counts
+    counts = basin_counts(np.array([[-1., -1.], [-1., 0.], [0., 0.]]),
+                          {"a": [-np.pi, 0, -np.pi, 0], "b": [-np.pi, 0, 0, np.pi],
+                           "c": [0, np.pi, -np.pi, np.pi]})
+    assert counts == {"a": 1, "b": 1, "c": 1}
