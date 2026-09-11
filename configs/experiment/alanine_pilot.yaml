@@ -5,3 +5,5 @@ defaults:
 action: pilot
 model:
   condition_readout: false
+evaluation:
+  rng_mode: checkpoint

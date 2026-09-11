@@ -5,6 +5,8 @@ defaults:
 action: pilot
 model:
   condition_readout: false
+evaluation:
+  rng_mode: checkpoint
 train:
   steps: 20000
   max_seconds: 600

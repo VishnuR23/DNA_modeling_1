@@ -3,3 +3,5 @@
 defaults:
   - override /data: alanine
 action: pilot
+evaluation:
+  rng_mode: checkpoint

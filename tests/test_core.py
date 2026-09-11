@@ -118,6 +118,11 @@ def test_cpu_smoke_and_exact_resume(config: DictConfig, tmp_path: Path) -> None:
     result = evaluate(config, evaluation)
     assert result["finite_samples"]
     assert result["scientific_acceptance"] == "not_applicable_synthetic"
+    repeated = tmp_path / "eval_repeated"
+    repeated.mkdir()
+    torch.randn(17)  # Unrelated work must not change configured evaluation samples.
+    evaluate(config, repeated)
+    np.testing.assert_array_equal(np.load(evaluation / "samples_nm.npy"), np.load(repeated / "samples_nm.npy"))
     assert time.perf_counter() - started < 120
 
 

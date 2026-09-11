@@ -46,7 +46,7 @@ def write_json(path: str | Path, values: dict[str, Any]) -> None:
 
 
 def record_environment(cfg: DictConfig, output: Path) -> None:
-    """Save resolved config and local execution provenance; memory reported in bytes."""
+    """Save resolved config, source hashes and package versions; no physical tensors."""
     output.mkdir(parents=True, exist_ok=True)
     OmegaConf.save(cfg, output / "config.yaml", resolve=True)
     revision = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True)

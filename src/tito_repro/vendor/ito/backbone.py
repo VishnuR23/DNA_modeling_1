@@ -25,6 +25,7 @@ class ChiroBlock(nn.Module):
     """Complete-graph message/update block: scalars [B,A,F], vectors [B,A,F,3]."""
 
     def __init__(self, width: int, radial_scale: float) -> None:
+        """Set feature width F and dimensionless radial Fourier scale for [B,A,F,3] vectors."""
         super().__init__()
         self.width, self.radial_scale = width, radial_scale
         self.phi, self.radial = mlp(width, width, 4 * width), mlp(width, width, 4 * width)

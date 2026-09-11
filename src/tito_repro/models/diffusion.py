@@ -10,6 +10,7 @@ class Diffusion(nn.Module):
     """Conditional DDPM on centered [B,A,3] dimensionless coordinates."""
 
     def __init__(self, denoiser: Denoiser, steps: int, beta_start: float, beta_end: float) -> None:
+        """Set dimensionless diffusion levels and sigmoid-logit bounds for [B,A,3] coordinates."""
         super().__init__()
         self.denoiser, self.steps = denoiser, steps
         # ITO Appendix E.3: sigmoid schedule on [-8,-4], 1000 levels in scientific configs.

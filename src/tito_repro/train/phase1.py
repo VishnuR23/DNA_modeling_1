@@ -72,6 +72,9 @@ def train(cfg: DictConfig, output: Path) -> dict[str, Any]:
         for key in ("model", "data", "train"):
             previous = state["config"][key].copy()
             current = OmegaConf.to_container(cfg[key], resolve=True)
+            if key == "model":
+                previous.setdefault("condition_readout", False)
+                current.setdefault("condition_readout", False)
             if key == "train":
                 for allowed in ("resume", "max_seconds", "checkpoint_every", "log_every"):
                     previous.pop(allowed, None)
@@ -145,6 +148,13 @@ def train(cfg: DictConfig, output: Path) -> dict[str, Any]:
 def evaluate(cfg: DictConfig, output: Path) -> dict[str, Any]:
     """Evaluate checkpoint rollouts; positions nm, torsions rad, lags/timescales ps."""
     state = torch.load(cfg.evaluation.checkpoint, map_location="cpu", weights_only=False)
+    rng_mode = cfg.evaluation.get("rng_mode", "seed")
+    if rng_mode == "seed":
+        torch.manual_seed(cfg.seed)
+    elif rng_mode == "checkpoint":
+        torch.set_rng_state(state["torch_rng"])
+    else:
+        raise ValueError("evaluation.rng_mode must be seed or checkpoint")
     model_cfg = OmegaConf.create(state["config"])
     model = make_model(model_cfg)
     model.load_state_dict(state["ema"])
@@ -158,6 +168,7 @@ def evaluate(cfg: DictConfig, output: Path) -> dict[str, Any]:
     initial = center(torch.tensor(reference[rng.integers(len(reference), size=cfg.evaluation.chains)])) / scale
     started = time.perf_counter()
     results: dict[str, Any] = {"status": "diagnostic", "device": "cpu", "seed": cfg.seed,
+                              "sampling_rng_mode": rng_mode,
                               "scientific_acceptance": "incomplete", "lags": [],
                               "checkpoint_sha256": digest(cfg.evaluation.checkpoint)}
     if model_cfg.data.kind == "synthetic":

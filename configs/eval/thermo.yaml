@@ -1,4 +1,5 @@
 checkpoint: null
+rng_mode: seed
 chains: 4
 transitions: 64
 lags: [10, 100, 1000]

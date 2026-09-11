@@ -27,6 +27,7 @@ class LagPairs:
 
     def __init__(self, trajectories: list[np.ndarray], max_lag: int, seed: int,
                  law: str = "disexp", fixed_lag: int | None = None) -> None:
+        """Index [T,A,3] nm replicas; max_lag/fixed_lag are integer stored-frame counts."""
         if max_lag < 1 or law not in {"disexp", "uniform", "fixed"}:
             raise ValueError("Invalid max_lag or lag law")
         if not trajectories or any(len(t) <= max_lag for t in trajectories):

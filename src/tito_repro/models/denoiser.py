@@ -12,6 +12,7 @@ class Denoiser(nn.Module):
     def __init__(self, atoms: int, width: int, condition_layers: int, score_layers: int,
                  max_lag: int, diffusion_steps: int, radial_scale: float,
                  condition_readout: bool = True) -> None:
+        """Configure [B,atoms,3] noise prediction; lag uses frames and radial_scale is dimensionless."""
         super().__init__()
         if width < 2 or width % 2 or min(atoms, condition_layers, score_layers) < 1:
             raise ValueError("Positive sizes and even feature width required")
