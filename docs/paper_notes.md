@@ -87,7 +87,7 @@ IC downloads `alanine-dipeptide-{0,1,2}-250ns-nowater.xtc` plus `alanine-dipepti
 | EMA | evaluation curves described as EMA; weight-decay setting not in paper | weight decay .99; warm-up min(.99,(1+u)/(10+u)) |
 | Sampling | 50 ODE steps for all reported samples | 50 default; CLI 10 chains ×100 transitions, physical lag 100 |
 | Train/val/test | all available trajectories trained; no held-out split | all three trajectories loaded |
-| Alanine Fig. 3 | 15,000 terminal samples; nested counts 4,64,512 | no equivalent full figure driver |
+| Alanine Fig. 3 | total lags 4,64,512 ps; 15,000 terminal samples; nested counts 4,64,512 at 1 ps | no equivalent full figure driver |
 | Alanine throughput | 48 generated transitions/s, TITAN V, memory filled | not a local benchmark |
 
 I Figure 3 contains conditional distributions, not merely a pooled equilibrium free-energy plot. Need a supplementary project equilibrium histogram plus the direct/nested conditional comparison to preserve that distinction. Fixed versus stochastic lag was statistically indistinguishable for alanine in I Fig. 6; improvement was observed for Müller–Brown. Do not claim alanine multi-lag superiority as an expected mandatory result.
