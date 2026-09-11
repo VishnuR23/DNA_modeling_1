@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "platform": "Reference",
+  "device": "cpu",
+  "seed": 20260910,
+  "production_ps": 100.0,
+  "integrated_ps": 110.0,
+  "wall_seconds": 42.28016700001899,
+  "ns_per_cpu_hour": 9.366093563438907,
+  "topology_sha256": "20d4ff8f96df706d42f2efa334ab7facf256d16d5f8ba80175b407c3885bf9f5",
+  "system_sha256": "fc47993c128feb722cf625a2f51d30f2af31a7b5371e1b0aa5aa425b8fc63f25",
+  "scientific_acceptance": "not_evaluated_short_reference",
+  "openmm_version": "8.6"
+}

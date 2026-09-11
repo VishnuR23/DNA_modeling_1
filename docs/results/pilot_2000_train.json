@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "steps": 2000,
+  "steps_this_run": 2000,
+  "wall_seconds": 44.10113437497057,
+  "seconds_per_step": 0.022050567187485284,
+  "seed": 20260910,
+  "device": "cpu",
+  "parameters": 19249,
+  "final_loss": 0.316892147064209,
+  "scientific_acceptance": "not_evaluated",
+  "data": {
+    "kind": "mdshare_explicit",
+    "sha256": "b66a26416720df5ee0bd68771684847a4d0043c84ca0ae58aa756e4a48c454a9",
+    "path": "/Users/vishnu/Bio_one/tito-repro/data/alanine/processed.npz"
+  }
+}

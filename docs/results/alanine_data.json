@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://ftp.mi.fu-berlin.de/pub/cmb-data/alanine-dipeptide-nowater.pdb",
+      "sha256": "20d4ff8f96df706d42f2efa334ab7facf256d16d5f8ba80175b407c3885bf9f5",
+      "bytes": 1813
+    },
+    {
+      "url": "https://ftp.mi.fu-berlin.de/pub/cmb-data/alanine-dipeptide-0-250ns-nowater.xtc",
+      "sha256": "ab8c91c8f572fddf4de3b9b78a6dfe56285f5f7dda30d2b124e261fa612e2b29",
+      "bytes": 42909936
+    },
+    {
+      "url": "https://ftp.mi.fu-berlin.de/pub/cmb-data/alanine-dipeptide-1-250ns-nowater.xtc",
+      "sha256": "6a80b5f301ee8c301ef7a7e19559411ca623a9af9a416d8fb70e0ff8f6b94134",
+      "bytes": 42911308
+    },
+    {
+      "url": "https://ftp.mi.fu-berlin.de/pub/cmb-data/alanine-dipeptide-2-250ns-nowater.xtc",
+      "sha256": "635813174dc3bdebe2ee65b99a91830ff54d37c24c0235054476f522244bceb5",
+      "bytes": 42907500
+    }
+  ],
+  "positions_shape": [
+    3,
+    250000,
+    22,
+    3
+  ],
+  "processed_sha256": "b66a26416720df5ee0bd68771684847a4d0043c84ca0ae58aa756e4a48c454a9",
+  "spacing_ps": 1.0,
+  "timestamp_policy": "continuous frame index using documented MDShare spacing",
+  "verified_timestamp_period_frames": 1000,
+  "scientific_acceptance": "not_evaluated",
+  "device": "cpu"
+}

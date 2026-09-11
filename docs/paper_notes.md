@@ -1,6 +1,6 @@
 # Source review and implementation specification
 
-Prepared 2026-09-10. This is a pre-implementation specification, not an experimental report. “Paper” values, “released code” values, and “proposed” choices are deliberately distinguished. No simulation, model training, or physical evaluation has run.
+Prepared 2026-09-10 as a pre-implementation specification. “Paper” values, “released code” values, and “proposed” choices are deliberately distinguished. CPU implementation and experiments subsequently began at the user's instruction; current results are in [local_phase1_status.md](local_phase1_status.md), and the active resource plan is [scaling_plan.md](scaling_plan.md). Historical GPU proposals below describe source review, not current execution requirements.
 
 ## Sources and reading scope
 

@@ -1,0 +1,117 @@
+{
+  "status": "completed",
+  "steps": 2000,
+  "steps_this_run": 2000,
+  "wall_seconds": 60.319545458070934,
+  "seconds_per_step": 0.030159772729035465,
+  "seed": 20260910,
+  "device": "cpu",
+  "parameters": 20593,
+  "final_loss": 0.549525260925293,
+  "scientific_acceptance": "not_evaluated",
+  "data": {
+    "kind": "mdshare_explicit",
+    "sha256": "b66a26416720df5ee0bd68771684847a4d0043c84ca0ae58aa756e4a48c454a9",
+    "path": "/Users/vishnu/Bio_one/tito-repro/data/alanine/processed.npz"
+  },
+  "evaluation": {
+    "status": "diagnostic",
+    "device": "cpu",
+    "seed": 20260910,
+    "scientific_acceptance": "incomplete",
+    "lags": [
+      {
+        "lag_ps": 10.0,
+        "jsd_nats": 0.6235274903047175,
+        "jsd_bits": 0.8995600181205572,
+        "reference_msm": {
+          "lag_ps": 10.0,
+          "transitions": 749970,
+          "active_states": 103,
+          "timescale_ps": 1421.9399822431865,
+          "status": "estimated",
+          "estimator": "symmetrized_counts",
+          "second_eigenvalue": 0.9929920255554036
+        },
+        "model_msm": {
+          "lag_ps": 10.0,
+          "transitions": 256,
+          "active_states": 109,
+          "timescale_ps": 69.67281641315678,
+          "status": "estimated",
+          "estimator": "symmetrized_counts",
+          "second_eigenvalue": 0.8662965434716662
+        },
+        "timescale_ratio": 0.048998422776778655,
+        "reference_vamp2": 2.4545409277644783,
+        "model_vamp2": 1.3712616620998381
+      },
+      {
+        "lag_ps": 100.0,
+        "jsd_nats": 0.6223935663946043,
+        "jsd_bits": 0.8979241117186915,
+        "reference_msm": {
+          "lag_ps": 100.0,
+          "transitions": 749700,
+          "active_states": 103,
+          "timescale_ps": 1411.1037398619667,
+          "status": "estimated",
+          "estimator": "symmetrized_counts",
+          "second_eigenvalue": 0.9315862394872739
+        },
+        "model_msm": {
+          "lag_ps": 100.0,
+          "transitions": 256,
+          "active_states": 102,
+          "timescale_ps": 779.2463726446331,
+          "status": "estimated",
+          "estimator": "symmetrized_counts",
+          "second_eigenvalue": 0.8795638508756082
+        },
+        "timescale_ratio": 0.5522247235492824,
+        "reference_vamp2": 1.6964447011334742,
+        "model_vamp2": 1.5276091806666297
+      },
+      {
+        "lag_ps": 1000.0,
+        "jsd_nats": 0.6173081925871953,
+        "jsd_bits": 0.8905874681456758,
+        "reference_msm": {
+          "lag_ps": 1000.0,
+          "transitions": 747000,
+          "active_states": 103,
+          "timescale_ps": 1325.7752037611092,
+          "status": "estimated",
+          "estimator": "symmetrized_counts",
+          "second_eigenvalue": 0.47035117378046964
+        },
+        "model_msm": {
+          "lag_ps": 1000.0,
+          "transitions": 256,
+          "active_states": 121,
+          "timescale_ps": 5797.671697360822,
+          "status": "estimated",
+          "estimator": "symmetrized_counts",
+          "second_eigenvalue": 0.8415725674635521
+        },
+        "timescale_ratio": 4.373042791050346,
+        "reference_vamp2": 1.1635566620145887,
+        "model_vamp2": 1.1580954486729795
+      }
+    ],
+    "checkpoint_sha256": "49fd0220fdadb66073c0633cf879487f91244efea2d0353258dce93361e41919",
+    "ck": {
+      "jsd_nats": 0.6931471805599454,
+      "branches": 64,
+      "total_lag_ps": 500.0,
+      "initial_conditions": 1
+    },
+    "acceptance_missing": [
+      "three reference basin recovery checks",
+      "bootstrap confidence intervals",
+      "CK per initial basin and finite-sample control",
+      "independent reference convergence"
+    ],
+    "wall_seconds": 93.67598725005519
+  }
+}

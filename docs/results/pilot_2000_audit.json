@@ -1,0 +1,101 @@
+{
+  "device": "cpu",
+  "seed": 20260910,
+  "status": "diagnostic",
+  "source_run": "runs/evaluate/20260910_203226_407589",
+  "source_metrics_sha256": "5ae1bba97032bc26d087345c6f38d5a84a4829768db3ff87e4335a351908e017",
+  "scientific_acceptance": "not_passed",
+  "reference_basin_counts": {
+    "alpha_r": 175651,
+    "beta": 551862,
+    "alpha_l": 22487
+  },
+  "bootstrap_method": "whole generated chains; reference histogram held fixed",
+  "control_method": "IID reference draws of matching frame count; not temporal uncertainty",
+  "basin_definition": "broad project regions, not fitted paper boundaries",
+  "lags": [
+    {
+      "lag_ps": 10.0,
+      "jsd_nats": 0.5861896762682773,
+      "chain_bootstrap_interval_nats": [
+        0.5861896762682773,
+        0.6461976997181216
+      ],
+      "matched_count_reference_jsd_mean_nats": 0.2931873163052793,
+      "matched_count_reference_jsd_interval_nats": [
+        0.2771382371344342,
+        0.31575428932990757
+      ],
+      "basin_counts": {
+        "alpha_r": 75,
+        "beta": 72,
+        "alpha_l": 109
+      },
+      "generated_frames": 256,
+      "basin_count_screen_pass": true,
+      "thermo_point_threshold_pass": false,
+      "timescale_ratio": 0.08816955269917338,
+      "kinetic_point_threshold_pass": false
+    },
+    {
+      "lag_ps": 100.0,
+      "jsd_nats": 0.6390027384098745,
+      "chain_bootstrap_interval_nats": [
+        0.6390027384098745,
+        0.6684756467527891
+      ],
+      "matched_count_reference_jsd_mean_nats": 0.2948197849583236,
+      "matched_count_reference_jsd_interval_nats": [
+        0.276112457701457,
+        0.3155326195769076
+      ],
+      "basin_counts": {
+        "alpha_r": 66,
+        "beta": 59,
+        "alpha_l": 131
+      },
+      "generated_frames": 256,
+      "basin_count_screen_pass": true,
+      "thermo_point_threshold_pass": false,
+      "timescale_ratio": 0.8356766884142083,
+      "kinetic_point_threshold_pass": true
+    },
+    {
+      "lag_ps": 1000.0,
+      "jsd_nats": 0.6152772753302372,
+      "chain_bootstrap_interval_nats": [
+        0.610078717696713,
+        0.6702124420829952
+      ],
+      "matched_count_reference_jsd_mean_nats": 0.29313734025594357,
+      "matched_count_reference_jsd_interval_nats": [
+        0.27050119669559236,
+        0.3143888180007639
+      ],
+      "basin_counts": {
+        "alpha_r": 45,
+        "beta": 85,
+        "alpha_l": 126
+      },
+      "generated_frames": 256,
+      "basin_count_screen_pass": true,
+      "thermo_point_threshold_pass": false,
+      "timescale_ratio": 6.517755347302303,
+      "kinetic_point_threshold_pass": false
+    }
+  ],
+  "ck": {
+    "jsd_nats": 0.6823167558636962,
+    "branches": 64,
+    "total_lag_ps": 500.0,
+    "initial_conditions": 1,
+    "point_threshold_pass": false,
+    "acceptance": "incomplete: one initial condition and sparse branches"
+  },
+  "acceptance_missing": [
+    "three reference basin recovery checks",
+    "bootstrap confidence intervals",
+    "CK per initial basin and finite-sample control",
+    "independent reference convergence"
+  ]
+}
