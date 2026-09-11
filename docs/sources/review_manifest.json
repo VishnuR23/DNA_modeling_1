@@ -1,0 +1,123 @@
+{
+  "review_date": "2026-09-10",
+  "papers": [
+    {
+      "name": "ito",
+      "arxiv": "2305.18046v2",
+      "pdf_url": "https://arxiv.org/pdf/2305.18046v2",
+      "pdf_sha256": "7b103fcf5df73ce99d0563b1d4851335112145c7953df6439da4e606086782c2",
+      "read_scope": "full text including appendices"
+    },
+    {
+      "name": "tito",
+      "arxiv": "2510.07589v1",
+      "pdf_url": "https://arxiv.org/pdf/2510.07589v1",
+      "pdf_sha256": "9629fb1d8375886dbeb3eae9290a4772ecb71c5ad591024b9459c76ec271ef7f",
+      "read_scope": "full text including appendices"
+    },
+    {
+      "name": "plm",
+      "arxiv": "2602.11216",
+      "pdf_url": "https://arxiv.org/pdf/2602.11216",
+      "pdf_sha256": "1bb6ceb09b57bed98e015376ac2a1c271b45bef1ec50e16e9c99cc7449fd9ff7",
+      "read_scope": "skim: method, main results, architecture and training appendices"
+    }
+  ],
+  "repositories": [
+    {
+      "repository": "https://github.com/olsson-group/ito",
+      "commit": "8310311250e0e3893bc10bbd80ab67d2eab4ae6a",
+      "files": [
+        {
+          "path": ".gitignore",
+          "sha256": "d3e239ba91cb1a288d5c0b7ae5bffe5d3727cfbcd6951f64f0ce1536938a670b"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "ba49a065a2deb11cf5161337efa5b7b5d264145e540b475e204178c402d2c0f4"
+        },
+        {
+          "path": "README.md",
+          "sha256": "974f3a4e53f5e4779f208b02825a5a1ab543de1e33dfa7806a2d2f0cf847df1f"
+        },
+        {
+          "path": "assets/ito_cln_025.gif",
+          "sha256": "e567fbd8e946290802d542ecaa9a657b90099e7458d0bdbb86a3173f87804884"
+        },
+        {
+          "path": "ito/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "ito/data.py",
+          "sha256": "477d7d8f4f2d64215dc8e9f93eac2318b910e2ff9a4ca6e63e2ca998a2a21e5d"
+        },
+        {
+          "path": "ito/model/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "ito/model/beta_schedule.py",
+          "sha256": "1d219c7faccb2bd8a2c30b31c568ee5418970cc692d6faff4c7d6b5efe9fbe83"
+        },
+        {
+          "path": "ito/model/cpainn.py",
+          "sha256": "02aa5e56a82bceee620f5f10d0710d8e1a42e7de1520370131ec076b1ef1471d"
+        },
+        {
+          "path": "ito/model/ddpm.py",
+          "sha256": "4b5e8897fc5a4b735d95b8de79f2c2660a565a1a15f43a29ba829e4201d06572"
+        },
+        {
+          "path": "ito/model/dpm_solve.py",
+          "sha256": "8332cd61aeff04696a07b559a7edc43f7fe4a3a052256eced3f8e54d35f9ca40"
+        },
+        {
+          "path": "ito/model/ema.py",
+          "sha256": "a6fc7735f5ff681b291065602ae10c4bf09e75a02b71680567890141bcb29fed"
+        },
+        {
+          "path": "ito/model/embedding.py",
+          "sha256": "cc1e70a2aac7e24bd64b2edad7677c05066d8f03e2d14563fcbfe3f2af1de936"
+        },
+        {
+          "path": "ito/utils.py",
+          "sha256": "6af3e5b8a5c7e611f1442db83ce3f7c469a5bd4d8d8466e1fd73245be6dc0120"
+        },
+        {
+          "path": "makefile",
+          "sha256": "9b862678a35a0669c5fcf4fa03a9e1798492c77fcf04920585d585487f3fe300"
+        },
+        {
+          "path": "scripts/analyse_trajs.py",
+          "sha256": "f93324ca7f5c1a18a2b2a6605d21c0e599e01645d3a9d04b8b0dd626332aad2e"
+        },
+        {
+          "path": "scripts/sample_tlddpm.py",
+          "sha256": "2d1c1d2e2d43424df109edb6175e28fa7cbd3e5f5f051d77503f03b24b780132"
+        },
+        {
+          "path": "scripts/train_tlddpm.py",
+          "sha256": "b879251db64901bded96251c1b1aa515690691577966e09dfc473f572385ed70"
+        },
+        {
+          "path": "setup.py",
+          "sha256": "3e1249e34954d0b6a8ad789dd6aa95a4d6bebdc682cc0950139dfe3f4d9eebe4"
+        }
+      ],
+      "scope": "all tracked text files; GIF is presentation asset"
+    },
+    {
+      "repository": "https://github.com/olsson-group/tito",
+      "commit": "97949de311caa6621b17b5b5f0320da78b39e26b",
+      "files": [],
+      "scope": "selected architecture/data/training/evaluation sources"
+    },
+    {
+      "repository": "https://github.com/microsoft/timewarp",
+      "commit": "df25511dda579b8e73bcc5f8f8754a9b233f6c8e",
+      "files": [],
+      "scope": "selected architecture/data/training/evaluation sources"
+    }
+  ]
+}
