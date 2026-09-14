@@ -67,6 +67,12 @@ To produce the finite-sample-control/basin-occupancy figure from saved evaluatio
 .venv/bin/python -m tito_repro.cli experiment=alanine_audit audit.evaluation_run=runs/evaluate/20260910_203226_407589
 ```
 
+Check the authoritative Phase 1 gate before any later phase:
+
+```sh
+.venv/bin/python -m tito_repro.cli experiment=phase1_gates
+```
+
 For another run, change only that run path. Resume a time-limited training run with `experiment=alanine_train train.resume=<checkpoint.pt>`, preserving its original model/data/steps/seed/thread settings through matching config overrides. Increasing the total step count changes the cosine schedule and is rejected on resume; launch a new experiment instead.
 
 ## Limitations

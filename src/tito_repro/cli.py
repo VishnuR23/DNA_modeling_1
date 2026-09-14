@@ -43,6 +43,9 @@ def main(cfg: DictConfig) -> None:
         elif cfg.action == "audit":
             from tito_repro.eval.phase1_audit import audit
             result = audit(cfg, output)
+        elif cfg.action == "gates":
+            from tito_repro.eval.gates import write_phase1_gate_report
+            result = write_phase1_gate_report(cfg.gates.metrics, output / "phase1_gates.json")
         else:
             raise ValueError(f"Unknown action: {cfg.action}")
         logging.info("Result: %s", result)

@@ -10,6 +10,7 @@ from omegaconf import DictConfig
 
 from tito_repro.data.pairs import LagPairs, center, synthetic_trajectories
 from tito_repro.eval.metrics import jsd, msm_timescale
+from tito_repro.eval.gates import phase1_gate_report
 from tito_repro.train.phase1 import evaluate, make_model, train
 from tito_repro.utils.runtime import seed_cpu
 
@@ -150,3 +151,14 @@ def test_basin_screen_boundaries() -> None:
                           {"a": [-np.pi, 0, -np.pi, 0], "b": [-np.pi, 0, 0, np.pi],
                            "c": [0, np.pi, -np.pi, np.pi]})
     assert counts == {"a": 1, "b": 1, "c": 1}
+
+
+def test_phase1_gate_requires_all_metrics() -> None:
+    """Missing or inconclusive scientific metrics cannot unlock Phase 2."""
+    failed = phase1_gate_report({"lags": [], "ck": {}, "acceptance_missing": []})
+    assert failed["status"] == "failed_or_incomplete"
+    assert failed["phase2_allowed"] is False
+    passing = phase1_gate_report({"lags": [{"jsd_nats": .01, "timescale_ratio": 1.,
+        "reference_msm": {"status": "estimated"}, "model_msm": {"status": "estimated"}}],
+        "ck": {"jsd_nats": .01}, "acceptance_missing": []})
+    assert passing["passed"] is True

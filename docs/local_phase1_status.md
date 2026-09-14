@@ -55,6 +55,8 @@ The next scientifically justified experiment uses the corrected conditioning rea
 
 Legacy follow-up: `runs/pilot/20260910_203505_844138`. Corrected pilot: `runs/pilot/20260910_204051_246711`,20,593 parameters. Full metrics/config snapshots are committed under `docs/results/`. These two jobs partly overlapped on CPU; their wall times are observed campaign costs, not controlled architecture-speed benchmarks. Both finished their configured step counts before the600s cap, then completed evaluation. No jobs were left running.
 
+The machine-checkable gate command is `experiment=phase1_gates`. Its current report is `failed_or_incomplete` with `phase2_allowed=false`; this is the authoritative project status.
+
 More training on the legacy variant did not materially improve thermodynamics. The corrected2,000-update model still fails to reproduce molecular structure; restoring that layer alone is not sufficient. None of these configurations passes Phase1, so Phase2 has not started. Further work should first validate the corrected architecture and sampling solver at molecular scale, then fund a longer corrected-model fit and sufficiently sampled evaluation. Increasing steps blindly on the legacy model is not supported by these results.
 
 Evaluation RNG policy is now explicit: seed-based standalone evaluation, checkpoint-based named molecular pipelines. The latter restores the checkpoint's RNG before constructing the evaluation model, preserving the pipeline's original random sequence. Re-evaluation no longer depends on unrelated prior torch draws; the CPU test checks this contract. Existing standalone2,000-update results use seed mode, and the two follow-ups use checkpoint mode. These different random sequences mean the three pilots are not a paired ablation.
