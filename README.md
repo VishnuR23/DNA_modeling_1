@@ -1,3 +1,5 @@
+# DNA_modeling_1
+
 # Local CPU implicit transfer operators
 
 This project reimplements learned molecular transition operators and checks whether their samples reproduce molecular thermodynamics and kinetics. Its planned extension tests reference-free detectors for unphysical generated configurations.
