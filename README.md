@@ -30,6 +30,16 @@ python3.11 -m venv .venv
 
 The lock records the tested macOS arm64 environment and allowed libraries' transitive dependencies. Editable installation uses the repository configs. Installation and the initial public data download require internet; subsequent experiments work offline.
 
+No paid API, account, subscription, rented GPU, or cloud job is required. Computation uses your existing computer, electricity and local storage. Data ingestion defaults to cached files only; missing files fail before any network request. The opt-in below enables the public data download. This is an application default, not a system network firewall.
+
+For a small offline verification run after installation:
+
+```sh
+.venv/bin/python scripts/verify_local.py
+```
+
+This runs the software tests, a 30-update synthetic CPU train/sample experiment, and the gate report from committed molecular results. It needs no molecular data download or checkpoint. Outputs go to `runs/`. Successful software verification does not mean scientific acceptance: the saved molecular gates still fail and Phase 2 remains blocked.
+
 ```sh
 # Numerical contracts and tiny CPU train/sample/resume test
 .venv/bin/python -m pytest -q
@@ -37,7 +47,10 @@ The lock records the tested macOS arm64 environment and allowed libraries' trans
 # Synthetic training and distribution figures
 .venv/bin/python -m tito_repro.cli experiment=smoke
 
-# Fetch all original alanine trajectories once; subsequent calls verify cached hashes
+# Fetch original public alanine trajectories once (explicit network opt-in)
+.venv/bin/python -m tito_repro.cli experiment=alanine_download download.allow_network=true
+
+# Verify cached raw trajectories and rebuild processed data offline
 .venv/bin/python -m tito_repro.cli experiment=alanine_download
 
 # Separate ff14SB/OBC2 implicit-solvent control and energy figure (100 ps pilot)
@@ -69,11 +82,13 @@ To produce the finite-sample-control/basin-occupancy figure from saved evaluatio
 .venv/bin/python -m tito_repro.cli experiment=alanine_audit audit.evaluation_run=runs/evaluate/20260910_203226_407589
 ```
 
-Check the authoritative Phase 1 gate before any later phase:
+Check the authoritative Phase 1 gate before any later phase. The default reads the committed corrected 2,000-update pilot snapshot, so it works in a fresh checkout without rerunning training:
 
 ```sh
 .venv/bin/python -m tito_repro.cli experiment=phase1_gates
 ```
+
+To assess a new experiment, append `gates.metrics=<path/to/metrics.json>`; both pipeline metrics and standalone evaluation metrics are accepted.
 
 For another run, change only that run path. Resume a time-limited training run with `experiment=alanine_train train.resume=<checkpoint.pt>`, preserving its original model/data/steps/seed/thread settings through matching config overrides. Increasing the total step count changes the cosine schedule and is rejected on resume; launch a new experiment instead.
 
