@@ -1,0 +1,62 @@
+data:
+  kind: mdshare_explicit
+  path: data/alanine/processed.npz
+  topology: data/alanine/alanine-dipeptide-nowater.pdb
+  spacing_ps: 1.0
+  scale_nm: 0.1661689
+  temperature_k: 300.0
+  torsions:
+  - - 4
+    - 6
+    - 8
+    - 14
+  - - 6
+    - 8
+    - 14
+    - 16
+model:
+  atoms: 22
+  condition_readout: true
+  epsilon_skip: true
+  width: 16
+  condition_layers: 1
+  score_layers: 2
+  max_lag: 1000
+  diffusion_steps: 1000
+  radial_scale: 3.0
+  beta_start: -8.0
+  beta_end: -4.0
+train:
+  steps: 1000
+  batch_size: 8
+  learning_rate: 0.001
+  gradient_clip: 1.0
+  ema_decay: 0.99
+  lag_law: disexp
+  fixed_lag: null
+  max_seconds: 60
+  checkpoint_every: 100
+  log_every: 50
+  resume: null
+evaluation:
+  checkpoint: null
+  rng_mode: seed
+  chains: 4
+  transitions: 64
+  lags:
+  - 10
+  - 100
+  - 1000
+  solver_steps: 50
+  bins: 64
+  msm_bins: 12
+  min_transitions: 100
+  fes_max_kj_mol: 20.0
+  ck_branches: 64
+  ck_lag: 100
+  ck_steps: 5
+seed: 20260910
+action: train
+runtime:
+  device: cpu
+  threads: 2

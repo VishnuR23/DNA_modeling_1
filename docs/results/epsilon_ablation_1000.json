@@ -1,0 +1,156 @@
+{
+  "plain": {
+    "training": {
+      "status": "completed",
+      "steps": 1000,
+      "steps_this_run": 1000,
+      "wall_seconds": 24.274593082955107,
+      "seconds_per_step": 0.02427459308295511,
+      "seed": 20260910,
+      "device": "cpu",
+      "parameters": 20593,
+      "final_loss": 0.6223400235176086,
+      "scientific_acceptance": "not_evaluated",
+      "data": {
+        "kind": "mdshare_explicit",
+        "sha256": "b66a26416720df5ee0bd68771684847a4d0043c84ca0ae58aa756e4a48c454a9",
+        "path": "/Users/vishnu/Bio_one/tito-repro/data/alanine/processed.npz"
+      }
+    },
+    "diagnostic": {
+      "status": "diagnostic",
+      "device": "cpu",
+      "seed": 20260910,
+      "samples": 64,
+      "checkpoint_sha256": "69c1f8fb99472e13b6a719fe8c2fc53193bae7cd98d411229e8e0812257ec4ea",
+      "checkpoint_steps": 1000,
+      "data": {
+        "kind": "mdshare_explicit",
+        "sha256": "b66a26416720df5ee0bd68771684847a4d0043c84ca0ae58aa756e4a48c454a9",
+        "path": "/Users/vishnu/Bio_one/tito-repro/data/alanine/processed.npz"
+      },
+      "levels": [
+        {
+          "noise_level": 1,
+          "alpha_bar": 0.9996646642684937,
+          "epsilon_mse": 2.9643938541412354,
+          "zero_epsilon_mse": 2.776333808898926,
+          "identity_epsilon_mse": 5.770333766937256,
+          "clean_reconstruction_mse": 0.0009944005869328976,
+          "epsilon_error_amplification": 0.00033544821781106293
+        },
+        {
+          "noise_level": 100,
+          "alpha_bar": 0.959670901298523,
+          "epsilon_mse": 1.5741902589797974,
+          "zero_epsilon_mse": 2.776333808898926,
+          "identity_epsilon_mse": 4.730834007263184,
+          "clean_reconstruction_mse": 0.06615357846021652,
+          "epsilon_error_amplification": 0.042023882269859314
+        },
+        {
+          "noise_level": 500,
+          "alpha_bar": 0.585624098777771,
+          "epsilon_mse": 0.4862324893474579,
+          "zero_epsilon_mse": 2.776333808898926,
+          "identity_epsilon_mse": 2.140124797821045,
+          "clean_reconstruction_mse": 0.344048410654068,
+          "epsilon_error_amplification": 0.707580029964447
+        },
+        {
+          "noise_level": 1000,
+          "alpha_bar": 0.011344441212713718,
+          "epsilon_mse": 0.05494195595383644,
+          "zero_epsilon_mse": 2.776333808898926,
+          "identity_epsilon_mse": 0.03432994708418846,
+          "clean_reconstruction_mse": 4.788131237030029,
+          "epsilon_error_amplification": 87.1489028930664
+        }
+      ],
+      "scientific_acceptance": "not_evaluated",
+      "limitations": [
+        "training-source pairs, not held-out validation",
+        "forward-noised reference states, not autoregressive samples",
+        "single seed and finite sample diagnostics"
+      ]
+    }
+  },
+  "residual": {
+    "training": {
+      "status": "completed",
+      "steps": 1000,
+      "steps_this_run": 1000,
+      "wall_seconds": 27.890444417018443,
+      "seconds_per_step": 0.027890444417018444,
+      "seed": 20260910,
+      "device": "cpu",
+      "parameters": 20593,
+      "final_loss": 0.605315625667572,
+      "scientific_acceptance": "not_evaluated",
+      "data": {
+        "kind": "mdshare_explicit",
+        "sha256": "b66a26416720df5ee0bd68771684847a4d0043c84ca0ae58aa756e4a48c454a9",
+        "path": "/Users/vishnu/Bio_one/tito-repro/data/alanine/processed.npz"
+      }
+    },
+    "diagnostic": {
+      "status": "diagnostic",
+      "device": "cpu",
+      "seed": 20260910,
+      "samples": 64,
+      "checkpoint_sha256": "8c0fdf1e50c22e80bf4e2adcf6fc932f682902176c071649981e4cf310bf6e39",
+      "checkpoint_steps": 1000,
+      "data": {
+        "kind": "mdshare_explicit",
+        "sha256": "b66a26416720df5ee0bd68771684847a4d0043c84ca0ae58aa756e4a48c454a9",
+        "path": "/Users/vishnu/Bio_one/tito-repro/data/alanine/processed.npz"
+      },
+      "levels": [
+        {
+          "noise_level": 1,
+          "alpha_bar": 0.9996646642684937,
+          "epsilon_mse": 2.931072235107422,
+          "zero_epsilon_mse": 2.776333808898926,
+          "identity_epsilon_mse": 5.770333766937256,
+          "clean_reconstruction_mse": 0.0009832230862230062,
+          "epsilon_error_amplification": 0.00033544821781106293
+        },
+        {
+          "noise_level": 100,
+          "alpha_bar": 0.959670901298523,
+          "epsilon_mse": 1.520278811454773,
+          "zero_epsilon_mse": 2.776333808898926,
+          "identity_epsilon_mse": 4.730834007263184,
+          "clean_reconstruction_mse": 0.06388802081346512,
+          "epsilon_error_amplification": 0.042023882269859314
+        },
+        {
+          "noise_level": 500,
+          "alpha_bar": 0.585624098777771,
+          "epsilon_mse": 0.4686884582042694,
+          "zero_epsilon_mse": 2.776333808898926,
+          "identity_epsilon_mse": 2.140124797821045,
+          "clean_reconstruction_mse": 0.3316345512866974,
+          "epsilon_error_amplification": 0.707580029964447
+        },
+        {
+          "noise_level": 1000,
+          "alpha_bar": 0.011344441212713718,
+          "epsilon_mse": 0.018060976639389992,
+          "zero_epsilon_mse": 2.776333808898926,
+          "identity_epsilon_mse": 0.03432994708418846,
+          "clean_reconstruction_mse": 1.5739943981170654,
+          "epsilon_error_amplification": 87.1489028930664
+        }
+      ],
+      "scientific_acceptance": "not_evaluated",
+      "limitations": [
+        "training-source pairs, not held-out validation",
+        "forward-noised reference states, not autoregressive samples",
+        "single seed and finite sample diagnostics"
+      ]
+    }
+  },
+  "matched_completed_steps": true,
+  "scientific_acceptance": "not_evaluated"
+}
