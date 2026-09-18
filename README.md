@@ -10,13 +10,15 @@ The initial 2,000-update alanine run took 44.1 seconds on this Mac and produced 
 
 The corrected-readout model also failed its 2,000-update pilot: JSD **0.624, 0.622, 0.617**, timescale ratios **0.049, 0.552, 4.373**, CK **0.693 nats**. A 20,000-update legacy-model follow-up took 479.4 seconds and remained poor (JSD **0.612–0.633**). All three outcomes are preserved; the readout fix alone does not solve the reproduction.
 
-The diffusion interface was then corrected so the denoiser returns epsilon directly. A fresh 500-update sanity run still failed (JSD **0.631–0.648 nats**, CK **0.693 nats**), so this consistency fix is necessary but insufficient. Its short run is recorded in the status report; no longer fit has been claimed.
+A no-skip epsilon parameterization was then tested in a 500-update run and still failed (JSD **0.631–0.648 nats**, CK **0.693 nats**). The earlier description of removing the skip as a necessary consistency fix was incorrect: a residual branch plus noisy input can also predict epsilon when the full output is supervised. Both variants are now explicit and can be compared in bounded paired runs.
 
 The [development policy](docs/development_policy.md) permits exploratory Phase 2 implementation while Phase 1 remains unvalidated. No detector AUROC or TITO reproduction result is claimed. For context, TITO reports peptide TICA JSD mean/median 0.042/0.036 and top-ten timescale discrepancy mean/median 1.204/0.434; these concern a different dataset, projection and model and cannot be compared directly to the alanine numbers above.
 
 ![Initial CPU pilot: model error exceeds the matched-count reference control](docs/figures/pilot_2000_audit.png)
 
 This figure shows a failed pilot, not a successful reproduction. Its model omitted a conditioning readout that is now restored in the default configuration; legacy experiment configs explicitly preserve the earlier variant.
+
+Exploratory Phase 2 now includes a variable-size, element-conditioned flow model and a completed 2,000-update synthetic pilot. See [Phase 2 results and limitations](docs/phase2_status.md).
 
 ## Run locally
 
@@ -46,6 +48,12 @@ This runs the software tests, a 30-update synthetic CPU train/sample experiment,
 
 # Synthetic training and distribution figures
 .venv/bin/python -m tito_repro.cli experiment=smoke
+
+# Exploratory Phase 2 flow training; generated data, no download, 60-second training cap
+.venv/bin/python -m tito_repro.cli experiment=phase2_synthetic
+
+# Paired Phase 1 epsilon variants; cached alanine data required, 60 seconds per fit
+.venv/bin/python scripts/compare_epsilon.py
 
 # Fetch original public alanine trajectories once (explicit network opt-in)
 .venv/bin/python -m tito_repro.cli experiment=alanine_download download.allow_network=true
@@ -98,5 +106,5 @@ For another run, change only that run path. Resume a time-limited training run w
 - The denoiser is much smaller than the paper's model. DDIM replaces DPM-Solver; native torch ChiroPaiNN is adapted under its MIT license in `src/tito_repro/vendor/ito/`. No additional equivariant library was installed.
 - Symmetrized-count fixed-grid MSM estimates are diagnostic, not the paper's Bayesian MSM. The broad basin count screen is not evidence of correct free-energy minima. Whole-chain bootstrap holds the reference fixed and does not establish full uncertainty.
 - The 100 ps ff14SB/OBC2 reference is far too short for convergence and differs from the original explicit-solvent ff99SB-ILDN ensemble. They are kept separate. OpenMM timing is a local CPU measurement, not a GPU speed comparison.
-- TITO uses flow matching; this Phase 1 DDPM does not yet implement transferability. Full Timewarp evaluation is a major local storage/runtime constraint. Phase 2 exploration is authorized; no validated transferability or Phase 3–4 result exists. No DESRES data is used.
+- TITO uses flow matching; this Phase 1 DDPM does not yet implement transferability. Full Timewarp evaluation is a major local storage/runtime constraint. A variable-size synthetic flow prototype is implemented; no validated molecular transferability or Phase 3–4 result exists. No DESRES data is used.
 - Results/checkpoints and downloaded trajectories are gitignored. Source hashes and configs provide local provenance; rerunning on different library versions/hardware need not be bitwise identical.
