@@ -75,6 +75,8 @@ def train(cfg: DictConfig, output: Path) -> dict[str, Any]:
             if key == "model":
                 previous.setdefault("condition_readout", False)
                 current.setdefault("condition_readout", False)
+                previous.setdefault("epsilon_skip", False)
+                current.setdefault("epsilon_skip", False)
             if key == "train":
                 for allowed in ("resume", "max_seconds", "checkpoint_every", "log_every"):
                     previous.pop(allowed, None)

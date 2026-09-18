@@ -11,12 +11,13 @@ class Denoiser(nn.Module):
 
     def __init__(self, atoms: int, width: int, condition_layers: int, score_layers: int,
                  max_lag: int, diffusion_steps: int, radial_scale: float,
-                 condition_readout: bool = True) -> None:
+                 condition_readout: bool = True, epsilon_skip: bool = False) -> None:
         """Configure [B,atoms,3] noise prediction; lag uses frames and radial_scale is dimensionless."""
         super().__init__()
         if width < 2 or width % 2 or min(atoms, condition_layers, score_layers) < 1:
             raise ValueError("Positive sizes and even feature width required")
         self.width, self.max_lag, self.diffusion_steps = width, max_lag, diffusion_steps
+        self.epsilon_skip = epsilon_skip
         self.atom_embedding = nn.Embedding(atoms, width)
         self.condition_mix, self.time_mix = mlp(2 * width, width, width), mlp(2 * width, width, width)
         self.condition = nn.ModuleList([ChiroBlock(width, radial_scale) for _ in range(condition_layers)])
@@ -53,7 +54,7 @@ class Denoiser(nn.Module):
         for block in self.score:
             s, v = block(noisy, s, v)
         output = self.readout(v.transpose(-1, -2)).squeeze(-1) * self.gate(s)
-        # The diffusion objective supervises epsilon directly.  Adding the noisy
-        # input here would turn the output into x-hat while loss() compares it to
-        # epsilon, making training and DDIM sampling inconsistent.
-        return center(output)
+        # Both parameterizations predict epsilon: with a skip, the learned
+        # branch is its residual relative to noisy coordinates. The complete
+        # output, including that skip, is supervised by the same epsilon loss.
+        return center(output + noisy if self.epsilon_skip else output)

@@ -1,5 +1,6 @@
 atoms: 22
 condition_readout: true
+epsilon_skip: false
 width: 16
 condition_layers: 1
 score_layers: 2
