@@ -1,0 +1,172 @@
+{
+  "status": "completed",
+  "device": "cpu",
+  "phase": "phase2_exploration",
+  "seed": 20260910,
+  "scientific_acceptance": "not_applicable_synthetic",
+  "data": "generated_gaussian_ar1",
+  "coupling": "independent_gaussian_linear_path",
+  "solver": "heun",
+  "field_evaluations_per_sample": 40,
+  "train_atoms": [
+    3,
+    4
+  ],
+  "steps": 2000,
+  "training_wall_seconds": 7.95490516605787,
+  "before": [
+    {
+      "atoms": 3,
+      "lag_frames": 1,
+      "held_out_size": false,
+      "velocity_mse": 4.1040263175964355,
+      "zero_velocity_mse": 4.104854106903076,
+      "conditional_residual_second_moment": 1.1057868003845215,
+      "expected_conditional_variance": 0.23999999999999994,
+      "reference_residual_second_moment": 0.21981675922870636,
+      "finite_samples": true,
+      "max_centroid": 7.947286206899662e-08
+    },
+    {
+      "atoms": 3,
+      "lag_frames": 4,
+      "held_out_size": false,
+      "velocity_mse": 4.156337261199951,
+      "zero_velocity_mse": 4.1569719314575195,
+      "conditional_residual_second_moment": 0.8272883892059326,
+      "expected_conditional_variance": 0.5548185600000001,
+      "reference_residual_second_moment": 0.5404759645462036,
+      "finite_samples": true,
+      "max_centroid": 3.973643103449831e-08
+    },
+    {
+      "atoms": 4,
+      "lag_frames": 1,
+      "held_out_size": false,
+      "velocity_mse": 4.554901123046875,
+      "zero_velocity_mse": 4.55184268951416,
+      "conditional_residual_second_moment": 1.220476508140564,
+      "expected_conditional_variance": 0.2699999999999999,
+      "reference_residual_second_moment": 0.2691265642642975,
+      "finite_samples": true,
+      "max_centroid": 5.960464477539063e-08
+    },
+    {
+      "atoms": 4,
+      "lag_frames": 4,
+      "held_out_size": false,
+      "velocity_mse": 4.442774295806885,
+      "zero_velocity_mse": 4.442170143127441,
+      "conditional_residual_second_moment": 0.8518388271331787,
+      "expected_conditional_variance": 0.62417088,
+      "reference_residual_second_moment": 0.6596815586090088,
+      "finite_samples": true,
+      "max_centroid": 4.470348358154297e-08
+    },
+    {
+      "atoms": 5,
+      "lag_frames": 1,
+      "held_out_size": true,
+      "velocity_mse": 4.769868850708008,
+      "zero_velocity_mse": 4.771709442138672,
+      "conditional_residual_second_moment": 1.339453101158142,
+      "expected_conditional_variance": 0.2879999999999999,
+      "reference_residual_second_moment": 0.2875252366065979,
+      "finite_samples": true,
+      "max_centroid": 7.152557657263969e-08
+    },
+    {
+      "atoms": 5,
+      "lag_frames": 4,
+      "held_out_size": true,
+      "velocity_mse": 4.663103103637695,
+      "zero_velocity_mse": 4.662907600402832,
+      "conditional_residual_second_moment": 0.9014135003089905,
+      "expected_conditional_variance": 0.665782272,
+      "reference_residual_second_moment": 0.6495381593704224,
+      "finite_samples": true,
+      "max_centroid": 4.7683716530855236e-08
+    }
+  ],
+  "after": [
+    {
+      "atoms": 3,
+      "lag_frames": 1,
+      "held_out_size": false,
+      "velocity_mse": 1.9713882207870483,
+      "zero_velocity_mse": 4.104854106903076,
+      "conditional_residual_second_moment": 0.24581977725028992,
+      "expected_conditional_variance": 0.23999999999999994,
+      "reference_residual_second_moment": 0.21981675922870636,
+      "finite_samples": true,
+      "max_centroid": 3.973643103449831e-08
+    },
+    {
+      "atoms": 3,
+      "lag_frames": 4,
+      "held_out_size": false,
+      "velocity_mse": 2.924023389816284,
+      "zero_velocity_mse": 4.1569719314575195,
+      "conditional_residual_second_moment": 0.5662660598754883,
+      "expected_conditional_variance": 0.5548185600000001,
+      "reference_residual_second_moment": 0.5404759645462036,
+      "finite_samples": true,
+      "max_centroid": 3.973643103449831e-08
+    },
+    {
+      "atoms": 4,
+      "lag_frames": 1,
+      "held_out_size": false,
+      "velocity_mse": 2.323239803314209,
+      "zero_velocity_mse": 4.55184268951416,
+      "conditional_residual_second_moment": 0.24999992549419403,
+      "expected_conditional_variance": 0.2699999999999999,
+      "reference_residual_second_moment": 0.2691265642642975,
+      "finite_samples": true,
+      "max_centroid": 5.960464477539063e-08
+    },
+    {
+      "atoms": 4,
+      "lag_frames": 4,
+      "held_out_size": false,
+      "velocity_mse": 3.091733455657959,
+      "zero_velocity_mse": 4.442170143127441,
+      "conditional_residual_second_moment": 0.578433096408844,
+      "expected_conditional_variance": 0.62417088,
+      "reference_residual_second_moment": 0.6596815586090088,
+      "finite_samples": true,
+      "max_centroid": 5.960464477539063e-08
+    },
+    {
+      "atoms": 5,
+      "lag_frames": 1,
+      "held_out_size": true,
+      "velocity_mse": 2.1783432960510254,
+      "zero_velocity_mse": 4.771709442138672,
+      "conditional_residual_second_moment": 0.22323250770568848,
+      "expected_conditional_variance": 0.2879999999999999,
+      "reference_residual_second_moment": 0.2875252366065979,
+      "finite_samples": true,
+      "max_centroid": 4.7683716530855236e-08
+    },
+    {
+      "atoms": 5,
+      "lag_frames": 4,
+      "held_out_size": true,
+      "velocity_mse": 3.2779431343078613,
+      "zero_velocity_mse": 4.662907600402832,
+      "conditional_residual_second_moment": 0.5670292973518372,
+      "expected_conditional_variance": 0.665782272,
+      "reference_residual_second_moment": 0.6495381593704224,
+      "finite_samples": true,
+      "max_centroid": 4.7683716530855236e-08
+    }
+  ],
+  "limitations": [
+    "no molecular data or chemical validity",
+    "no optimal-transport alignment",
+    "no peptide transferability claim",
+    "point estimates without uncertainty intervals",
+    "checkpoint resume not implemented for this prototype"
+  ]
+}
