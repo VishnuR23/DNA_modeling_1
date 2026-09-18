@@ -22,7 +22,10 @@ def main(cfg: DictConfig) -> None:
     os.environ["XDG_CACHE_HOME"] = str(cache)
     try:
         from tito_repro.train.phase1 import evaluate, train
-        if cfg.action == "train":
+        if cfg.action == "phase2_synthetic":
+            from tito_repro.train.flow import train_flow
+            result = train_flow(cfg, output)
+        elif cfg.action == "train":
             result = train(cfg, output)
         elif cfg.action == "evaluate":
             result = evaluate(cfg, output)

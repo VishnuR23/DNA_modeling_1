@@ -1,0 +1,16 @@
+# @package _global_
+action: phase2_synthetic
+flow:
+  width: 8
+  train_atoms: [3, 4]
+  evaluation_atoms: [3, 4, 5]
+  elements: [6, 1, 8]
+  lags: [1, 4]
+  correlation: 0.8
+  steps: 2000
+  batch_size: 16
+  learning_rate: 0.001
+  max_seconds: 60
+  checkpoint_every: 100
+  evaluation_samples: 128
+  solver_steps: 20
