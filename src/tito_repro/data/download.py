@@ -13,6 +13,12 @@ from tito_repro.utils.runtime import digest, write_json
 def download_alanine(cfg: DictConfig, output: Path) -> dict[str, Any]:
     """Fetch configured MDShare files and save float32 [R,T,A,3] nm with spacing ps."""
     root = Path(cfg.download.directory)
+    missing = [name for name in cfg.download.files if not (root / name).is_file()]
+    if missing and not cfg.download.get("allow_network", False):
+        raise FileNotFoundError(
+            "Offline mode: missing cached alanine files: " + ", ".join(missing)
+            + ". To fetch public data explicitly, rerun with download.allow_network=true."
+        )
     root.mkdir(parents=True, exist_ok=True)
     sources = []
     for filename in cfg.download.files:
@@ -20,9 +26,14 @@ def download_alanine(cfg: DictConfig, output: Path) -> dict[str, Any]:
         url = cfg.download.base_url.rstrip("/") + "/" + filename
         if not destination.exists():
             temporary = destination.with_suffix(destination.suffix + ".part")
-            subprocess.run(["curl", "--fail", "--location", "--silent", "--show-error",
-                            "--max-time", str(cfg.download.timeout_seconds), url, "-o", str(temporary)], check=True)
-            temporary.replace(destination)
+            try:
+                subprocess.run(["curl", "--fail", "--location", "--silent", "--show-error",
+                                "--max-time", str(cfg.download.timeout_seconds), url, "-o", str(temporary)], check=True)
+                if digest(temporary) != cfg.download.sha256[filename]:
+                    raise ValueError(f"Downloaded checksum differs for {filename}")
+                temporary.replace(destination)
+            finally:
+                temporary.unlink(missing_ok=True)
         checksum = digest(destination)
         if checksum != cfg.download.sha256[filename]:
             raise ValueError(f"Downloaded/cached checksum differs for {filename}")

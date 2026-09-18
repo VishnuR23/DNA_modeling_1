@@ -3,6 +3,7 @@ defaults:
   - override /data: alanine
 action: download
 download:
+  allow_network: false
   base_url: https://ftp.mi.fu-berlin.de/pub/cmb-data
   directory: data/alanine
   topology: alanine-dipeptide-nowater.pdb
