@@ -29,13 +29,17 @@ class Denoiser(nn.Module):
         self.gate = mlp(width, width, 1)
 
     def forward(self, noisy: torch.Tensor, condition: torch.Tensor,
-                lag: torch.Tensor, noise_step: torch.Tensor) -> torch.Tensor:
+                lag: torch.Tensor, noise_step: torch.Tensor,
+                atom_types: torch.Tensor | None = None) -> torch.Tensor:
         """Predict mean-free noise [B,A,3]; lag [B] is frame multiples, step [B] dimensionless."""
         if noisy.device.type != "cpu":
             raise ValueError("CPU tensors required")
         noisy, condition = center(noisy), center(condition)
         b, a, _ = noisy.shape
-        embedding = self.atom_embedding(torch.arange(a)).unsqueeze(0).expand(b, -1, -1)
+        identities = torch.arange(a) if atom_types is None else atom_types
+        if identities.shape != (a,) or identities.dtype != torch.long:
+            raise ValueError("Atom identities must be a long tensor of shape [atoms]")
+        embedding = self.atom_embedding(identities).unsqueeze(0).expand(b, -1, -1)
         times = fourier(lag.to(noisy.dtype), self.width, self.max_lag)[:, None].expand(-1, a, -1)
         s = self.condition_mix(torch.cat((embedding, times), dim=-1))
         v = torch.zeros(b, a, self.width, 3, dtype=noisy.dtype)
