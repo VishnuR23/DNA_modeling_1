@@ -10,7 +10,7 @@ The initial 2,000-update alanine run took 44.1 seconds on this Mac and produced 
 
 The corrected-readout model also failed its 2,000-update pilot: JSD **0.624, 0.622, 0.617**, timescale ratios **0.049, 0.552, 4.373**, CK **0.693 nats**. A 20,000-update legacy-model follow-up took 479.4 seconds and remained poor (JSD **0.612–0.633**). All three outcomes are preserved; the readout fix alone does not solve the reproduction.
 
-A no-skip epsilon parameterization was then tested in a 500-update run and still failed (JSD **0.631–0.648 nats**, CK **0.693 nats**). The earlier description of removing the skip as a necessary consistency fix was incorrect: a residual branch plus noisy input can also predict epsilon when the full output is supervised. Both variants are now explicit and can be compared in bounded paired runs.
+A no-skip epsilon parameterization was then tested in a 500-update run and still failed (JSD **0.631–0.648 nats**, CK **0.693 nats**). The earlier description of removing the skip as a necessary consistency fix was incorrect: a residual branch plus noisy input can also predict epsilon when the full output is supervised. Both variants are now explicit; a [paired 1,000-update diagnostic](docs/denoising_status.md) found lower high-noise error with the residual variant, without establishing molecular acceptance.
 
 The [development policy](docs/development_policy.md) permits exploratory Phase 2 implementation while Phase 1 remains unvalidated. No detector AUROC or TITO reproduction result is claimed. For context, TITO reports peptide TICA JSD mean/median 0.042/0.036 and top-ten timescale discrepancy mean/median 1.204/0.434; these concern a different dataset, projection and model and cannot be compared directly to the alanine numbers above.
 

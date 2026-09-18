@@ -1,6 +1,6 @@
 # Local CPU Phase 1 status — 2026-09-10
 
-**Software pipeline works; scientific reproduction has not passed.** This is the historical Phase 1 report. The [2026-09-18 development policy](development_policy.md) now permits later-phase exploration; see [Phase 2 status](phase2_status.md). The interpretation of the epsilon skip below is corrected in the new denoising report. All execution described here occurred on this MacBookPro17,1 (Apple M1,8 GiB RAM), without CUDA/MPS/remote compute. The original research phase gates remain binding.
+**Software pipeline works; scientific reproduction has not passed.** This is the historical Phase 1 report. The [2026-09-18 development policy](development_policy.md) now permits later-phase exploration; see [Phase 2 status](phase2_status.md). The interpretation of the epsilon skip below is corrected in the [new denoising report](denoising_status.md). All execution described here occurred on this MacBookPro17,1 (Apple M1,8 GiB RAM), without CUDA/MPS/remote compute. The original research phase gates remain binding.
 
 ## Implemented and checked
 
