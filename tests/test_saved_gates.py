@@ -18,3 +18,5 @@ def test_default_gates_use_committed_results(tmp_path):
     assert report == phase1_gate_report(saved["evaluation"])
     assert json.loads(destination.read_text()) == report
     assert report["phase2_allowed"] is False
+    assert report["phase2_exploration_allowed"] is True
+    assert report["phase2_validated_claims_allowed"] is False

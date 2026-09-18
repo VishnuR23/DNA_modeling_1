@@ -1,6 +1,6 @@
 # Local CPU execution plan
 
-The user's 2026-09-10 instruction replaces the GPU requirement: **all computation runs on this computer, with no CUDA, MPS, cloud jobs, or GPU prerequisites**. The previous plan is preserved in [scaling_plan_gpu_archived.md](scaling_plan_gpu_archived.md) as historical context only. Scientific acceptance gates still apply; Phase 2 cannot start before Phase 1 passes.
+The user's 2026-09-10 instruction replaces the GPU requirement: **all computation runs on this computer, with no CUDA, MPS, cloud jobs, or GPU prerequisites**. The previous plan is preserved in [scaling_plan_gpu_archived.md](scaling_plan_gpu_archived.md) as historical context only. Scientific acceptance gates still apply to validated results. The 2026-09-18 user instruction permits bounded exploratory work in later phases while earlier gates fail; the active policy is [development_policy.md](development_policy.md).
 
 ## Hardware and resource policy
 
@@ -31,11 +31,11 @@ The requested ff14SB/OBC2, 300 K, 2 fs system is a separate **implicit-solvent c
 
 Project thresholds proposed before observing results, not paper-reported cutoffs: phi/psi JSD ≤0.10 **nats**, recovery of three main basins, slowest timescale ratio in [0.5,2] at 10/100/1000 ps, nested/direct CK JSD ≤0.05 nats. Do not loosen them after seeing results. The paper does not supply a directly comparable single alanine JSD number; see paper notes.
 
-The current fixed-grid MSM uses symmetrized counts, not the paper's Bayesian MSM. Disconnected/undersampled graphs are inconclusive. Tiny histograms and one CK starting configuration cannot determine acceptance. Production acceptance still requires confidence intervals, per-basin CK with matched finite-sample controls, adequate transitions and independent reference convergence. Failure/incomplete evaluation blocks Phase 2 even when software tests pass.
+The current fixed-grid MSM uses symmetrized counts, not the paper's Bayesian MSM. Disconnected/undersampled graphs are inconclusive. Tiny histograms and one CK starting configuration cannot determine acceptance. Production acceptance still requires confidence intervals, per-basin CK with matched finite-sample controls, adequate transitions and independent reference convergence. Failure/incomplete evaluation blocks scientific acceptance, but does not block bounded Phase 2 prototypes.
 
 ## Later phases: conditional CPU feasibility
 
-No Phase 2–4 implementation starts now. Before each phase, recalibrate locally and update its plan. Preliminary Phase 2 allowance: 30 CPU minutes for variable-size calibration, 2 CPU hours for training pilot, 2 CPU hours for evaluation calibration. These are **future estimates, not launched jobs or sufficient-training claims**. Candidate width 16, 1+2 blocks, physical batch 1–2, 16 seeded training peptides out of 1,457 (1.10%), preserving validation/test inventories. This replaces the old 64-molecule proposal. Full validation/test transfer is roughly 762 GB raw and may be impractical locally; do not quietly subsample those splits. If infeasible, Phase 2 remains incomplete. TITO requires flow matching, not an unchanged DDPM.
+Exploratory Phase 2 implementation may start under the development policy. Before each phase, recalibrate locally and update its plan. Preliminary Phase 2 allowance: 30 CPU minutes for variable-size calibration, 2 CPU hours for training pilot, 2 CPU hours for evaluation calibration. These are **future estimates, not launched jobs or sufficient-training claims**. Candidate width 16, 1+2 blocks, physical batch 1–2, 16 seeded training peptides out of 1,457 (1.10%), preserving validation/test inventories. This replaces the old 64-molecule proposal. Full validation/test transfer is roughly 762 GB raw and may be impractical locally; do not quietly subsample those splits. If infeasible, Phase 2 remains incomplete. TITO requires flow matching, not an unchanged DDPM.
 
 MDQM9-nc is public but outside the current peptide-first numbered phases. No 44.63 GB HDF5 download or new chemistry dependencies are implicit. No DESRES data is used.
 

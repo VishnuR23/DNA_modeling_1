@@ -12,7 +12,7 @@ The corrected-readout model also failed its 2,000-update pilot: JSD **0.624, 0.6
 
 The diffusion interface was then corrected so the denoiser returns epsilon directly. A fresh 500-update sanity run still failed (JSD **0.631–0.648 nats**, CK **0.693 nats**), so this consistency fix is necessary but insufficient. Its short run is recorded in the status report; no longer fit has been claimed.
 
-The extension has not started: Phase 1 gates block transferable training and hallucination detection. No detector AUROC or TITO reproduction result is claimed. For context, TITO reports peptide TICA JSD mean/median 0.042/0.036 and top-ten timescale discrepancy mean/median 1.204/0.434; these concern a different dataset, projection and model and cannot be compared directly to the alanine numbers above.
+The [development policy](docs/development_policy.md) permits exploratory Phase 2 implementation while Phase 1 remains unvalidated. No detector AUROC or TITO reproduction result is claimed. For context, TITO reports peptide TICA JSD mean/median 0.042/0.036 and top-ten timescale discrepancy mean/median 1.204/0.434; these concern a different dataset, projection and model and cannot be compared directly to the alanine numbers above.
 
 ![Initial CPU pilot: model error exceeds the matched-count reference control](docs/figures/pilot_2000_audit.png)
 
@@ -38,7 +38,7 @@ For a small offline verification run after installation:
 .venv/bin/python scripts/verify_local.py
 ```
 
-This runs the software tests, a 30-update synthetic CPU train/sample experiment, and the gate report from committed molecular results. It needs no molecular data download or checkpoint. Outputs go to `runs/`. Successful software verification does not mean scientific acceptance: the saved molecular gates still fail and Phase 2 remains blocked.
+This runs the software tests, a 30-update synthetic CPU train/sample experiment, and the gate report from committed molecular results. It needs no molecular data download or checkpoint. Outputs go to `runs/`. Successful software verification does not mean scientific acceptance: the saved molecular gates still fail; exploratory Phase 2 development is allowed.
 
 ```sh
 # Numerical contracts and tiny CPU train/sample/resume test
@@ -98,5 +98,5 @@ For another run, change only that run path. Resume a time-limited training run w
 - The denoiser is much smaller than the paper's model. DDIM replaces DPM-Solver; native torch ChiroPaiNN is adapted under its MIT license in `src/tito_repro/vendor/ito/`. No additional equivariant library was installed.
 - Symmetrized-count fixed-grid MSM estimates are diagnostic, not the paper's Bayesian MSM. The broad basin count screen is not evidence of correct free-energy minima. Whole-chain bootstrap holds the reference fixed and does not establish full uncertainty.
 - The 100 ps ff14SB/OBC2 reference is far too short for convergence and differs from the original explicit-solvent ff99SB-ILDN ensemble. They are kept separate. OpenMM timing is a local CPU measurement, not a GPU speed comparison.
-- TITO uses flow matching; this Phase 1 DDPM does not yet implement transferability. Full Timewarp evaluation is a major local storage/runtime constraint. Phases 2–4 have not started; no DESRES data is used.
+- TITO uses flow matching; this Phase 1 DDPM does not yet implement transferability. Full Timewarp evaluation is a major local storage/runtime constraint. Phase 2 exploration is authorized; no validated transferability or Phase 3–4 result exists. No DESRES data is used.
 - Results/checkpoints and downloaded trajectories are gitignored. Source hashes and configs provide local provenance; rerunning on different library versions/hardware need not be bitwise identical.

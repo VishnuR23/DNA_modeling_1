@@ -19,7 +19,7 @@ def main() -> None:
         print(f"\n{label}", flush=True)
         subprocess.run([sys.executable, *arguments], cwd=root, check=True)
     print("\nLocal software verification completed. See runs/ for artifacts. "
-          "A failed molecular gate still blocks Phase 2.")
+          "Failed molecular gates block scientific acceptance, not exploratory development.")
 
 
 if __name__ == "__main__":

@@ -26,7 +26,10 @@ def phase1_gate_report(metrics: dict[str, Any], jsd_limit: float = 0.10,
             "thermodynamics": {"passed": thermo, "limit_jsd_nats": jsd_limit},
             "kinetics": {"passed": kinetic, "ratio_range": [ratio_low, ratio_high]},
             "chapman_kolmogorov": {"passed": ck_pass, "limit_jsd_nats": ck_limit},
-            "missing_requirements": missing, "phase2_allowed": passed}
+            "missing_requirements": missing, "phase2_allowed": passed,
+            "phase2_exploration_allowed": True,
+            "phase2_validated_claims_allowed": passed,
+            "development_policy": "exploration_without_scientific_acceptance"}
 
 
 def write_phase1_gate_report(metrics_path: str | Path, output_path: str | Path) -> dict[str, Any]:
