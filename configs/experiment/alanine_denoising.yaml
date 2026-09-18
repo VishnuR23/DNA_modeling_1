@@ -1,0 +1,6 @@
+# @package _global_
+action: denoising
+diagnostic:
+  checkpoint: null
+  samples: 64
+  levels: [1, 100, 500, 1000]

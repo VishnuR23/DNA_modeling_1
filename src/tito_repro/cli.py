@@ -25,6 +25,9 @@ def main(cfg: DictConfig) -> None:
         if cfg.action == "phase2_synthetic":
             from tito_repro.train.flow import train_flow
             result = train_flow(cfg, output)
+        elif cfg.action == "denoising":
+            from tito_repro.eval.denoising import diagnose_denoising
+            result = diagnose_denoising(cfg, output)
         elif cfg.action == "train":
             result = train(cfg, output)
         elif cfg.action == "evaluate":
