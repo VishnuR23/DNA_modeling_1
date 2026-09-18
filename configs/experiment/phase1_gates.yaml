@@ -1,4 +1,4 @@
 # @package _global_
 action: gates
 gates:
-  metrics: runs/pilot/20260910_204051_246711/evaluation/metrics.json
+  metrics: docs/results/corrected_2000.json

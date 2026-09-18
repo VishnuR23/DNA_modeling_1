@@ -30,8 +30,10 @@ def phase1_gate_report(metrics: dict[str, Any], jsd_limit: float = 0.10,
 
 
 def write_phase1_gate_report(metrics_path: str | Path, output_path: str | Path) -> dict[str, Any]:
-    """Read metrics JSON and write its deterministic Phase 1 gate report."""
+    """Read standalone or pipeline metrics and write the Phase 1 gate report."""
     metrics = json.loads(Path(metrics_path).read_text())
+    if "evaluation" in metrics:
+        metrics = metrics["evaluation"]
     report = phase1_gate_report(metrics)
     write_json(output_path, report)
     return report
