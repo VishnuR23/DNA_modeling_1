@@ -20,6 +20,8 @@ This figure shows a failed pilot, not a successful reproduction. Its model omitt
 
 Exploratory Phase 2 now includes a variable-size, element-conditioned flow model and a completed 2,000-update synthetic pilot. See [Phase 2 results and limitations](docs/phase2_status.md).
 
+Follow-up: paired molecular rollouts showed no clear distribution benefit from the residual epsilon variant. Three-seed synthetic calibration exposes substantial variation at twice the training size; doubling flow solver steps did not resolve the first seed's low dispersion. Both outcomes and their controls are preserved in the linked reports.
+
 ## Run locally
 
 Run commands from `tito-repro/`. The local `.venv` is already installed. For a fresh installation with Python 3.11:
@@ -51,6 +53,12 @@ This runs the software tests, a 30-update synthetic CPU train/sample experiment,
 
 # Exploratory Phase 2 flow training; generated data, no download, 60-second training cap
 .venv/bin/python -m tito_repro.cli experiment=phase2_synthetic
+
+# Three-seed synthetic calibration including held-out five/eight-atom sizes
+.venv/bin/python scripts/calibrate_flow.py
+
+# Reuse a saved flow checkpoint for evaluation only
+.venv/bin/python -m tito_repro.cli experiment=phase2_evaluate flow_evaluation.checkpoint=<local-flow-checkpoint.pt>
 
 # Paired Phase 1 epsilon variants; cached alanine data required, 60 seconds per fit
 .venv/bin/python scripts/compare_epsilon.py

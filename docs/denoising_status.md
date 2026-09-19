@@ -31,4 +31,27 @@ Diagnose a specific checkpoint:
 
 The paired metrics, configs, source hashes and checkpoint hashes are committed under `docs/results/epsilon_*1000*`. Original artifacts are under `runs/epsilon_ablation/20260918_164803_442185`. Checkpoints from before the historical skip removal must be interpreted with their original code revision; missing `epsilon_skip` currently defaults to false and cannot identify the architecture of every historical checkpoint.
 
-Next: compare generated distributions using matched seeds and solver budgets, retain finite-sample controls, and expand only if improvements survive those checks. Exploratory Phase 2 development proceeds independently under the revised policy.
+## Paired generated-sample follow-up
+
+The two 1,000-update checkpoints were sampled with identical initial configurations and reset Gaussian RNG streams at each lag. Each variant generated 4 chains × 32 transitions at 10, 100 and 1,000 ps with 50 DDIM evaluations per transition. The sampling/comparison stage took 57.44 seconds locally, excluding checkpoint/data setup. No new training or downloads occurred.
+
+| Lag (ps) | Bins per angle | Plain JSD | Residual JSD | Matched-count reference JSD mean |
+|---|---:|---:|---:|---:|
+| 10 | 32 | 0.627 | 0.641 | 0.200 |
+| 100 | 32 | 0.596 | 0.608 | 0.202 |
+| 1,000 | 32 | 0.615 | 0.617 | 0.200 |
+| 10 | 64 | 0.666 | 0.672 | 0.395 |
+| 100 | 64 | 0.650 | 0.655 | 0.394 |
+| 1,000 | 64 | 0.662 | 0.661 | 0.395 |
+
+All JSD values are in nats. Every 95% paired whole-chain bootstrap interval for residual-minus-plain JSD includes zero (200 replicates; reference histogram fixed). Four chains are insufficient for strong uncertainty claims. IID reference controls measure finite-histogram effects, not temporal uncertainty. The 1,000-frame lag remains a boundary extrapolation from DisExp training support 1…999.
+
+The lower high-noise prediction error did **not** produce clear torsion-distribution improvement. Both variants remain much worse than matched-count reference controls. The default stays unchanged. This test does not measure bond validity, energy, kinetic or CK agreement, so no acceptance gate is passed.
+
+```sh
+.venv/bin/python -m tito_repro.cli experiment=epsilon_sampling \
+  comparison.checkpoints.plain=<plain-checkpoint.pt> \
+  comparison.checkpoints.residual=<residual-checkpoint.pt>
+```
+
+Metrics/config/environment snapshots are `docs/results/epsilon_sampling_1000*`; raw trajectories are in `runs/epsilon_sampling/20260918_184641_659602`. Next molecular work should diagnose generated bond geometry and short-lag conditional behavior before increasing training blindly. Exploratory Phase 2 continues independently.

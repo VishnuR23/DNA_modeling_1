@@ -27,4 +27,38 @@ Reproduce from the repository root:
 
 Training is limited to 2,000 updates or 60 seconds, checked between updates. Setup and bounded evaluation are outside that training timer. Periodic checkpoints and loss arrays are saved, but this prototype has no resume command or EMA yet. Results, config and checkpoint provenance are committed under `docs/results/phase2_synthetic_2000*`; the original artifacts are under `runs/phase2_synthetic/20260918_164507_673450`.
 
-Next useful work is to measure calibration across more seeds and sizes, then add validated topology/bond features and a cached-data molecular pilot. A missing peptide dataset does not block synthetic development. Molecular reproduction, optimal-transport matching and peptide transferability remain unestablished.
+## Three-seed size calibration
+
+Three completed 2,000-update runs used seeds 20260910, 20260911 and 20260912, with training sizes 3/4 and evaluation sizes 3/4/5/8. Other settings match the first pilot. Each seed controls both training and independent evaluation draws, so the spread combines training and finite-evaluation variation. It does not isolate training instability. No additional data was downloaded.
+
+| Atoms | Lag 1: mean ratio (seed range) | Lag 4: mean ratio (seed range) |
+|---|---:|---:|
+| 3 | 1.141 (1.024–1.276) | 0.968 (0.926–1.021) |
+| 4 | 1.021 (0.926–1.082) | 0.953 (0.835–1.096) |
+| 5, held-out | 0.929 (0.775–1.031) | 0.944 (0.852–1.107) |
+| 8, held-out | 0.945 (0.697–1.194) | 1.015 (0.668–1.342) |
+
+Ratios divide the generated residual second moment by the analytic conditional variance; 1 is the target. All samples were finite. The eight-atom means obscure substantial variation, so this is not evidence of reliable size generalization. Ranges and sample standard deviations across three seeds are descriptive, not confidence intervals.
+
+![Residual moment calibration across three experiment seeds](figures/phase2_calibration.png)
+
+```sh
+.venv/bin/python scripts/calibrate_flow.py
+.venv/bin/python scripts/plot_flow_calibration.py
+```
+
+The campaign applies the 60-second training cap per seed and a 180-second subprocess timeout per full invocation. The plot reads committed results. Metrics, configs, environment and checkpoint hashes are preserved in `docs/results/flow_calibration_3seeds*`; original checkpoints are under `runs/flow_calibration/20260918_184807_441433`.
+
+## Reuse checkpoints for cheaper diagnostics
+
+Standalone evaluation now loads existing weights and saves raw condition/reference/generated/prior arrays. It permits new sizes, sample counts, solver budgets and evaluation seeds without retraining:
+
+```sh
+.venv/bin/python -m tito_repro.cli experiment=phase2_evaluate \
+  flow_evaluation.checkpoint=<local-flow-checkpoint.pt> \
+  flow_evaluation.solver_steps=40
+```
+
+For training seed 20260910, increasing Heun steps from 20 to 40 on identical evaluation inputs changed residual second moments by less than 0.6% relative across every tested size/lag. At eight atoms, lag 1 changed 0.21971→0.22039 and lag 4 changed 0.48629→0.48350. Doubling solver work did not resolve that run's low dispersion. This is a single-model solver sensitivity check, not a convergence proof. Snapshot files are `docs/results/flow_solver40*`; raw samples are in `runs/phase2_evaluate/20260918_185025_129926`.
+
+Next useful work is to separate model-seed variation from evaluation noise with shared evaluation inputs and larger samples, then add validated topology/bond features and a cached-data molecular pilot. Molecular reproduction, optimal-transport matching and peptide transferability remain unestablished.
