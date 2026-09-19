@@ -61,4 +61,29 @@ Standalone evaluation now loads existing weights and saves raw condition/referen
 
 For training seed 20260910, increasing Heun steps from 20 to 40 on identical evaluation inputs changed residual second moments by less than 0.6% relative across every tested size/lag. At eight atoms, lag 1 changed 0.21971→0.22039 and lag 4 changed 0.48629→0.48350. Doubling solver work did not resolve that run's low dispersion. This is a single-model solver sensitivity check, not a convergence proof. Snapshot files are `docs/results/flow_solver40*`; raw samples are in `runs/phase2_evaluate/20260918_185025_129926`.
 
-Next useful work is to separate model-seed variation from evaluation noise with shared evaluation inputs and larger samples, then add validated topology/bond features and a cached-data molecular pilot. Molecular reproduction, optimal-transport matching and peptide transferability remain unestablished.
+## Shared-input follow-up
+
+The three saved models were re-evaluated without training using the same evaluation seed 20260910 and 512 examples per size/lag (four times the earlier count), with 20 Heun steps. The runner checks exact equality of saved condition, reference and prior arrays across models and rejects mismatches. All shared-input checks passed.
+
+| Atoms | Lag 1: mean ratio (model range) | Lag 4: mean ratio (model range) |
+|---|---:|---:|
+| 3 | 1.021 (0.936–1.116) | 0.971 (0.889–1.050) |
+| 4 | 1.005 (0.927–1.058) | 0.959 (0.871–1.060) |
+| 5, held-out | 0.950 (0.796–1.056) | 0.949 (0.869–1.100) |
+| 8, held-out | 0.957 (0.689–1.204) | 0.978 (0.695–1.254) |
+
+The broad eight-atom range persists when inputs are identical, demonstrating differences between trained models conditional on this finite evaluation sample. It cannot be explained solely by changing evaluation draws. One shared evaluation seed still does not establish population uncertainty or reliable generalization.
+
+![Three saved models evaluated on identical inputs](figures/phase2_shared_inputs.png)
+
+```sh
+.venv/bin/python scripts/calibrate_saved_flow.py \
+  --campaign runs/flow_calibration/20260918_184807_441433
+.venv/bin/python scripts/plot_flow_calibration.py \
+  --summary docs/results/flow_shared_inputs_512.json \
+  --output docs/figures/phase2_shared_inputs.png
+```
+
+Evaluation has a 180-second subprocess timeout per model. Committed metrics, resolved evaluation configs, checkpoint hashes and environment records are under `docs/results/flow_shared_inputs_512*`. Raw samples remain local under `runs/flow_shared_inputs/20260918_201232_914245`.
+
+Next useful work is to test architecture or training changes against this fixed evaluation set, while adding independent evaluation seeds before any acceptance claim. Validated topology/bond features and a cached-data molecular pilot remain outstanding. Molecular reproduction, optimal-transport matching and peptide transferability remain unestablished.

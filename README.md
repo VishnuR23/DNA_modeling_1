@@ -22,6 +22,8 @@ Exploratory Phase 2 now includes a variable-size, element-conditioned flow model
 
 Follow-up: paired molecular rollouts showed no clear distribution benefit from the residual epsilon variant. Three-seed synthetic calibration exposes substantial variation at twice the training size; doubling flow solver steps did not resolve the first seed's low dispersion. Both outcomes and their controls are preserved in the linked reports.
 
+The latest checkpoint-only comparison uses 512 identical evaluation inputs per size/lag across all three saved flow models. Variation persists at eight atoms (moment ratios roughly 0.69–1.25), so differing evaluation draws alone do not explain it. [Shared-input results and plot](docs/phase2_status.md#shared-input-follow-up).
+
 ## Run locally
 
 Run commands from `tito-repro/`. The local `.venv` is already installed. For a fresh installation with Python 3.11:
@@ -56,6 +58,9 @@ This runs the software tests, a 30-update synthetic CPU train/sample experiment,
 
 # Three-seed synthetic calibration including held-out five/eight-atom sizes
 .venv/bin/python scripts/calibrate_flow.py
+
+# Compare saved models on identical inputs without retraining
+.venv/bin/python scripts/calibrate_saved_flow.py --campaign <local-calibration-campaign-directory>
 
 # Reuse a saved flow checkpoint for evaluation only
 .venv/bin/python -m tito_repro.cli experiment=phase2_evaluate flow_evaluation.checkpoint=<local-flow-checkpoint.pt>
