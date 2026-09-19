@@ -2,8 +2,9 @@
 from copy import deepcopy
 
 import pytest
+import numpy as np
 
-from tito_repro.eval.flow_calibration import summarize_seeds
+from tito_repro.eval.flow_calibration import summarize_seeds, verify_shared_inputs
 
 
 def result(seed, moment):
@@ -40,3 +41,17 @@ def test_incompatible_runs_are_not_pooled(change):
         second["status"] = "time_limit"
     with pytest.raises(ValueError):
         summarize_seeds([first, second])
+
+
+def test_shared_inputs_allow_different_predictions_but_reject_different_noise(tmp_path):
+    first, second = tmp_path / "first", tmp_path / "second"
+    first.mkdir()
+    second.mkdir()
+    inputs = {key: np.ones((2, 3, 3)) for key in ("condition", "reference", "prior")}
+    np.savez(first / "sample.npz", **inputs, generated=np.zeros((2, 3, 3)))
+    np.savez(second / "sample.npz", **inputs, generated=np.ones((2, 3, 3)))
+    verify_shared_inputs(first, second)
+    inputs["prior"] = np.zeros((2, 3, 3))
+    np.savez(second / "sample.npz", **inputs)
+    with pytest.raises(ValueError, match="prior"):
+        verify_shared_inputs(first, second)

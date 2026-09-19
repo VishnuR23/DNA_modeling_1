@@ -1,5 +1,18 @@
 """Aggregate independent synthetic flow seeds without claiming confidence bounds."""
 import numpy as np
+from pathlib import Path
+
+
+def verify_shared_inputs(first: Path, second: Path) -> None:
+    """Require identical conditions, targets and priors; predictions may differ."""
+    names = {path.name for path in first.glob("*.npz")}
+    if not names or names != {path.name for path in second.glob("*.npz")}:
+        raise ValueError("Saved evaluation grids differ or are empty")
+    for name in sorted(names):
+        with np.load(first / name, allow_pickle=False) as a, np.load(second / name, allow_pickle=False) as b:
+            for key in ("condition", "reference", "prior"):
+                if not np.array_equal(a[key], b[key]):
+                    raise ValueError(f"Evaluation inputs differ: {name}, {key}")
 
 
 def summarize_seeds(runs: list[dict]) -> dict:
