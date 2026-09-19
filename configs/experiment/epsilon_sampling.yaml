@@ -1,0 +1,12 @@
+# @package _global_
+action: epsilon_sampling
+comparison:
+  checkpoints:
+    plain: null
+    residual: null
+  chains: 4
+  transitions: 32
+  lags: [10, 100, 1000]
+  solver_steps: 50
+  histogram_bins: [32, 64]
+  bootstrap_replicates: 200
