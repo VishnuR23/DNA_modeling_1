@@ -9,7 +9,7 @@ from omegaconf import DictConfig, OmegaConf
 
 from tito_repro.data.pairs import center
 from tito_repro.models.flow import ConditionalFlow, linear_path
-from tito_repro.utils.runtime import write_json
+from tito_repro.utils.runtime import digest, write_json
 
 
 def pairs(atoms: int, batch: int, lag: int, correlation: float,
@@ -27,11 +27,13 @@ def element_ids(atoms: int, vocabulary: list[int]) -> torch.Tensor:
 
 
 @torch.no_grad()
-def diagnose(model: ConditionalFlow, cfg: DictConfig) -> list[dict]:
+def diagnose(model: ConditionalFlow, cfg: DictConfig, output: Path | None = None) -> list[dict]:
     """Fixed independent pairs/noise for before/after loss and conditional moments."""
     model.eval()
     rows = []
     rng = torch.Generator().manual_seed(cfg.seed + 1000)
+    if output is not None:
+        output.mkdir(parents=True, exist_ok=True)
     for atoms in cfg.flow.evaluation_atoms:
         for lag in cfg.flow.lags:
             condition, target, lags = pairs(atoms, cfg.flow.evaluation_samples, lag, cfg.flow.correlation, rng)
@@ -41,6 +43,9 @@ def diagnose(model: ConditionalFlow, cfg: DictConfig) -> list[dict]:
             x, velocity = linear_path(prior, target, times)
             prediction = model(x, condition, lags, times, elements)
             samples = model.sample(condition, lags, elements, cfg.flow.solver_steps, prior=prior)
+            if output is not None:
+                np.savez(output / f"atoms_{atoms}_lag_{lag}.npz", condition=condition.numpy(),
+                         reference=target.numpy(), generated=samples.numpy(), prior=prior.numpy())
             expected_mean = cfg.flow.correlation ** lag * condition
             expected_variance = (1 - cfg.flow.correlation ** (2 * lag)) * (1 - 1 / atoms)
             rows.append({
@@ -54,6 +59,35 @@ def diagnose(model: ConditionalFlow, cfg: DictConfig) -> list[dict]:
                 "max_centroid": float(samples.mean(-2).abs().max()),
             })
     return rows
+
+
+def evaluate_flow(cfg: DictConfig, output: Path) -> dict:
+    """Re-evaluate saved synthetic weights with an explicit seed and sampling budget."""
+    f = cfg.flow_evaluation
+    if (not f.checkpoint or not f.atoms or min(f.atoms) < 2
+            or len(set(f.atoms)) != len(f.atoms) or f.samples < 1 or f.solver_steps < 1):
+        raise ValueError("A local checkpoint, unique atom counts >=2 and positive sampling budget are required")
+    state = torch.load(f.checkpoint, map_location="cpu", weights_only=False)
+    if state.get("purpose") != "synthetic_flow_prototype":
+        raise ValueError("Expected a synthetic flow checkpoint")
+    saved = OmegaConf.create(state["config"])
+    training_seed = saved.seed
+    saved.seed = cfg.seed
+    saved.flow.evaluation_atoms = f.atoms
+    saved.flow.evaluation_samples = f.samples
+    saved.flow.solver_steps = f.solver_steps
+    model = ConditionalFlow(saved.flow.width, max(saved.flow.lags))
+    model.load_state_dict(state["model"])
+    rows = diagnose(model, saved, output / "samples")
+    OmegaConf.save(saved, output / "evaluation_config.yaml", resolve=True)
+    result = {"status": "completed", "device": "cpu", "seed": cfg.seed,
+              "training_seed": training_seed, "checkpoint_sha256": digest(f.checkpoint),
+              "checkpoint_steps": state["steps"], "rows": rows,
+              "scientific_acceptance": "not_applicable_synthetic",
+              "field_evaluations_per_sample": 2 * f.solver_steps,
+              "samples_per_size_lag": f.samples, "limitations": ["synthetic data only", "no new training"]}
+    write_json(output / "metrics.json", result)
+    return result
 
 
 def train_flow(cfg: DictConfig, output: Path) -> dict:

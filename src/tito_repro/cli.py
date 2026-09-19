@@ -1,4 +1,4 @@
-"""Configuration-only entry point for local Phase 1 experiments."""
+"""Configuration-only entry point for local CPU experiments."""
 import logging
 import os
 from pathlib import Path
@@ -25,6 +25,9 @@ def main(cfg: DictConfig) -> None:
         if cfg.action == "phase2_synthetic":
             from tito_repro.train.flow import train_flow
             result = train_flow(cfg, output)
+        elif cfg.action == "phase2_evaluate":
+            from tito_repro.train.flow import evaluate_flow
+            result = evaluate_flow(cfg, output)
         elif cfg.action == "epsilon_sampling":
             from tito_repro.eval.paired_sampling import compare_sampling
             result = compare_sampling(cfg, output)

@@ -1,0 +1,7 @@
+# @package _global_
+action: phase2_evaluate
+flow_evaluation:
+  checkpoint: null
+  atoms: [3, 4, 5, 8]
+  samples: 128
+  solver_steps: 20
