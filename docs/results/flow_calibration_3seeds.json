@@ -1,0 +1,121 @@
+{
+  "status": "completed",
+  "seeds": [
+    20260910,
+    20260911,
+    20260912
+  ],
+  "rows": [
+    {
+      "atoms": 3,
+      "lag_frames": 1,
+      "held_out_size": false,
+      "second_moment_ratio_mean": 1.1414033257299003,
+      "second_moment_ratio_seed_std": 0.12662527664896203,
+      "second_moment_ratio_range": [
+        1.0242490718762083,
+        1.2757440408070886
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.49188568519441134,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 3,
+      "lag_frames": 4,
+      "held_out_size": false,
+      "second_moment_ratio_mean": 0.9675780606847971,
+      "second_moment_ratio_seed_std": 0.048235000077458665,
+      "second_moment_ratio_range": [
+        0.9263705483153459,
+        1.0206328711777202
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.7408508958301168,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 4,
+      "lag_frames": 1,
+      "held_out_size": false,
+      "second_moment_ratio_mean": 1.0208376211884584,
+      "second_moment_ratio_seed_std": 0.08325359178157075,
+      "second_moment_ratio_range": [
+        0.9259256499784967,
+        1.0815204293639575
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.49366769934403537,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 4,
+      "lag_frames": 4,
+      "held_out_size": false,
+      "second_moment_ratio_mean": 0.9526270248254199,
+      "second_moment_ratio_seed_std": 0.13222704883116546,
+      "second_moment_ratio_range": [
+        0.8352693432142466,
+        1.0958893945697856
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.7049810422678292,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 5,
+      "lag_frames": 1,
+      "held_out_size": true,
+      "second_moment_ratio_mean": 0.9290072032146984,
+      "second_moment_ratio_seed_std": 0.13562681130938253,
+      "second_moment_ratio_range": [
+        0.7751128739780851,
+        1.0310946446326046
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.4673660508367372,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 5,
+      "lag_frames": 4,
+      "held_out_size": true,
+      "second_moment_ratio_mean": 0.943850357822425,
+      "second_moment_ratio_seed_std": 0.14165090341737271,
+      "second_moment_ratio_range": [
+        0.8516737696371663,
+        1.1069539751930413
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.7190416825067971,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 8,
+      "lag_frames": 1,
+      "held_out_size": true,
+      "second_moment_ratio_mean": 0.9450174986370029,
+      "second_moment_ratio_seed_std": 0.24812069297631253,
+      "second_moment_ratio_range": [
+        0.6974944519618204,
+        1.1937315501863999
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.8599519204201448,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 8,
+      "lag_frames": 4,
+      "held_out_size": true,
+      "second_moment_ratio_mean": 1.0146735610330238,
+      "second_moment_ratio_seed_std": 0.33753791035535263,
+      "second_moment_ratio_range": [
+        0.6677921764508717,
+        1.342019482929318
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.8085269202766566,
+      "all_samples_finite": true
+    }
+  ],
+  "scientific_acceptance": "not_applicable_synthetic",
+  "uncertainty": "sample standard deviation and range across seeds; not confidence intervals",
+  "limitations": [
+    "small seed count",
+    "synthetic point clouds, not molecules",
+    "second moments do not test the complete conditional distribution"
+  ]
+}
