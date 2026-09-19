@@ -1,0 +1,134 @@
+{
+  "status": "completed",
+  "device": "cpu",
+  "seed": 20260910,
+  "scientific_acceptance": "not_evaluated",
+  "data": {
+    "kind": "mdshare_explicit",
+    "sha256": "b66a26416720df5ee0bd68771684847a4d0043c84ca0ae58aa756e4a48c454a9",
+    "path": "/Users/vishnu/Bio_one/tito-repro/data/alanine/processed.npz"
+  },
+  "checkpoint_sha256": {
+    "plain": "69c1f8fb99472e13b6a719fe8c2fc53193bae7cd98d411229e8e0812257ec4ea",
+    "residual": "8c0fdf1e50c22e80bf4e2adcf6fc932f682902176c071649981e4cf310bf6e39"
+  },
+  "checkpoint_steps": 1000,
+  "lags": [
+    {
+      "lag_ps": 10.0,
+      "generated_frames_per_variant": 128,
+      "histograms": [
+        {
+          "bins": 32,
+          "plain_jsd_nats": 0.6268916818452863,
+          "residual_jsd_nats": 0.6410187352690873,
+          "residual_minus_plain_jsd_nats": 0.01412705342380094,
+          "paired_chain_bootstrap_interval_nats": [
+            -0.02045117692722918,
+            0.03883340723435956
+          ],
+          "matched_count_reference_jsd_mean_nats": 0.20012759741549468,
+          "matched_count_reference_interval_nats": [
+            0.17251269090180923,
+            0.2311378432432746
+          ]
+        },
+        {
+          "bins": 64,
+          "plain_jsd_nats": 0.6655641668915674,
+          "residual_jsd_nats": 0.6721311996104136,
+          "residual_minus_plain_jsd_nats": 0.0065670327188461775,
+          "paired_chain_bootstrap_interval_nats": [
+            -0.007829950217371207,
+            0.016812970611823852
+          ],
+          "matched_count_reference_jsd_mean_nats": 0.39509884539549456,
+          "matched_count_reference_interval_nats": [
+            0.37029018014597104,
+            0.4203912522900943
+          ]
+        }
+      ]
+    },
+    {
+      "lag_ps": 100.0,
+      "generated_frames_per_variant": 128,
+      "histograms": [
+        {
+          "bins": 32,
+          "plain_jsd_nats": 0.5961506392381086,
+          "residual_jsd_nats": 0.6078494441921918,
+          "residual_minus_plain_jsd_nats": 0.011698804954083153,
+          "paired_chain_bootstrap_interval_nats": [
+            -0.01220379813881678,
+            0.02997691142707637
+          ],
+          "matched_count_reference_jsd_mean_nats": 0.20162742039878073,
+          "matched_count_reference_interval_nats": [
+            0.17532145576617847,
+            0.2303398142522084
+          ]
+        },
+        {
+          "bins": 64,
+          "plain_jsd_nats": 0.6497418484419577,
+          "residual_jsd_nats": 0.6551832258552268,
+          "residual_minus_plain_jsd_nats": 0.005441377413269111,
+          "paired_chain_bootstrap_interval_nats": [
+            -0.0035917041879166556,
+            0.011310528611418213
+          ],
+          "matched_count_reference_jsd_mean_nats": 0.39400386177023367,
+          "matched_count_reference_interval_nats": [
+            0.3718040268436131,
+            0.4148448286883348
+          ]
+        }
+      ]
+    },
+    {
+      "lag_ps": 1000.0,
+      "generated_frames_per_variant": 128,
+      "histograms": [
+        {
+          "bins": 32,
+          "plain_jsd_nats": 0.6146330600985443,
+          "residual_jsd_nats": 0.6168693986992171,
+          "residual_minus_plain_jsd_nats": 0.002236338600672738,
+          "paired_chain_bootstrap_interval_nats": [
+            -0.017331539258960693,
+            0.014068236431872605
+          ],
+          "matched_count_reference_jsd_mean_nats": 0.20038213698566004,
+          "matched_count_reference_interval_nats": [
+            0.17265754109350953,
+            0.22777594171422458
+          ]
+        },
+        {
+          "bins": 64,
+          "plain_jsd_nats": 0.6615914238107334,
+          "residual_jsd_nats": 0.6608033202915224,
+          "residual_minus_plain_jsd_nats": -0.000788103519210992,
+          "paired_chain_bootstrap_interval_nats": [
+            -0.010055548028933159,
+            0.006443887260756492
+          ],
+          "matched_count_reference_jsd_mean_nats": 0.39467503381783847,
+          "matched_count_reference_interval_nats": [
+            0.37063460165123596,
+            0.41864800883437586
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "four-chain default bootstrap is exploratory",
+    "reference held fixed in bootstrap",
+    "IID reference controls do not measure temporal uncertainty",
+    "torsion histograms do not establish chemical validity or kinetics",
+    "1000-frame lag is the upper boundary beyond DisExp training support"
+  ],
+  "wall_seconds": 57.43790266697761
+}
