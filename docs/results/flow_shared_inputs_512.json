@@ -1,0 +1,127 @@
+{
+  "status": "completed",
+  "seeds": [
+    20260910,
+    20260911,
+    20260912
+  ],
+  "rows": [
+    {
+      "atoms": 3,
+      "lag_frames": 1,
+      "held_out_size": false,
+      "second_moment_ratio_mean": 1.0206512278980682,
+      "second_moment_ratio_seed_std": 0.09036985520444964,
+      "second_moment_ratio_range": [
+        0.9364112590750061,
+        1.1161044239997866
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.49124656935088,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 3,
+      "lag_frames": 4,
+      "held_out_size": false,
+      "second_moment_ratio_mean": 0.9714707111015234,
+      "second_moment_ratio_seed_std": 0.08059116415865077,
+      "second_moment_ratio_range": [
+        0.8893146305877812,
+        1.0504000335878148
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.7118510653492006,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 4,
+      "lag_frames": 1,
+      "held_out_size": false,
+      "second_moment_ratio_mean": 1.0047018895914528,
+      "second_moment_ratio_seed_std": 0.0687572786721851,
+      "second_moment_ratio_range": [
+        0.9269864470870409,
+        1.0576236027258417
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.4883341466631958,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 4,
+      "lag_frames": 4,
+      "held_out_size": false,
+      "second_moment_ratio_mean": 0.9589761737722537,
+      "second_moment_ratio_seed_std": 0.09526948499811211,
+      "second_moment_ratio_range": [
+        0.8710763889271916,
+        1.0602104064628664
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.7395155158190668,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 5,
+      "lag_frames": 1,
+      "held_out_size": true,
+      "second_moment_ratio_mean": 0.9498311103218132,
+      "second_moment_ratio_seed_std": 0.13661368844004762,
+      "second_moment_ratio_range": [
+        0.7955806019405526,
+        1.0555638000369074
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.4869048584609314,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 5,
+      "lag_frames": 4,
+      "held_out_size": true,
+      "second_moment_ratio_mean": 0.9494244089035049,
+      "second_moment_ratio_seed_std": 0.1304768973143421,
+      "second_moment_ratio_range": [
+        0.8687439989236302,
+        1.0999563754588464
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.7405179067515156,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 8,
+      "lag_frames": 1,
+      "held_out_size": true,
+      "second_moment_ratio_mean": 0.9568658613023308,
+      "second_moment_ratio_seed_std": 0.2579128741556765,
+      "second_moment_ratio_range": [
+        0.6893057198751543,
+        1.2039054953862756
+      ],
+      "velocity_mse_to_zero_baseline_mean": 1.195070989439881,
+      "all_samples_finite": true
+    },
+    {
+      "atoms": 8,
+      "lag_frames": 4,
+      "held_out_size": true,
+      "second_moment_ratio_mean": 0.978334899590962,
+      "second_moment_ratio_seed_std": 0.27963526806395483,
+      "second_moment_ratio_range": [
+        0.6950084489471339,
+        1.2541267009859027
+      ],
+      "velocity_mse_to_zero_baseline_mean": 0.7771440367013666,
+      "all_samples_finite": true
+    }
+  ],
+  "scientific_acceptance": "not_applicable_synthetic",
+  "uncertainty": "sample standard deviation and range across seeds; not confidence intervals",
+  "limitations": [
+    "small seed count",
+    "synthetic point clouds, not molecules",
+    "second moments do not test the complete conditional distribution",
+    "one shared evaluation seed; finite-sample uncertainty not estimated"
+  ],
+  "evaluation_seed": 20260910,
+  "samples_per_size_lag": 512,
+  "shared_inputs_verified": true,
+  "source_campaign": "/Users/vishnu/Bio_one/tito-repro/runs/flow_calibration/20260918_184807_441433",
+  "interpretation": "model variation conditional on one fixed finite evaluation sample"
+}
